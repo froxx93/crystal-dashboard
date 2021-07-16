@@ -108,9 +108,9 @@ export default {
 
     const navMenuItems = [
       {
-        title: 'Home',
+        title: 'Dashboard',
         route: 'index',
-        icon: 'HomeIcon',
+        icon: 'ActivityIcon',
       },
       {
         title: 'Group',
@@ -136,6 +136,8 @@ export default {
     ]
 
     return {
+      isVerticalMenuCollapsed:
+        this.$store.state['vertical-menu'].isVerticalMenuCollapsed,
       isMouseHovered: false,
       shallShadowBottom: false,
 
@@ -148,9 +150,6 @@ export default {
     }
   },
   computed: {
-    isVerticalMenuCollapsed() {
-      return this.$store.state['vertical-menu'].isVerticalMenuCollapsed
-    },
     collapseTogglerIcon() {
       if (this.$props.isVerticalMenuActive) {
         return this.isVerticalMenuCollapsed ? 'unpinned' : 'pinned'

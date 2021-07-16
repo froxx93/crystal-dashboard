@@ -7,7 +7,7 @@ export default function useAppConfig(store) {
   const isVerticalMenuCollapsed = computed({
     get: () => store.state.verticalMenu.isVerticalMenuCollapsed,
     set: (val) => {
-      store.commit('verticalMenu/updateVerticalMenuCollapsed', val)
+      store.commit('vertical-menu/updateVerticalMenuCollapsed', val)
     },
   })
 

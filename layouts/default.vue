@@ -4,7 +4,7 @@
     :class="[layoutClasses]"
     :data-col="isNavMenuHidden ? '1-column' : null"
   >
-    <BNavbar
+    <!-- <BNavbar
       :toggleable="false"
       :variant="navbarBackgroundColor"
       class="header-navbar navbar navbar-shadow align-items-center"
@@ -15,7 +15,7 @@
           <UserDropdown />
         </BNavbarNav>
       </div>
-    </BNavbar>
+    </BNavbar> -->
 
     <VerticalNavMenu
       v-if="!isNavMenuHidden"
@@ -36,14 +36,14 @@
 </template>
 
 <script lang="ts">
-import UserDropdown from '@/components/app-navbar/components/UserDropdown.vue'
+// import UserDropdown from '@/components/app-navbar/components/UserDropdown.vue'
 import VerticalNavMenu from '@/components/layouts/layout-vertical/vertical-nav-menu/VerticalNavMenu.vue'
 
 export default {
   // eslint-disable-next-line vue/component-definition-name-casing
   name: 'default',
   components: {
-    UserDropdown,
+    // UserDropdown,
     VerticalNavMenu,
   },
   data() {
@@ -117,6 +117,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+html .content.app-content {
+  padding-top: 2rem;
 }
 
 *,
