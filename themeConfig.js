@@ -8,6 +8,7 @@ export const $themeBreakpoints = {}
 
 // APP CONFIG
 export const $themeConfig = {
+  language: 'en',
   app: {
     appName: 'Vuexy', // Will update name in navigation menu (Branding)
     // eslint-disable-next-line global-require

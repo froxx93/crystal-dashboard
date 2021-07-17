@@ -1,8 +1,18 @@
 import { $themeConfig } from '@/themeConfig'
 
+type Language = 'en' | 'de'
+
+interface AppConfigState {
+  gameName: string
+  appLanguage: Language
+  layout: any
+}
+
 export default {
   namespaced: true,
   state: {
+    gameName: 'crystal',
+    appLanguage: 'en',
     layout: {
       isRTL: $themeConfig.layout.isRTL,
       skin: localStorage.getItem('vuexy-skin') || $themeConfig.layout.skin,
@@ -20,17 +30,17 @@ export default {
         type: $themeConfig.layout.footer.type,
       },
     },
-  },
+  } as AppConfigState,
   getters: {},
   mutations: {
-    toggleRtl(state) {
+    toggleRtl(state: AppConfigState) {
       state.layout.isRTL = !state.layout.isRTL
       document.documentElement.setAttribute(
         'dir',
         state.layout.isRTL ? 'rtl' : 'ltr'
       )
     },
-    updateSkin(state, skin) {
+    updateSkin(state: AppConfigState, skin: string) {
       state.layout.skin = skin
 
       // Update value in localStorage
@@ -41,22 +51,22 @@ export default {
       else if (document.body.className.match('dark-layout'))
         document.body.classList.remove('dark-layout')
     },
-    updateRouterTransition(state, val) {
+    updateRouterTransition(state: AppConfigState, val: string) {
       state.layout.routerTransition = val
     },
-    updateLayoutType(state, val) {
+    updateLayoutType(state: AppConfigState, val: string) {
       state.layout.type = val
     },
-    updateContentWidth(state, val) {
+    updateContentWidth(state: AppConfigState, val: string) {
       state.layout.contentWidth = val
     },
-    updateNavMenuHidden(state, val) {
+    updateNavMenuHidden(state: AppConfigState, val: boolean) {
       state.layout.menu.hidden = val
     },
-    updateNavbarConfig(state, obj) {
+    updateNavbarConfig(state: AppConfigState, obj: any) {
       Object.assign(state.layout.navbar, obj)
     },
-    updateFooterConfig(state, obj) {
+    updateFooterConfig(state: AppConfigState, obj: any) {
       Object.assign(state.layout.footer, obj)
     },
   },
