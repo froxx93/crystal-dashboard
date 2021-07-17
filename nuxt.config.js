@@ -55,7 +55,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: process.env.VUE_APP_API_URL,
+    baseURL: 'https://pokeapi.co/api/v2',
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
