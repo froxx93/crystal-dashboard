@@ -38,8 +38,9 @@
 <script lang="ts">
 // import UserDropdown from '@/components/app-navbar/components/UserDropdown.vue'
 import VerticalNavMenu from '@/components/layouts/layout-vertical/vertical-nav-menu/VerticalNavMenu.vue'
+import Vue from 'vue'
 
-export default {
+export default Vue.extend({
   // eslint-disable-next-line vue/component-definition-name-casing
   name: 'default',
   components: {
@@ -83,7 +84,7 @@ export default {
 
       return classes
     },
-    navbarTypeClass() {
+    navbarTypeClass(): string {
       if (this.navbarType === 'sticky') return 'fixed-top'
       if (this.navbarType === 'static') return 'navbar-static-top'
       if (this.navbarType === 'hidden') return 'd-none'
@@ -91,16 +92,16 @@ export default {
     },
   },
   watch: {
-    currentBreakpoint(val) {
+    currentBreakpoint(val: string): void {
       this.isVerticalMenuActive = val === 'xl'
     },
   },
   methods: {
-    toggleVerticalMenuActive() {
+    toggleVerticalMenuActive(): void {
       this.isVerticalMenuActive = !this.isVerticalMenuActive
     },
   },
-}
+})
 </script>
 
 <style lang="scss">

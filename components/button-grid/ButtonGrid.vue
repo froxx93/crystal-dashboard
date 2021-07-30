@@ -14,12 +14,14 @@
 </template>
 
 <script lang="ts">
+import Vue from 'vue'
+
 export interface ButtonGridItem {
   value: string
   text: string
 }
 
-export default {
+export default Vue.extend({
   props: {
     id: {
       type: String,
@@ -37,12 +39,12 @@ export default {
     }
   },
   methods: {
-    onChange(value: string) {
+    onChange(value: string): void {
       this.selected = value
       this.$emit('change', value)
     },
   },
-}
+})
 </script>
 
 <style lang="scss" scoped>
