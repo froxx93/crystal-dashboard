@@ -65,12 +65,13 @@
 </template>
 
 <script lang="ts">
+import Vue from 'vue'
 import machines from '@/assets/data/machines'
 import { ButtonGridItem } from '~/components/button-grid/ButtonGrid.vue'
 import { Machine } from '~/domains/Machine'
 import Location from '~/domains/Location'
 
-export default {
+export default Vue.extend({
   data() {
     const allMachines: ButtonGridItem[] = machines.map(
       ({
@@ -92,7 +93,7 @@ export default {
     }
   },
   methods: {
-    onChangeMachine(machineId: string) {
+    onChangeMachine(machineId: string): void {
       const machine = machines.find(({ id }) => id === machineId)
       this.selectedMachine = machine
       this.infoHeadline = machine
@@ -112,7 +113,7 @@ export default {
       return locations
     },
   },
-}
+})
 </script>
 
 <style></style>

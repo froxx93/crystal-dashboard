@@ -8,10 +8,11 @@
 </template>
 
 <script lang="ts">
+import Vue from 'vue'
 import Location from '~/domains/Location'
 import Marker from '~/domains/Marker'
 
-export default {
+export default Vue.extend({
   props: {
     location: {
       type: Object as () => Location,
@@ -32,5 +33,5 @@ export default {
       }
     },
   },
-}
+})
 </script>

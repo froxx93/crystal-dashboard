@@ -1,4 +1,6 @@
-export const handleLoginStatus = {
+import Vue from 'vue'
+
+export const handleLoginStatus = Vue.extend({
   created() {
     this.handleLoginStatus()
   },
@@ -22,4 +24,4 @@ export const handleLoginStatus = {
       }
     },
   },
-}
+})
