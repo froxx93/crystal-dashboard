@@ -3,9 +3,7 @@
     class="main-menu menu-fixed menu-accordion menu-shadow"
     :class="[
       {
-        expanded:
-          !isVerticalMenuCollapsed ||
-          (isVerticalMenuCollapsed && isMouseHovered),
+        expanded: isMouseHovered,
       },
       skin === 'semi-dark' ? 'menu-dark' : 'menu-light',
     ]"
@@ -14,12 +12,7 @@
   >
     <!-- main menu header-->
     <div class="navbar-header expanded">
-      <slot
-        name="header"
-        :toggleVerticalMenuActive="toggleVerticalMenuActive"
-        :toggleCollapsed="toggleCollapsed"
-        :collapseTogglerIcon="collapseTogglerIcon"
-      >
+      <slot name="header">
         <ul class="nav navbar-nav flex-row">
           <!-- Logo & Text -->
           <li class="nav-item mr-auto">
@@ -27,24 +20,6 @@
               <span class="brand-logo">
                 <b-img :src="appLogoImage" alt="logo" />
               </span>
-            </b-link>
-          </li>
-
-          <!-- Toggler Button -->
-          <li class="nav-item nav-toggle">
-            <b-link class="nav-link modern-nav-toggle">
-              <feather-icon
-                icon="XIcon"
-                size="20"
-                class="d-block d-xl-none"
-                @click="toggleVerticalMenuActive"
-              />
-              <feather-icon
-                :icon="collapseTogglerIconFeather"
-                size="20"
-                class="d-none d-xl-block collapse-toggle-icon"
-                @click="toggleCollapsed"
-              />
             </b-link>
           </li>
         </ul>
@@ -56,7 +31,7 @@
     <div :class="{ 'd-block': shallShadowBottom }" class="shadow-bottom" />
 
     <!-- main menu content-->
-    <VuePerfectScrollbar
+    <vue-perfect-scrollbar
       :settings="perfectScrollbarSettings"
       class="main-menu-content scroll-area"
       tagname="ul"
@@ -66,18 +41,17 @@
         }
       "
     >
-      <VerticalNavMenuItems
+      <vertical-nav-menu-items
         :items="navMenuItems"
         class="navigation navigation-main"
       />
-    </VuePerfectScrollbar>
+    </vue-perfect-scrollbar>
     <!-- /main menu content-->
   </div>
 </template>
 
 <script>
 import VuePerfectScrollbar from 'vue-perfect-scrollbar'
-import { BLink, BImg } from 'bootstrap-vue'
 import { $themeConfig } from '@/themeConfig'
 import VerticalNavMenuItems from './vertical-nav-menu-items/VerticalNavMenuItems.vue'
 
@@ -85,16 +59,10 @@ export default {
   components: {
     VuePerfectScrollbar,
     VerticalNavMenuItems,
-    BLink,
-    BImg,
   },
   props: {
     isVerticalMenuActive: {
       type: Boolean,
-      required: true,
-    },
-    toggleVerticalMenuActive: {
-      type: Function,
       required: true,
     },
   },
@@ -113,23 +81,12 @@ export default {
         icon: 'ActivityIcon',
       },
       {
-        title: 'Group',
-        icon: 'BookOpenIcon',
+        title: 'Tools',
+        icon: 'ToolIcon',
         children: [
           {
-            title: 'Create',
-            route: 'create',
-            icon: 'FilePlusIcon',
-          },
-          {
-            title: 'List',
-            route: 'list',
-            icon: 'ListIcon',
-          },
-          {
-            title: 'Details',
-            route: 'details',
-            icon: 'SearchIcon',
+            title: 'Machine Finder',
+            route: 'machine-finder',
           },
         ],
       },
@@ -169,9 +126,6 @@ export default {
     },
   },
   methods: {
-    toggleCollapsed() {
-      this.isVerticalMenuCollapsed = !this.isVerticalMenuCollapsed
-    },
     updateMouseHovered(val) {
       this.isMouseHovered = val
     },
