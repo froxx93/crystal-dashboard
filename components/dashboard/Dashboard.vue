@@ -8,14 +8,8 @@
       @remove="() => removeTracker(tracker)"
     />
 
-    <b-col cols="12">
-      <b-dropdown
-        class="mb-1"
-        size="lg"
-        variant="outline-primary"
-        text="+"
-        no-caret
-      >
+    <b-col cols="12" class="mb-1 d-flex justify-content-between">
+      <b-dropdown size="lg" variant="outline-primary" text="+" no-caret>
         <b-dropdown-item
           v-for="trackerType in trackerTypes"
           :key="trackerType.value"
@@ -23,6 +17,16 @@
           >{{ trackerType.label }}</b-dropdown-item
         >
       </b-dropdown>
+      <b-button
+        variant="outline-danger"
+        size="lg"
+        :disabled="!trackers.length"
+        @click="showConfirmClearModal"
+        >Clear</b-button
+      >
+      <b-modal id="modal-1" title="BootstrapVue">
+        <p class="my-4">Hello from modal!</p>
+      </b-modal>
     </b-col>
 
     <b-col v-if="!trackers.length" cols="12">
@@ -80,6 +84,26 @@ export default Vue.extend({
       const index = this.trackers.indexOf(tracker)
       tracker.value = id
       this.trackers.splice(index, 1, tracker)
+    },
+    showConfirmClearModal() {
+      this.$bvModal
+        .msgBoxConfirm(
+          'Clearing the dashboard will remove all trackers. Do you really want to continue?',
+          {
+            title: 'Clear Dashboard',
+            okVariant: 'danger',
+            okTitle: 'Clear',
+            cancelVariant: 'light',
+            cancelTitle: 'Cancel',
+            hideHeaderClose: true,
+            centered: true,
+          }
+        )
+        .then((confirmed: boolean) => {
+          if (confirmed) {
+            this.trackers = []
+          }
+        })
     },
   },
 })
