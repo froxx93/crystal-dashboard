@@ -1,3 +1,5 @@
+const { version } = require('./package.json')
+
 // Theme Colors
 // Initially this will be blank. Later on when app is initialized we will assign bootstrap colors to this from CSS variables.
 export const $themeColors = {}
@@ -8,6 +10,7 @@ export const $themeBreakpoints = {}
 
 // APP CONFIG
 export const $themeConfig = {
+  version,
   language: 'en',
   app: {
     appName: 'Vuexy', // Will update name in navigation menu (Branding)
