@@ -39,6 +39,8 @@
 // import UserDropdown from '@/components/app-navbar/components/UserDropdown.vue'
 import VerticalNavMenu from '@/components/layouts/layout-vertical/vertical-nav-menu/VerticalNavMenu.vue'
 import Vue from 'vue'
+import * as ls from 'local-storage'
+import { $themeConfig } from '~/themeConfig'
 
 export default Vue.extend({
   // eslint-disable-next-line vue/component-definition-name-casing
@@ -95,6 +97,12 @@ export default Vue.extend({
     currentBreakpoint(val: string): void {
       this.isVerticalMenuActive = val === 'xl'
     },
+  },
+  created() {
+    if (ls.get('version') !== $themeConfig.version) {
+      ls.clear()
+    }
+    ls.set('version', $themeConfig.version)
   },
   methods: {
     toggleVerticalMenuActive(): void {
