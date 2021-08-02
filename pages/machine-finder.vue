@@ -24,38 +24,13 @@
           </b-card>
         </b-col>
       </b-row>
-      <!-- <b-row>
-        <b-col>
-          <b-card title="Trainer Finder">
-            <b-card-text
-              >Display radio button grid for trainer types here</b-card-text
-            >
-          </b-card>
-        </b-col>
-      </b-row> -->
       <b-row v-if="selectedMachine" class="map">
         <b-col>
-          <b-card>
-            <b-row>
-              <b-col cols="3">
-                <p>
-                  <strong>{{ infoHeadline }}</strong>
-                </p>
-                <p v-for="(singleInfo, index) in infoCopy" :key="index">
-                  {{ singleInfo }}
-                </p>
-              </b-col>
-              <template v-if="selectedMachine && selectedMachine.itemSource">
-                <location-col
-                  v-for="(location, index) in flattenLocations(
-                    selectedMachine.itemSource.location
-                  )"
-                  :key="index"
-                  :location="location"
-                  cols="3"
-                />
-              </template>
-            </b-row>
+          <b-card :title="infoHeadline">
+            <machine-tracker-content-wrapper
+              :selected-machine="selectedMachine"
+              :active-item-source-index="0"
+            />
           </b-card>
         </b-col>
       </b-row>
@@ -68,9 +43,12 @@ import Vue from 'vue'
 import machines from '@/assets/data/machines'
 import { ButtonGridItem } from '~/components/button-grid/ButtonGrid.vue'
 import { Machine } from '~/domains/Machine'
-import Location from '~/domains/Location'
+import MachineTrackerContentWrapper from '~/components/dashboard/trackers/machine-tracker/MachineTrackerContentWrapper.vue'
 
 export default Vue.extend({
+  components: {
+    MachineTrackerContentWrapper,
+  },
   data() {
     const allMachines: ButtonGridItem[] = machines.map(
       ({
@@ -87,7 +65,6 @@ export default Vue.extend({
       tmList: allMachines.filter(({ value }) => value.startsWith('tm')),
       hmList: allMachines.filter(({ value }) => value.startsWith('hm')),
       infoHeadline: '',
-      infoCopy: [] as string[],
       selectedMachine: undefined as Machine | undefined,
     }
   },
@@ -98,18 +75,6 @@ export default Vue.extend({
       this.infoHeadline = machine
         ? `${machine.name} (${machine.move.name})`
         : ''
-      this.infoCopy = machine?.itemSource?.conditions || []
-    },
-    flattenLocations(location: Location): Location[] {
-      const locations: Location[] = []
-      locations.push(location)
-
-      const { parentLocation } = location.map
-      if (parentLocation) {
-        locations.push(...this.flattenLocations(parentLocation))
-      }
-
-      return locations
     },
   },
 })

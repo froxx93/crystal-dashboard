@@ -4,28 +4,12 @@
       :title="selectedMachine ? infoHeadline : ''"
       :no-body="!selectedMachine"
     >
-      <div v-if="selectedMachine" v-dragscroll class="scrollbox">
-        <b-row class="map" :style="`width: ${totalCols * 350}px`">
-          <b-col v-if="infoCopy && infoCopy.length" :cols="`${colWidth}`">
-            <p>
-              <strong>Info</strong>
-            </p>
-            <p v-for="(singleInfo, index) in infoCopy" :key="index">
-              {{ singleInfo }}
-            </p>
-          </b-col>
-          <template v-if="selectedMachine && selectedMachine.itemSource">
-            <location-col
-              v-for="(location, index) in flattenLocations(
-                selectedMachine.itemSource.location
-              )"
-              :key="index"
-              :location="location"
-              :cols="`${colWidth}`"
-            />
-          </template>
-        </b-row>
-      </div>
+      <template v-if="selectedMachine">
+        <machine-tracker-content-wrapper
+          :selected-machine="selectedMachine"
+          :active-item-source-index="0"
+        />
+      </template>
 
       <b-row v-else class="finders">
         <b-col>
@@ -56,13 +40,16 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { Tracker } from './Tracker.vue'
+import { Tracker } from '../Tracker.vue'
+import MachineTrackerContentWrapper from '../machine-tracker/MachineTrackerContentWrapper.vue'
 import machines from '~/assets/data/machines'
 import { ButtonGridItem } from '~/components/button-grid/ButtonGrid.vue'
 import { Machine } from '~/domains/Machine'
-import Location from '~/domains/Location'
 
 export default Vue.extend({
+  components: {
+    MachineTrackerContentWrapper,
+  },
   props: {
     tracker: {
       type: Object as () => Tracker,
@@ -89,26 +76,7 @@ export default Vue.extend({
       tmList: allMachines.filter(({ value }) => value.startsWith('tm')),
       hmList: allMachines.filter(({ value }) => value.startsWith('hm')),
       infoHeadline: '',
-      infoCopy: [] as string[],
     }
-  },
-  computed: {
-    totalCols(): number {
-      let cols = 0
-      if (this.infoCopy && this.infoCopy.length) {
-        cols += 1
-      }
-      if (this.selectedMachine) {
-        cols += this.flattenLocations(
-          this.selectedMachine.itemSource.location
-        ).length
-      }
-
-      return cols
-    },
-    colWidth(): number {
-      return 12 / this.totalCols
-    },
   },
   watch: {
     selectedMachine: {
@@ -118,7 +86,6 @@ export default Vue.extend({
         this.infoHeadline = machine
           ? `${machine.name} (${machine.move.name})`
           : ''
-        this.infoCopy = machine?.itemSource?.conditions || []
       },
     },
   },
@@ -127,23 +94,6 @@ export default Vue.extend({
       const machine = machines.find(({ id }) => id === machineId)
       this.selectedMachine = machine
     },
-    flattenLocations(location: Location): Location[] {
-      const locations: Location[] = []
-      locations.push(location)
-
-      const { parentLocation } = location.map
-      if (parentLocation) {
-        locations.push(...this.flattenLocations(parentLocation))
-      }
-
-      return locations
-    },
   },
 })
 </script>
-
-<style lang="scss">
-.scrollbox {
-  overflow-x: auto;
-}
-</style>

@@ -43,7 +43,7 @@ import Tracker, {
   Tracker as TTracker,
   TrackerType,
   TRACKER_TYPES,
-} from './tracker/Tracker.vue'
+} from './trackers/Tracker.vue'
 
 export default Vue.extend({
   components: {

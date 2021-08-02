@@ -19,6 +19,19 @@ const KANTO: Map = {
 }
 
 // routes and cities
+const ROUTE_9: Map = {
+  id: 'route-9',
+  name: 'Route 9',
+  type: 'route',
+  width: 60,
+  height: 18,
+  fileName: 'route-9.png',
+  parentLocation: {
+    map: KANTO,
+    x: 13,
+    y: 3,
+  },
+}
 const ROUTE_10: Map = {
   id: 'route-10',
   name: 'Route 10',
@@ -283,13 +296,13 @@ const ROUTE_45: Map = {
   id: 'route-45',
   name: 'Route 45',
   type: 'route',
-  width: 3,
-  height: 3,
+  width: 20,
+  height: 89,
   fileName: 'route-45.jpeg',
   parentLocation: {
     map: JOHTO,
-    x: 1,
-    y: 2,
+    x: 15,
+    y: 4,
   },
 }
 const ROUTE_46: Map = {
@@ -489,7 +502,7 @@ const VERIDIAN_CITY: Map = {
 }
 const LAKE_OF_RAGE: Map = {
   id: 'lake-of-rage',
-  name: 'Veridian City',
+  name: 'Lake of Rage',
   type: 'route',
   width: 40,
   height: 38,
@@ -498,6 +511,19 @@ const LAKE_OF_RAGE: Map = {
     map: JOHTO,
     x: 12,
     y: 0,
+  },
+}
+const ROCK_TUNNEL_1F: Map = {
+  id: 'rock-tunnel-1f',
+  name: 'Rock Tunnel (1F)',
+  type: 'route',
+  width: 28,
+  height: 26,
+  fileName: 'rock-tunnel-1f.png',
+  parentLocation: {
+    map: ROUTE_10,
+    x: 6,
+    y: 19,
   },
 }
 
@@ -1017,6 +1043,71 @@ const ICE_PATH_1F: Map = {
     y: 7,
   },
 }
+const ROUTE_27_HOUSE: Map = {
+  id: 'route-27-house',
+  name: 'Route 27 House',
+  type: 'house',
+  width: 8,
+  height: 8,
+  fileName: 'route-27-house.png',
+  parentLocation: {
+    map: ROUTE_27,
+    x: 33,
+    y: 7,
+  },
+}
+const LAKE_OF_RAGE_HOUSE: Map = {
+  id: 'lake-of-rage-house',
+  name: 'Lake of Rage House',
+  type: 'house',
+  width: 8,
+  height: 8,
+  fileName: 'lake-of-rage-house.png',
+  parentLocation: {
+    map: LAKE_OF_RAGE,
+    x: 6,
+    y: 5,
+  },
+}
+const GOLDENROD_RADIO_TOWER_3F: Map = {
+  id: 'goldenrod-radio-tower-3f',
+  name: 'Goldenrod Radio Tower (3F)',
+  type: 'house',
+  width: 18,
+  height: 8,
+  fileName: 'goldenrod-radio-tower-3f.png',
+  parentLocation: {
+    map: GOLDENROD_CITY,
+    x: 5,
+    y: 15,
+  },
+}
+const DARK_CAVE_INNER: Map = {
+  id: 'dark-cave-inner',
+  name: 'Dark Cave (Inner)',
+  type: 'house',
+  width: 30,
+  height: 36,
+  fileName: 'dark-cave-inner.png',
+  parentLocation: {
+    map: ROUTE_45,
+    x: 2,
+    y: 5,
+  },
+}
+const DARK_CAVE_OUTER: Map = {
+  id: 'dark-cave-outer',
+  name: 'Dark Cave (Outer)',
+  type: 'house',
+  width: 30,
+  height: 36,
+  fileName: 'dark-cave-outer.png',
+  parentLocation: {
+    map: ROUTE_31,
+    x: 34,
+    y: 5,
+  },
+}
 
 export default {
   // worlds
@@ -1024,6 +1115,7 @@ export default {
   KANTO,
 
   // routes and cities
+  ROUTE_9,
   ROUTE_10,
   ROUTE_23,
   ROUTE_27,
@@ -1061,6 +1153,7 @@ export default {
   VIOLET_CITY,
   VERIDIAN_CITY,
   LAKE_OF_RAGE,
+  ROCK_TUNNEL_1F,
 
   // houses
   CIANWOOD_GYM,
@@ -1103,4 +1196,9 @@ export default {
   SPROUT_TOWER_2F,
   SPROUT_TOWER_3F,
   ICE_PATH_1F,
+  ROUTE_27_HOUSE,
+  LAKE_OF_RAGE_HOUSE,
+  GOLDENROD_RADIO_TOWER_3F,
+  DARK_CAVE_INNER,
+  DARK_CAVE_OUTER,
 }
