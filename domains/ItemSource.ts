@@ -4,6 +4,6 @@ export type ItemSourceType = 'field-item' | 'hidden-item' | 'npc' | 'other'
 
 export interface ItemSource {
   type: ItemSourceType
-  location: Location
+  location: Location // TODO: Allow multiple locations
   conditions?: string[] // TODO: Make conditions to enum
 }

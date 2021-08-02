@@ -26,6 +26,7 @@
     "vee-validate": "^3.4.8",
     "vue": "^2.6.12",
     "vue-apexcharts": "^1.6.1",
+    "vue-dragscroll": "^3.0.0",
     "vue-echarts": "^6.0.0-rc.5",
     "vue-feather-icons": "^5.1.0",
     "vue-perfect-scrollbar": "^0.2.1",

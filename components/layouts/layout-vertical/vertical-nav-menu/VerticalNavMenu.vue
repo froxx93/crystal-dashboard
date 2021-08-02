@@ -90,6 +90,11 @@ export default {
           },
         ],
       },
+      {
+        title: 'About',
+        route: 'about',
+        icon: 'HelpCircleIcon',
+      },
     ]
 
     return {

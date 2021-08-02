@@ -11344,6 +11344,11 @@ vue-demi@^0.9.1:
   resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.9.1.tgz#25d6e1ebd4d4010757ff3571e2bf6a1d7bf3de82"
   integrity sha512-7s1lufRD2l369eFWPjgLvhqCRk0XzGWJsQc7K4q+0mZtixyGIvsK1Cg88P4NcaRIEiBuuN4q1NN4SZKFKwQswA==
 
+vue-dragscroll@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/vue-dragscroll/-/vue-dragscroll-3.0.0.tgz#395b87b2ce7abe2e4cc63543be50430139a9ce2d"
+  integrity sha512-Bnt5lqXoOTs1DgtqFQBXIlzpSajznR2Xl7h0X2UtZbraArM55Z1aFoi3GkHITLhqn48Y7uebFyaCcCRDAUW8qg==
+
 vue-echarts@^6.0.0-rc.5:
   version "6.0.0-rc.6"
   resolved "https://registry.yarnpkg.com/vue-echarts/-/vue-echarts-6.0.0-rc.6.tgz#c12afdbe2e858c941d434996e9bb9b7af3c8c631"
