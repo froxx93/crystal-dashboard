@@ -106,7 +106,6 @@ export default Vue.extend({
 
 <style lang="scss">
 @import '@/assets/scss/base/themes/bordered-layout.scss';
-/* @import '@/assets/scss/base/bootstrap-extended/_navbar.scss'; */
 
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
