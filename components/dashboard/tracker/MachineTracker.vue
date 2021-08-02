@@ -70,6 +70,8 @@ export default Vue.extend({
     },
   },
   data() {
+    const selectedMachine = machines.find((m) => m.id === this.tracker.value)
+
     const allMachines: ButtonGridItem[] = machines.map(
       ({
         id,
@@ -81,8 +83,9 @@ export default Vue.extend({
         text: `${name}`,
       })
     )
+
     return {
-      selectedMachine: undefined as Machine | undefined,
+      selectedMachine,
       tmList: allMachines.filter(({ value }) => value.startsWith('tm')),
       hmList: allMachines.filter(({ value }) => value.startsWith('hm')),
       infoHeadline: '',
@@ -107,14 +110,22 @@ export default Vue.extend({
       return 12 / this.totalCols
     },
   },
+  watch: {
+    selectedMachine: {
+      immediate: true,
+      handler(machine: Machine): void {
+        this.$emit('select', this.selectedMachine?.id || '')
+        this.infoHeadline = machine
+          ? `${machine.name} (${machine.move.name})`
+          : ''
+        this.infoCopy = machine?.itemSource?.conditions || []
+      },
+    },
+  },
   methods: {
     onChangeMachine(machineId: string): void {
       const machine = machines.find(({ id }) => id === machineId)
       this.selectedMachine = machine
-      this.infoHeadline = machine
-        ? `${machine.name} (${machine.move.name})`
-        : ''
-      this.infoCopy = machine?.itemSource?.conditions || []
     },
     flattenLocations(location: Location): Location[] {
       const locations: Location[] = []
