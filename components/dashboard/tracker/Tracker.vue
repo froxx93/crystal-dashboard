@@ -1,5 +1,10 @@
 <template>
-  <component :is="currentComp" class="tracker" :tracker="tracker">
+  <component
+    :is="currentComp"
+    class="tracker"
+    :tracker="tracker"
+    @select="onSelect"
+  >
     <feather-icon icon="XIcon" size="16" class="remove-icon" @click="remove" />
   </component>
 </template>
@@ -19,6 +24,7 @@ export const TRACKER_TYPES: TrackerType[] = [
 
 export interface Tracker {
   type: TrackerType
+  value?: string // some trackers get their value by post-creation user input -> optional
   createdAt: string // used for vue key
 }
 
@@ -46,6 +52,9 @@ export default Vue.extend({
   methods: {
     remove(): void {
       this.$emit('remove', this.tracker)
+    },
+    onSelect(id: string): void {
+      this.$emit('select', id)
     },
   },
 })
