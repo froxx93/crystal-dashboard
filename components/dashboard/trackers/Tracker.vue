@@ -11,7 +11,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import MachineTracker from './MachineTracker.vue'
+import MachineTracker from './machine-tracker/MachineTracker.vue'
 
 export interface TrackerType {
   value: string

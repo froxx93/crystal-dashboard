@@ -5,5 +5,5 @@ export interface Machine {
   id: string
   name: string
   move: Move
-  itemSource: ItemSource
+  itemSources: ItemSource[]
 }

@@ -1,5 +1,6 @@
 import { Machine } from '@/domains/Machine'
 import { $axios } from '@/utils/api'
+import { ItemSource } from '~/domains/ItemSource'
 
 interface ExampleState {
   list: Machine[]
@@ -70,7 +71,7 @@ export default {
               move: {
                 name: moveName,
               },
-              itemSource: undefined as any,
+              itemSources: [] as ItemSource[],
             })
           }
         })
