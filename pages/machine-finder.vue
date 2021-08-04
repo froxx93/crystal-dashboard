@@ -27,7 +27,7 @@
       <b-row v-if="selectedMachine" class="map">
         <b-col>
           <b-card :title="infoHeadline">
-            <machine-tracker-content-wrapper
+            <machine-location-tracker-content-wrapper
               :selected-machine="selectedMachine"
               :active-item-source-index="0"
             />
@@ -43,11 +43,11 @@ import Vue from 'vue'
 import machines from '@/assets/data/machines'
 import { ButtonGridItem } from '~/components/button-grid/ButtonGrid.vue'
 import { Machine } from '~/domains/Machine'
-import MachineTrackerContentWrapper from '~/components/dashboard/trackers/machine-tracker/MachineTrackerContentWrapper.vue'
+import MachineLocationTrackerContentWrapper from '~/components/dashboard/trackers/machine-location-tracker/MachineLocationTrackerContentWrapper.vue'
 
 export default Vue.extend({
   components: {
-    MachineTrackerContentWrapper,
+    MachineLocationTrackerContentWrapper,
   },
   data() {
     const allMachines: ButtonGridItem[] = machines.map(

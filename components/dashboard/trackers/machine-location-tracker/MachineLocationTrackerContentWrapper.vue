@@ -6,14 +6,14 @@
       :title="itemSource.location.map.name"
       :active="index === 0"
     >
-      <machine-tracker-content
+      <machine-location-tracker-content
         :selected-machine="selectedMachine"
         :item-source-index="index"
       />
     </b-tab>
   </b-tabs>
 
-  <machine-tracker-content
+  <machine-location-tracker-content
     v-else
     :selected-machine="selectedMachine"
     :item-source-index="0"
@@ -22,12 +22,12 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import MachineTrackerContent from './MachineTrackerContent.vue'
+import MachineLocationTrackerContent from './MachineLocationTrackerContent.vue'
 import { Machine } from '~/domains/Machine'
 
 export default Vue.extend({
   components: {
-    MachineTrackerContent,
+    MachineLocationTrackerContent,
   },
   props: {
     selectedMachine: {

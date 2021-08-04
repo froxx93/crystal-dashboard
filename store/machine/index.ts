@@ -1,4 +1,4 @@
-import { Machine } from '@/domains/Machine'
+import { Machine, MachineType } from '@/domains/Machine'
 import { $axios } from '@/utils/api'
 import { ItemSource } from '~/domains/ItemSource'
 
@@ -65,8 +65,11 @@ export default {
               }
             )
 
+            const type: MachineType = id.charAt(0) === 't' ? 'tm' : 'hm'
+
             machines.push({
               id,
+              type,
               name: machineName,
               move: {
                 name: moveName,

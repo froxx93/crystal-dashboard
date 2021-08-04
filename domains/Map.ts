@@ -1,6 +1,6 @@
 import Location from './Location'
 
-export type MapType = 'world' | 'route' | 'house'
+export type MapType = 'region' | 'area' | 'house'
 
 export default interface Map {
   id: string

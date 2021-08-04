@@ -1,10 +1,10 @@
-import Map from './Map'
+import Map from '../../domains/Map'
 
 // worlds
 const JOHTO: Map = {
   id: 'johto',
   name: 'Johto',
-  type: 'world',
+  type: 'region',
   width: 18,
   height: 14,
   fileName: 'johto.png',
@@ -12,7 +12,7 @@ const JOHTO: Map = {
 const KANTO: Map = {
   id: 'kanto',
   name: 'Kanto',
-  type: 'world',
+  type: 'region',
   width: 18,
   height: 14,
   fileName: 'kanto.png',
@@ -22,7 +22,7 @@ const KANTO: Map = {
 const ROUTE_9: Map = {
   id: 'route-9',
   name: 'Route 9',
-  type: 'route',
+  type: 'area',
   width: 60,
   height: 18,
   fileName: 'route-9.png',
@@ -35,7 +35,7 @@ const ROUTE_9: Map = {
 const ROUTE_10: Map = {
   id: 'route-10',
   name: 'Route 10',
-  type: 'route',
+  type: 'area',
   width: 20,
   height: 36,
   fileName: 'route-10.jpeg',
@@ -48,7 +48,7 @@ const ROUTE_10: Map = {
 const ROUTE_23: Map = {
   id: 'route-23',
   name: 'Route 23',
-  type: 'route',
+  type: 'area',
   width: 20,
   height: 18,
   fileName: 'route-23.png',
@@ -61,7 +61,7 @@ const ROUTE_23: Map = {
 const ROUTE_27: Map = {
   id: 'route-27',
   name: 'Route 27',
-  type: 'route',
+  type: 'area',
   width: 80,
   height: 18,
   fileName: 'route-27.png',
@@ -74,7 +74,7 @@ const ROUTE_27: Map = {
 const ROUTE_28: Map = {
   id: 'route-28',
   name: 'Route 28',
-  type: 'route',
+  type: 'area',
   width: 40,
   height: 14,
   fileName: 'route-28.png',
@@ -87,7 +87,7 @@ const ROUTE_28: Map = {
 const ROUTE_29: Map = {
   id: 'route-29',
   name: 'Route 29',
-  type: 'route',
+  type: 'area',
   width: 3,
   height: 3,
   fileName: 'route-29.jpeg',
@@ -100,7 +100,7 @@ const ROUTE_29: Map = {
 const ROUTE_30: Map = {
   id: 'route-30',
   name: 'Route 30',
-  type: 'route',
+  type: 'area',
   width: 3,
   height: 3,
   fileName: 'route-30.jpeg',
@@ -113,7 +113,7 @@ const ROUTE_30: Map = {
 const ROUTE_31: Map = {
   id: 'route-31',
   name: 'Route 31',
-  type: 'route',
+  type: 'area',
   width: 40,
   height: 18,
   fileName: 'route-31.jpeg',
@@ -126,7 +126,7 @@ const ROUTE_31: Map = {
 const ROUTE_32: Map = {
   id: 'route-32',
   name: 'Route 32',
-  type: 'route',
+  type: 'area',
   width: 20,
   height: 90,
   fileName: 'route-32.jpeg',
@@ -139,7 +139,7 @@ const ROUTE_32: Map = {
 const ROUTE_33: Map = {
   id: 'route-33',
   name: 'Route 33',
-  type: 'route',
+  type: 'area',
   width: 20,
   height: 18,
   fileName: 'route-33.jpeg',
@@ -152,7 +152,7 @@ const ROUTE_33: Map = {
 const ROUTE_34: Map = {
   id: 'route-34',
   name: 'Route 34',
-  type: 'route',
+  type: 'area',
   width: 22,
   height: 54,
   fileName: 'route-34.jpeg',
@@ -165,7 +165,7 @@ const ROUTE_34: Map = {
 const ROUTE_35: Map = {
   id: 'route-35',
   name: 'Route 35',
-  type: 'route',
+  type: 'area',
   width: 20,
   height: 36,
   fileName: 'route-35.jpeg',
@@ -178,7 +178,7 @@ const ROUTE_35: Map = {
 const ROUTE_36: Map = {
   id: 'route-36',
   name: 'Route 36',
-  type: 'route',
+  type: 'area',
   width: 46,
   height: 18,
   fileName: 'route-36.jpeg',
@@ -191,7 +191,7 @@ const ROUTE_36: Map = {
 const ROUTE_37: Map = {
   id: 'route-37',
   name: 'Route 37',
-  type: 'route',
+  type: 'area',
   width: 3,
   height: 3,
   fileName: 'route-37.jpeg',
@@ -204,7 +204,7 @@ const ROUTE_37: Map = {
 const ROUTE_38: Map = {
   id: 'route-38',
   name: 'Route 38',
-  type: 'route',
+  type: 'area',
   width: 3,
   height: 3,
   fileName: 'route-38.jpeg',
@@ -217,7 +217,7 @@ const ROUTE_38: Map = {
 const ROUTE_39: Map = {
   id: 'route-39',
   name: 'Route 39',
-  type: 'route',
+  type: 'area',
   width: 21,
   height: 38,
   fileName: 'route-39.jpeg',
@@ -230,7 +230,7 @@ const ROUTE_39: Map = {
 const ROUTE_40: Map = {
   id: 'route-40',
   name: 'Route 40',
-  type: 'route',
+  type: 'area',
   width: 3,
   height: 3,
   fileName: 'route-40.jpeg',
@@ -243,7 +243,7 @@ const ROUTE_40: Map = {
 const ROUTE_41: Map = {
   id: 'route-41',
   name: 'Route 41',
-  type: 'route',
+  type: 'area',
   width: 3,
   height: 3,
   fileName: 'route-41.jpeg',
@@ -256,7 +256,7 @@ const ROUTE_41: Map = {
 const ROUTE_42: Map = {
   id: 'route-42',
   name: 'Route 42',
-  type: 'route',
+  type: 'area',
   width: 60,
   height: 18,
   fileName: 'route-42.jpeg',
@@ -269,7 +269,7 @@ const ROUTE_42: Map = {
 const ROUTE_43: Map = {
   id: 'route-43',
   name: 'Route 43',
-  type: 'route',
+  type: 'area',
   width: 22,
   height: 54,
   fileName: 'route-43.jpeg',
@@ -282,7 +282,7 @@ const ROUTE_43: Map = {
 const ROUTE_44: Map = {
   id: 'route-44',
   name: 'Route 44',
-  type: 'route',
+  type: 'area',
   width: 60,
   height: 17,
   fileName: 'route-44.jpeg',
@@ -295,7 +295,7 @@ const ROUTE_44: Map = {
 const ROUTE_45: Map = {
   id: 'route-45',
   name: 'Route 45',
-  type: 'route',
+  type: 'area',
   width: 20,
   height: 89,
   fileName: 'route-45.jpeg',
@@ -308,7 +308,7 @@ const ROUTE_45: Map = {
 const ROUTE_46: Map = {
   id: 'route-46',
   name: 'Route 46',
-  type: 'route',
+  type: 'area',
   width: 3,
   height: 3,
   fileName: 'route-46.jpeg',
@@ -321,7 +321,7 @@ const ROUTE_46: Map = {
 const CIANWOOD_CITY: Map = {
   id: 'cianwood-city',
   name: 'Cianwood City',
-  type: 'route',
+  type: 'area',
   width: 28,
   height: 51,
   fileName: 'cianwood-city.jpeg',
@@ -334,7 +334,7 @@ const CIANWOOD_CITY: Map = {
 const ILEX_FOREST: Map = {
   id: 'ilex-forest',
   name: 'Ilex Forest',
-  type: 'route',
+  type: 'area',
   width: 34,
   height: 48,
   fileName: 'ilex-forest.jpeg',
@@ -347,7 +347,7 @@ const ILEX_FOREST: Map = {
 const CELADON_CITY: Map = {
   id: 'celadon-city',
   name: 'Celadon City',
-  type: 'route',
+  type: 'area',
   width: 40,
   height: 36,
   fileName: 'celadon-city.jpeg',
@@ -360,7 +360,7 @@ const CELADON_CITY: Map = {
 const FUCHSIA_CITY: Map = {
   id: 'fuchsia-city',
   name: 'Fuchsia City',
-  type: 'route',
+  type: 'area',
   width: 40,
   height: 36,
   fileName: 'fuchsia-city.jpeg',
@@ -373,7 +373,7 @@ const FUCHSIA_CITY: Map = {
 const GOLDENROD_CITY: Map = {
   id: 'goldenrod-city',
   name: 'Goldenrod City',
-  type: 'route',
+  type: 'area',
   width: 40,
   height: 36,
   fileName: 'goldenrod-city.png',
@@ -386,20 +386,20 @@ const GOLDENROD_CITY: Map = {
 const SAFFRON_CITY: Map = {
   id: 'saffron-city',
   name: 'Saffron City',
-  type: 'route',
+  type: 'area',
   width: 40,
   height: 36,
   fileName: 'saffron-city.png', // unclean file size
   parentLocation: {
-    map: JOHTO,
-    x: 5,
-    y: 8,
+    map: KANTO,
+    x: 11,
+    y: 5,
   },
 }
 const MAHAGONY_TOWN: Map = {
   id: 'mahagony-town',
   name: 'Mahagony Town',
-  type: 'route',
+  type: 'area',
   width: 20,
   height: 18,
   fileName: 'mahagony-town.png',
@@ -412,7 +412,7 @@ const MAHAGONY_TOWN: Map = {
 const AZALEA_TOWN: Map = {
   id: 'azalea-town',
   name: 'Azalea Town',
-  type: 'route',
+  type: 'area',
   width: 34,
   height: 23,
   fileName: 'azalea-town.png',
@@ -425,7 +425,7 @@ const AZALEA_TOWN: Map = {
 const ECRUTEAK_CITY: Map = {
   id: 'ecruteak-city',
   name: 'Ecruteak City',
-  type: 'route',
+  type: 'area',
   width: 40,
   height: 36,
   fileName: 'ecruteak-city.png',
@@ -438,7 +438,7 @@ const ECRUTEAK_CITY: Map = {
 const OLIVINE_CITY: Map = {
   id: 'olivine-city',
   name: 'Olivine City',
-  type: 'route',
+  type: 'area',
   width: 40,
   height: 36,
   fileName: 'olivine-city.png',
@@ -451,7 +451,7 @@ const OLIVINE_CITY: Map = {
 const BLACKTHORN_CITY: Map = {
   id: 'blackthorn-city',
   name: 'Blackthorn City',
-  type: 'route',
+  type: 'area',
   width: 40,
   height: 36,
   fileName: 'blackthorn-city.png',
@@ -464,7 +464,7 @@ const BLACKTHORN_CITY: Map = {
 const NATIONAL_PARK: Map = {
   id: 'national-park',
   name: 'National Park',
-  type: 'route',
+  type: 'area',
   width: 44,
   height: 56,
   fileName: 'national-park.png',
@@ -477,7 +477,7 @@ const NATIONAL_PARK: Map = {
 const VIOLET_CITY: Map = {
   id: 'violet-city',
   name: 'Violet City',
-  type: 'route',
+  type: 'area',
   width: 50,
   height: 38,
   fileName: 'violet-city.png',
@@ -490,7 +490,7 @@ const VIOLET_CITY: Map = {
 const VERIDIAN_CITY: Map = {
   id: 'veridian-city',
   name: 'Veridian City',
-  type: 'route',
+  type: 'area',
   width: 40,
   height: 36,
   fileName: 'veridian-city.png',
@@ -503,7 +503,7 @@ const VERIDIAN_CITY: Map = {
 const LAKE_OF_RAGE: Map = {
   id: 'lake-of-rage',
   name: 'Lake of Rage',
-  type: 'route',
+  type: 'area',
   width: 40,
   height: 38,
   fileName: 'lake-of-rage.jpeg',
@@ -516,7 +516,7 @@ const LAKE_OF_RAGE: Map = {
 const ROCK_TUNNEL_1F: Map = {
   id: 'rock-tunnel-1f',
   name: 'Rock Tunnel (1F)',
-  type: 'route',
+  type: 'area',
   width: 28,
   height: 26,
   fileName: 'rock-tunnel-1f.png',
@@ -770,7 +770,7 @@ const ECRUTEAK_GYM: Map = {
   height: 18,
   fileName: 'ecruteak-gym.png', // unclean file size
   parentLocation: {
-    map: ROUTE_23,
+    map: ECRUTEAK_CITY,
     x: 6,
     y: 27,
   },

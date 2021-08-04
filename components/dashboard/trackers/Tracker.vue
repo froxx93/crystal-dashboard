@@ -3,7 +3,7 @@
     :is="currentComp"
     class="tracker"
     :tracker="tracker"
-    @select="onSelect"
+    @change="onChange"
   >
     <feather-icon icon="XIcon" size="16" class="remove-icon" @click="remove" />
   </component>
@@ -11,26 +11,30 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import MachineTracker from './machine-tracker/MachineTracker.vue'
+import MachineLocationTracker from './machine-location-tracker/MachineLocationTracker.vue'
+import MachineListTracker from './machine-list-tracker/MachineListTracker.vue'
 
 export interface TrackerType {
   value: string
   label: string
+  unique: boolean
 }
 
 export const TRACKER_TYPES: TrackerType[] = [
-  { value: 'machine', label: 'Machine' },
+  { value: 'machine-location', label: 'Machine Location', unique: false },
+  { value: 'machine-list', label: 'TM List', unique: true },
 ]
 
 export interface Tracker {
   type: TrackerType
-  value?: string // some trackers get their value by post-creation user input -> optional
+  value?: any // some trackers get their value by post-creation user input -> optional
   createdAt: string // used for vue key
 }
 
 export default Vue.extend({
   components: {
-    MachineTracker,
+    MachineLocationTracker,
+    MachineListTracker,
   },
   props: {
     tracker: {
@@ -41,8 +45,10 @@ export default Vue.extend({
   computed: {
     currentComp() {
       switch (this.tracker.type.value) {
-        case 'machine':
-          return MachineTracker
+        case 'machine-location':
+          return MachineLocationTracker
+        case 'machine-list':
+          return MachineListTracker
 
         default:
           return undefined
@@ -53,8 +59,8 @@ export default Vue.extend({
     remove(): void {
       this.$emit('remove', this.tracker)
     },
-    onSelect(id: string): void {
-      this.$emit('select', id)
+    onChange(value: any): void {
+      this.$emit('change', value)
     },
   },
 })

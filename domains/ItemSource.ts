@@ -1,6 +1,12 @@
 import Location from './Location'
 
-export type ItemSourceType = 'field-item' | 'hidden-item' | 'npc' | 'other'
+export type ItemSourceType =
+  | 'field-item'
+  | 'hidden-item'
+  | 'npc'
+  | 'gym-leader'
+  | 'game-corner'
+  | 'other'
 
 export interface ItemSource {
   type: ItemSourceType

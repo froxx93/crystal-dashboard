@@ -1,6 +1,7 @@
 <template>
   <div>
-    <b-form-radio-group
+    <component
+      :is="multi ? 'b-form-checkbox-group' : 'b-form-radio-group'"
       :id="id"
       v-model="selected"
       class="radio-group"
@@ -8,6 +9,7 @@
       :name="id"
       buttons
       button-variant="light"
+      size="sm"
       @change="onChange"
     />
   </div>
@@ -31,12 +33,26 @@ export default Vue.extend({
       type: Array as () => ButtonGridItem[],
       required: true,
     },
+    multi: {
+      type: Boolean,
+      default: false,
+    },
+    initiallySelected: {
+      type: [String, Array],
+      default: undefined,
+    },
   },
   data() {
     return {
       with: 3,
-      selected: '',
+      selected:
+        this.initiallySelected || ((this.multi ? [] : '') as string[] | string),
     }
+  },
+  watch: {
+    selected(): void {
+      this.$emit('select', this.selected)
+    },
   },
   methods: {
     onChange(value: string): void {
