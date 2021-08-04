@@ -5,7 +5,7 @@
       :no-body="!selectedMachine"
     >
       <template v-if="selectedMachine">
-        <machine-tracker-content-wrapper
+        <machine-location-tracker-content-wrapper
           :selected-machine="selectedMachine"
           :active-item-source-index="0"
         />
@@ -41,14 +41,14 @@
 <script lang="ts">
 import Vue from 'vue'
 import { Tracker } from '../Tracker.vue'
-import MachineTrackerContentWrapper from '../machine-tracker/MachineTrackerContentWrapper.vue'
+import MachineLocationTrackerContentWrapper from '../machine-location-tracker/MachineLocationTrackerContentWrapper.vue'
 import machines from '~/assets/data/machines'
 import { ButtonGridItem } from '~/components/button-grid/ButtonGrid.vue'
 import { Machine } from '~/domains/Machine'
 
 export default Vue.extend({
   components: {
-    MachineTrackerContentWrapper,
+    MachineLocationTrackerContentWrapper,
   },
   props: {
     tracker: {
@@ -82,7 +82,7 @@ export default Vue.extend({
     selectedMachine: {
       immediate: true,
       handler(machine: Machine): void {
-        this.$emit('select', this.selectedMachine?.id || '')
+        this.$emit('change', this.selectedMachine?.id || '')
         this.infoHeadline = machine
           ? `${machine.name} (${machine.move.name})`
           : ''

@@ -4,7 +4,7 @@
       v-for="tracker in trackers"
       :key="tracker.createdAt"
       :tracker="tracker"
-      @select="(id) => onTrackerSelect(tracker, id)"
+      @change="(id) => onTrackerChange(tracker, id)"
       @remove="() => removeTracker(tracker)"
     />
 
@@ -53,9 +53,20 @@ export default Vue.extend({
     const trackers: TTracker[] = ls.get('trackers') || []
 
     return {
-      trackerTypes: TRACKER_TYPES,
       trackers,
     }
+  },
+  computed: {
+    trackerTypes(): TrackerType[] {
+      return TRACKER_TYPES.filter((trackerType) => {
+        return (
+          !trackerType.unique ||
+          !this.trackers.find(
+            (tracker) => tracker.type.value === trackerType.value
+          )
+        )
+      })
+    },
   },
   watch: {
     trackers(): void {
@@ -76,13 +87,13 @@ export default Vue.extend({
       const index = this.trackers.indexOf(tracker)
       this.trackers.splice(index, 1)
     },
-    onTrackerSelect(tracker: TTracker, id: string): void {
+    onTrackerChange(tracker: TTracker, value: any): void {
       /**
        * Simply setting the value prop isn't sufficient since the array of this.trackers itself doesn't update,
        * so splice is used to replace the updated tracker with itself
        */
       const index = this.trackers.indexOf(tracker)
-      tracker.value = id
+      tracker.value = value
       this.trackers.splice(index, 1, tracker)
     },
     showConfirmClearModal() {

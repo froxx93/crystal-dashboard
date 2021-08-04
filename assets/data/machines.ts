@@ -1,9 +1,10 @@
 import { Machine } from '~/domains/Machine'
-import maps from '~/domains/Maps'
+import maps from '~/assets/data/maps'
 
 const data: Machine[] = [
   {
     id: 'hm01',
+    type: 'hm',
     name: 'HM01',
     move: {
       name: 'Cut',
@@ -25,6 +26,7 @@ const data: Machine[] = [
   },
   {
     id: 'hm02',
+    type: 'hm',
     name: 'HM02',
     move: {
       name: 'Fly',
@@ -45,6 +47,7 @@ const data: Machine[] = [
   },
   {
     id: 'hm03',
+    type: 'hm',
     name: 'HM03',
     move: {
       name: 'Surf',
@@ -65,6 +68,7 @@ const data: Machine[] = [
   },
   {
     id: 'hm04',
+    type: 'hm',
     name: 'HM04',
     move: {
       name: 'Strength',
@@ -82,6 +86,7 @@ const data: Machine[] = [
   },
   {
     id: 'hm05',
+    type: 'hm',
     name: 'HM05',
     move: {
       name: 'Flash',
@@ -99,6 +104,7 @@ const data: Machine[] = [
   },
   {
     id: 'hm06',
+    type: 'hm',
     name: 'HM06',
     move: {
       name: 'Whirlpool',
@@ -117,6 +123,7 @@ const data: Machine[] = [
   },
   {
     id: 'hm07',
+    type: 'hm',
     name: 'HM07',
     move: {
       name: 'Waterfall',
@@ -134,13 +141,14 @@ const data: Machine[] = [
   },
   {
     id: 'tm01',
+    type: 'tm',
     name: 'TM01',
     move: {
       name: 'Dynamic Punch',
     },
     itemSources: [
       {
-        type: 'npc',
+        type: 'gym-leader',
         location: {
           map: maps.CIANWOOD_GYM,
           x: 4,
@@ -156,6 +164,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm02',
+    type: 'tm',
     name: 'TM02',
     move: {
       name: 'Headbutt',
@@ -182,6 +191,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm03',
+    type: 'tm',
     name: 'TM03',
     move: {
       name: 'Curse',
@@ -200,6 +210,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm04',
+    type: 'tm',
     name: 'TM04',
     move: {
       name: 'Rollout',
@@ -217,6 +228,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm05',
+    type: 'tm',
     name: 'TM05',
     move: {
       name: 'Roar',
@@ -235,13 +247,14 @@ const data: Machine[] = [
   },
   {
     id: 'tm06',
+    type: 'tm',
     name: 'TM06',
     move: {
       name: 'Toxic',
     },
     itemSources: [
       {
-        type: 'npc',
+        type: 'gym-leader',
         location: {
           map: maps.FUCHSIA_GYM,
           x: 1,
@@ -256,6 +269,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm07',
+    type: 'tm',
     name: 'TM07',
     move: {
       name: 'Zap Cannon',
@@ -279,6 +293,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm08',
+    type: 'tm',
     name: 'TM08',
     move: {
       name: 'Rock Smash',
@@ -309,6 +324,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm09',
+    type: 'tm',
     name: 'TM09',
     move: {
       name: 'Psych Up',
@@ -331,6 +347,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm10',
+    type: 'tm',
     name: 'TM10',
     move: {
       name: 'Hidden Power',
@@ -361,6 +378,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm11',
+    type: 'tm',
     name: 'TM11',
     move: {
       name: 'Sunny Day',
@@ -391,6 +409,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm12',
+    type: 'tm',
     name: 'TM12',
     move: {
       name: 'Sweet Scent',
@@ -408,6 +427,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm13',
+    type: 'tm',
     name: 'TM13',
     move: {
       name: 'Snore',
@@ -435,13 +455,14 @@ const data: Machine[] = [
   },
   {
     id: 'tm14',
+    type: 'tm',
     name: 'TM14',
     move: {
       name: 'Blizzard',
     },
     itemSources: [
       {
-        type: 'npc',
+        type: 'game-corner',
         location: {
           map: maps.GOLDENROD_GAME_CORNER,
           x: 16,
@@ -453,13 +474,14 @@ const data: Machine[] = [
   },
   {
     id: 'tm15',
+    type: 'tm',
     name: 'TM15',
     move: {
       name: 'Hyper Beam',
     },
     itemSources: [
       {
-        type: 'npc',
+        type: 'game-corner',
         location: {
           map: maps.CELADON_GAME_CORNER,
           x: 2,
@@ -475,13 +497,14 @@ const data: Machine[] = [
   },
   {
     id: 'tm16',
+    type: 'tm',
     name: 'TM16',
     move: {
       name: 'Icy Wind',
     },
     itemSources: [
       {
-        type: 'npc',
+        type: 'gym-leader',
         location: {
           map: maps.MAHAGONY_GYM,
           x: 5,
@@ -496,6 +519,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm17',
+    type: 'tm',
     name: 'TM17',
     move: {
       name: 'Protect',
@@ -517,6 +541,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm18',
+    type: 'tm',
     name: 'TM18',
     move: {
       name: 'Rain Dance',
@@ -535,13 +560,14 @@ const data: Machine[] = [
   },
   {
     id: 'tm19',
+    type: 'tm',
     name: 'TM19',
     move: {
       name: 'Giga Drain',
     },
     itemSources: [
       {
-        type: 'npc',
+        type: 'gym-leader',
         location: {
           map: maps.CELADON_GYM,
           x: 5,
@@ -553,6 +579,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm20',
+    type: 'tm',
     name: 'TM20',
     move: {
       name: 'Endure',
@@ -571,6 +598,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm21',
+    type: 'tm',
     name: 'TM21',
     move: {
       name: 'Frustration',
@@ -589,6 +617,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm22',
+    type: 'tm',
     name: 'TM22',
     move: {
       name: 'Solar Beam',
@@ -607,13 +636,14 @@ const data: Machine[] = [
   },
   {
     id: 'tm23',
+    type: 'tm',
     name: 'TM23',
     move: {
       name: 'Iron Tail',
     },
     itemSources: [
       {
-        type: 'npc',
+        type: 'gym-leader',
         location: {
           map: maps.OLIVINE_GYM,
           x: 5,
@@ -628,13 +658,14 @@ const data: Machine[] = [
   },
   {
     id: 'tm24',
+    type: 'tm',
     name: 'TM24',
     move: {
       name: 'Dragon Breath',
     },
     itemSources: [
       {
-        type: 'npc',
+        type: 'gym-leader',
         location: {
           map: maps.BLACKTHORN_GYM,
           x: 5,
@@ -649,13 +680,14 @@ const data: Machine[] = [
   },
   {
     id: 'tm25',
+    type: 'tm',
     name: 'TM25',
     move: {
       name: 'Thunder',
     },
     itemSources: [
       {
-        type: 'npc',
+        type: 'game-corner',
         location: {
           map: maps.GOLDENROD_GAME_CORNER,
           x: 16,
@@ -667,6 +699,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm26',
+    type: 'tm',
     name: 'TM26',
     move: {
       name: 'Earthquake',
@@ -684,6 +717,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm27',
+    type: 'tm',
     name: 'TM27',
     move: {
       name: 'Return',
@@ -702,6 +736,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm28',
+    type: 'tm',
     name: 'TM28',
     move: {
       name: 'Dig',
@@ -719,6 +754,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm29',
+    type: 'tm',
     name: 'TM29',
     move: {
       name: 'Psychic',
@@ -734,7 +770,7 @@ const data: Machine[] = [
         conditions: ['Requires Kanto access'],
       },
       {
-        type: 'npc',
+        type: 'game-corner',
         location: {
           map: maps.CELADON_GAME_CORNER,
           x: 2,
@@ -750,13 +786,14 @@ const data: Machine[] = [
   },
   {
     id: 'tm30',
+    type: 'tm',
     name: 'TM30',
     move: {
       name: 'Shadow Ball',
     },
     itemSources: [
       {
-        type: 'npc',
+        type: 'gym-leader',
         location: {
           map: maps.ECRUTEAK_GYM,
           x: 5,
@@ -771,13 +808,14 @@ const data: Machine[] = [
   },
   {
     id: 'tm31',
+    type: 'tm',
     name: 'TM31',
     move: {
       name: 'Mud-Slap',
     },
     itemSources: [
       {
-        type: 'npc',
+        type: 'gym-leader',
         location: {
           map: maps.VIOLET_GYM,
           x: 5,
@@ -791,13 +829,14 @@ const data: Machine[] = [
   },
   {
     id: 'tm32',
+    type: 'tm',
     name: 'TM32',
     move: {
       name: 'Double Team',
     },
     itemSources: [
       {
-        type: 'npc',
+        type: 'game-corner',
         location: {
           map: maps.CELADON_GAME_CORNER,
           x: 2,
@@ -813,6 +852,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm33',
+    type: 'tm',
     name: 'TM33',
     move: {
       name: 'Ice Punch',
@@ -831,6 +871,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm34',
+    type: 'tm',
     name: 'TM34',
     move: {
       name: 'Swagger',
@@ -849,6 +890,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm35',
+    type: 'tm',
     name: 'TM35',
     move: {
       name: 'Sleep Talk',
@@ -866,6 +908,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm36',
+    type: 'tm',
     name: 'TM36',
     move: {
       name: 'Sludge Bomb',
@@ -887,6 +930,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm37',
+    type: 'tm',
     name: 'TM37',
     move: {
       name: 'Sandstorm',
@@ -917,13 +961,14 @@ const data: Machine[] = [
   },
   {
     id: 'tm38',
+    type: 'tm',
     name: 'TM38',
     move: {
       name: 'Fire Blast',
     },
     itemSources: [
       {
-        type: 'npc',
+        type: 'game-corner',
         location: {
           map: maps.GOLDENROD_GAME_CORNER,
           x: 16,
@@ -935,6 +980,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm39',
+    type: 'tm',
     name: 'TM39',
     move: {
       name: 'Swift',
@@ -952,6 +998,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm40',
+    type: 'tm',
     name: 'TM40',
     move: {
       name: 'Defense Curl',
@@ -970,6 +1017,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm41',
+    type: 'tm',
     name: 'TM41',
     move: {
       name: 'Thunder Punch',
@@ -988,6 +1036,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm42',
+    type: 'tm',
     name: 'TM42',
     move: {
       name: 'Dream Eater',
@@ -1006,6 +1055,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm43',
+    type: 'tm',
     name: 'TM43',
     move: {
       name: 'Detect',
@@ -1024,6 +1074,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm44',
+    type: 'tm',
     name: 'TM44',
     move: {
       name: 'Rest',
@@ -1042,13 +1093,14 @@ const data: Machine[] = [
   },
   {
     id: 'tm45',
+    type: 'tm',
     name: 'TM45',
     move: {
       name: 'Attract',
     },
     itemSources: [
       {
-        type: 'npc',
+        type: 'gym-leader',
         location: {
           map: maps.GOLDENROD_GYM,
           x: 8,
@@ -1059,6 +1111,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm46',
+    type: 'tm',
     name: 'TM46',
     move: {
       name: 'Thief',
@@ -1076,6 +1129,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm47',
+    type: 'tm',
     name: 'TM47',
     move: {
       name: 'Steel Wing',
@@ -1103,6 +1157,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm48',
+    type: 'tm',
     name: 'TM48',
     move: {
       name: 'Fire Punch',
@@ -1121,13 +1176,14 @@ const data: Machine[] = [
   },
   {
     id: 'tm49',
+    type: 'tm',
     name: 'TM49',
     move: {
       name: 'Fury Cutter',
     },
     itemSources: [
       {
-        type: 'npc',
+        type: 'gym-leader',
         location: {
           map: maps.AZALEA_GYM,
           x: 5,
@@ -1139,6 +1195,7 @@ const data: Machine[] = [
   },
   {
     id: 'tm50',
+    type: 'tm',
     name: 'TM50',
     move: {
       name: 'Nightmare',
