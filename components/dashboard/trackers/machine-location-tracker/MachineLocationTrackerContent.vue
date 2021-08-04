@@ -39,14 +39,12 @@ export default Vue.extend({
       required: true,
     },
   },
-  data() {
-    return {
-      infoCopy:
-        this.selectedMachine.itemSources[this.itemSourceIndex]?.conditions ||
-        [],
-    }
-  },
   computed: {
+    infoCopy(): string[] {
+      return (
+        this.selectedMachine.itemSources[this.itemSourceIndex]?.conditions || []
+      )
+    },
     totalCols(): number {
       let cols = 0
       if (this.infoCopy && this.infoCopy.length) {
