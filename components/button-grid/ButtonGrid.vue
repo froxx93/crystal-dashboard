@@ -63,32 +63,19 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .radio-group {
   display: block;
 }
 
-/* The heart of the matter */
-$width: 3;
-.btn-matrix > .btn {
-  &:nth-child(#{$width}n + #{$width + 1}) {
-    clear: left;
-    margin-left: 0;
-  }
-  &:nth-child(n + #{$width + 1}) {
-    margin-top: -1px;
-  }
-  &:first-child {
-    border-bottom-left-radius: 0;
-  }
-  &:nth-child(#{$width}) {
-    border-top-right-radius: 4px !important;
-  }
-  &:nth-last-child(#{$width}) {
-    border-bottom-left-radius: 4px !important;
-  }
-  &:last-child {
-    border-top-right-radius: 0;
+.btn-light {
+  &:focus,
+  &.focus {
+    // use regular styles instead of focus styles
+    color: #2a2e30;
+    background-color: #f6f6f6;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
   }
 }
 </style>
