@@ -11,8 +11,8 @@
               Crystal.</b-card-text
             >
             <b-card-text
-              >This website does not track any user-specific data nor has it a
-              commercial purpose.</b-card-text
+              >This website does not track any user-specific data nor does it
+              have a commercial purpose.</b-card-text
             >
             <b-card-text
               >For bug reports, feature requests or feedback of any kind feel
