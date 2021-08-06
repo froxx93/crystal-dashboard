@@ -5,7 +5,12 @@
     :tracker="tracker"
     @change="onChange"
   >
-    <feather-icon icon="XIcon" size="16" class="remove-icon" @click="remove" />
+    <feather-icon
+      icon="XIcon"
+      size="16"
+      class="tracker-remove-icon"
+      @click="remove"
+    />
   </component>
 </template>
 
@@ -13,6 +18,7 @@
 import Vue from 'vue'
 import MachineLocationTracker from './machine-location-tracker/MachineLocationTracker.vue'
 import MachineListTracker from './machine-list-tracker/MachineListTracker.vue'
+import TypeCounterTracker from './type-counter-tracker/TypeCounterTracker.vue'
 
 export interface TrackerType {
   value: string
@@ -23,6 +29,7 @@ export interface TrackerType {
 export const TRACKER_TYPES: TrackerType[] = [
   { value: 'machine-location', label: 'Machine Location', unique: false },
   { value: 'machine-list', label: 'TM List', unique: true },
+  { value: 'type-counter', label: 'Type Counter', unique: false },
 ]
 
 export interface Tracker {
@@ -35,6 +42,7 @@ export default Vue.extend({
   components: {
     MachineLocationTracker,
     MachineListTracker,
+    TypeCounterTracker,
   },
   props: {
     tracker: {
@@ -49,6 +57,8 @@ export default Vue.extend({
           return MachineLocationTracker
         case 'machine-list':
           return MachineListTracker
+        case 'type-counter':
+          return TypeCounterTracker
 
         default:
           return undefined
@@ -67,7 +77,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-.remove-icon {
+.tracker-remove-icon {
   cursor: pointer;
   position: absolute;
   top: 0.5rem;
