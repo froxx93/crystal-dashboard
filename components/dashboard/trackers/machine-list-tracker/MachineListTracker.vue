@@ -30,7 +30,7 @@
       </b-row>
       <button-grid
         id="machine-list-tracker-machines"
-        :items="items"
+        :options="options"
         multi
         :initially-selected="selected"
         @select="onSelect"
@@ -45,7 +45,7 @@ import Vue from 'vue'
 import { Tracker } from '../Tracker.vue'
 import allMachines from '~/assets/data/machines'
 import allMaps from '~/assets/data/maps'
-import { ButtonGridItem } from '~/components/button-grid/ButtonGrid.vue'
+import { ButtonGridOption } from '~/components/button-grid/ButtonGrid.vue'
 import { getDeepestParent } from '~/utils/domain-utils/mapUtils'
 
 export default Vue.extend({
@@ -57,12 +57,12 @@ export default Vue.extend({
   },
   data() {
     const allTMs = allMachines.filter((machine) => machine.type === 'tm')
-    const allItems: ButtonGridItem[] = allTMs.map((machine) => ({
+    const allOptions: ButtonGridOption[] = allTMs.map((machine) => ({
       value: machine.id,
       text: machine.name,
     }))
 
-    const regions: ButtonGridItem[] = Object.values(allMaps)
+    const regions: ButtonGridOption[] = Object.values(allMaps)
       .filter((map) => map.type === 'region')
       .map((map) => ({
         value: map.id,
@@ -81,8 +81,9 @@ export default Vue.extend({
 
     return {
       allTMs,
-      allItems,
+      allOptions,
       regions,
+
       selectedRegion,
       excludeGymTMs,
       excludeGameCorners,
@@ -90,7 +91,7 @@ export default Vue.extend({
     }
   },
   computed: {
-    items(): ButtonGridItem[] {
+    options(): ButtonGridOption[] {
       let filteredTMs = this.allTMs
 
       // Apply region filter
@@ -122,12 +123,12 @@ export default Vue.extend({
         })
       }
 
-      const filteredItems = filteredTMs.map((tm) => ({
+      const filteredOptions = filteredTMs.map((tm) => ({
         value: tm.id,
         text: tm.name,
       }))
 
-      return filteredItems
+      return filteredOptions
     },
   },
   watch: {
@@ -151,15 +152,13 @@ export default Vue.extend({
     updatePersistableData(): any {
       const { selectedRegion, excludeGymTMs, excludeGameCorners, selected } =
         this
-      // TODO: update this
-      const data = {
+
+      this.$emit('change', {
         selectedRegion,
         excludeGymTMs,
         excludeGameCorners,
         selected,
-      }
-
-      this.$emit('change', data)
+      })
     },
   },
 })

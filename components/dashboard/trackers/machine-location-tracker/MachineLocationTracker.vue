@@ -18,7 +18,7 @@
               <b-card-title>TMs</b-card-title>
               <button-grid
                 id="tm-list"
-                :items="tmList"
+                :options="tmOptions"
                 @change="onChangeMachine"
               />
             </b-card-body>
@@ -26,7 +26,7 @@
               <b-card-title>HMs</b-card-title>
               <button-grid
                 id="hm-list"
-                :items="hmList"
+                :options="hmOptions"
                 @change="onChangeMachine"
               />
             </b-card-body>
@@ -43,7 +43,7 @@ import Vue from 'vue'
 import { Tracker } from '../Tracker.vue'
 import MachineLocationTrackerContentWrapper from '../machine-location-tracker/MachineLocationTrackerContentWrapper.vue'
 import machines from '~/assets/data/machines'
-import { ButtonGridItem } from '~/components/button-grid/ButtonGrid.vue'
+import { ButtonGridOption } from '~/components/button-grid/ButtonGrid.vue'
 import { Machine } from '~/domains/Machine'
 
 export default Vue.extend({
@@ -59,7 +59,7 @@ export default Vue.extend({
   data() {
     const selectedMachine = machines.find((m) => m.id === this.tracker.value)
 
-    const allMachines: ButtonGridItem[] = machines.map(
+    const allMachineOptions: ButtonGridOption[] = machines.map(
       ({
         id,
         name,
@@ -73,8 +73,12 @@ export default Vue.extend({
 
     return {
       selectedMachine,
-      tmList: allMachines.filter(({ value }) => value.startsWith('tm')),
-      hmList: allMachines.filter(({ value }) => value.startsWith('hm')),
+      tmOptions: allMachineOptions.filter(({ value }) =>
+        value.startsWith('tm')
+      ),
+      hmOptions: allMachineOptions.filter(({ value }) =>
+        value.startsWith('hm')
+      ),
       infoHeadline: '',
     }
   },

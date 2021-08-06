@@ -2,23 +2,37 @@
   <div>
     <component
       :is="multi ? 'b-form-checkbox-group' : 'b-form-radio-group'"
-      :id="id"
+      :id="`button-grid-${id}`"
       v-model="selected"
       class="radio-group"
-      :options="items"
       :name="id"
       buttons
       button-variant="light"
       size="sm"
       @change="onChange"
-    />
+    >
+      <component
+        :is="multi ? 'b-form-checkbox' : 'b-form-radio'"
+        v-for="option in options"
+        :key="`button-grid-${id}-${option.value}`"
+        :value="option.value"
+        >{{ option.text }}
+        <feather-icon
+          v-if="removeableOptions"
+          icon="XIcon"
+          size="16"
+          class="button-grid-remove-icon"
+          @click="() => removeOption(option)"
+        />
+      </component>
+    </component>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 
-export interface ButtonGridItem {
+export interface ButtonGridOption {
   value: string
   text: string
 }
@@ -29,8 +43,8 @@ export default Vue.extend({
       type: String,
       required: true,
     },
-    items: {
-      type: Array as () => ButtonGridItem[],
+    options: {
+      type: Array as () => ButtonGridOption[],
       required: true,
     },
     multi: {
@@ -40,6 +54,10 @@ export default Vue.extend({
     initiallySelected: {
       type: [String, Array],
       default: undefined,
+    },
+    removeableOptions: {
+      type: Boolean,
+      default: false,
     },
   },
   data() {
@@ -56,8 +74,10 @@ export default Vue.extend({
   },
   methods: {
     onChange(value: string): void {
-      this.selected = value
       this.$emit('change', value)
+    },
+    removeOption(option: ButtonGridOption): void {
+      this.$emit('remove', option)
     },
   },
 })
