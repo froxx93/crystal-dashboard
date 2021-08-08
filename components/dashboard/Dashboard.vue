@@ -24,9 +24,6 @@
         @click="showConfirmClearModal"
         >Clear</b-button
       >
-      <b-modal id="modal-1" title="BootstrapVue">
-        <p class="my-4">Hello from modal!</p>
-      </b-modal>
     </b-col>
 
     <b-col v-if="!trackers.length" cols="12">
