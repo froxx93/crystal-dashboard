@@ -43,7 +43,11 @@
           removeable-options
           @remove="onRemoveOption"
           @select="onSelectTrackedPokemon"
+          @dblclick="onDoubleClick"
         />
+        <p v-if="trackedPokemonOptions.length" class="text-muted small">
+          Double click to evolve a tracked Pokémon
+        </p>
       </template>
       <b-row v-else class="finders">
         <b-col>
@@ -54,6 +58,13 @@
           />
         </b-col>
       </b-row>
+      <b-modal id="evolution-modal">
+        <button-grid
+          id="evolution-modal-options"
+          :options="evolutionOptions"
+          @select="onEvolutionSelect"
+        />
+      </b-modal>
       <slot />
     </b-card>
   </b-col>
@@ -95,6 +106,9 @@ export default Vue.extend({
       selectedType: selectedType as Type | undefined,
       trackedPokemonList: trackedPokemonList as Pokemon[],
       caughtPokemonIds: caughtPokemonIds as string[],
+
+      pokemonToEvolve: undefined as Pokemon | undefined,
+      evolutionOptions: [] as ButtonGridOption[],
     }
   },
   computed: {
@@ -107,7 +121,10 @@ export default Vue.extend({
         .filter(({ types }) =>
           types.find((type) => type.id === this.selectedType?.id)
         )
-        .filter((pokemon) => !this.trackedPokemonList.includes(pokemon))
+        .filter(
+          (pokemon) =>
+            !this.trackedPokemonList.find(({ id }) => id === pokemon.id)
+        )
         .sort(({ name: nameA }, { name: nameB }) => (nameA < nameB ? -1 : 1))
     },
     amountTracked(): number {
@@ -172,6 +189,77 @@ export default Vue.extend({
         trackedPokemonList,
         caughtPokemonIds,
       })
+    },
+    onDoubleClick(option: ButtonGridOption): void {
+      const pokemon = this.trackedPokemonList.find(
+        ({ id }) => id === option.value
+      )
+      if (!pokemon) {
+        return
+      }
+
+      // Only handle double click for pokemon that can evolve
+      const evolutionsOfSelectedType = pokemon.evolvesTo.filter(
+        ({ types }) =>
+          this.selectedType &&
+          types.find(({ id }) => id === this.selectedType?.id)
+      )
+      if (!evolutionsOfSelectedType.length) {
+        return
+      }
+
+      const trackedIndex = this.trackedPokemonList
+        .map(({ id }) => id)
+        .indexOf(pokemon.id)
+      if (trackedIndex === -1) {
+        return
+      }
+
+      if (evolutionsOfSelectedType.length === 1) {
+        const evolution = evolutionsOfSelectedType[0]
+        this.evolveTrackedPokemon(trackedIndex, evolution)
+      } else {
+        this.evolutionOptions = evolutionsOfSelectedType.map(
+          ({ id, name }) => ({
+            value: id,
+            text: name,
+          })
+        )
+        this.pokemonToEvolve = pokemon
+        this.$bvModal.show('evolution-modal')
+      }
+    },
+    evolveTrackedPokemon(trackedIndex: number, evolution: Pokemon): void {
+      const pokemon = this.trackedPokemonList[trackedIndex]
+      if (!this.trackedPokemonList.map(({ id }) => id).includes(evolution.id)) {
+        this.trackedPokemonList.splice(trackedIndex, 1, evolution)
+      } else {
+        this.trackedPokemonList.splice(trackedIndex, 1)
+      }
+
+      const caughtIndex = this.caughtPokemonIds.indexOf(pokemon.id)
+      if (caughtIndex !== -1) {
+        this.caughtPokemonIds.splice(caughtIndex, 1)
+      }
+      this.caughtPokemonIds.push(evolution.id)
+    },
+    onEvolutionSelect(selectedOption: string): void {
+      this.$bvModal.hide('evolution-modal')
+      this.evolutionOptions = []
+
+      if (!this.pokemonToEvolve) {
+        return
+      }
+
+      const evolution = pokemon.find(({ id }) => id === selectedOption)
+      if (!evolution) {
+        return
+      }
+
+      const trackedIndex = this.trackedPokemonList
+        .map(({ id }) => id)
+        .indexOf(this.pokemonToEvolve.id)
+      this.evolveTrackedPokemon(trackedIndex, evolution)
     },
   },
 })

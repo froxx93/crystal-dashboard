@@ -4,27 +4,31 @@
       :is="multi ? 'b-form-checkbox-group' : 'b-form-radio-group'"
       :id="`button-grid-${id}`"
       v-model="selected"
-      class="radio-group"
+      class="button-grid"
       :name="id"
       buttons
       button-variant="light"
       size="sm"
       @change="onChange"
-    >
-      <component
-        :is="multi ? 'b-form-checkbox' : 'b-form-radio'"
+      ><span
         v-for="option in options"
         :key="`button-grid-${id}-${option.value}`"
-        :value="option.value"
-        >{{ option.text }}
-        <feather-icon
-          v-if="removeableOptions"
-          icon="XIcon"
-          size="16"
-          class="button-grid-remove-icon"
-          @click="() => removeOption(option)"
-        />
-      </component>
+        class="button-grid-option-wrapper"
+        @dblclick="() => onDoubleClick(option)"
+      >
+        <component
+          :is="multi ? 'b-form-checkbox' : 'b-form-radio'"
+          :value="option.value"
+          >{{ option.text }}
+          <feather-icon
+            v-if="removeableOptions"
+            icon="XIcon"
+            size="16"
+            class="button-grid-remove-icon"
+            @click="() => removeOption(option)"
+          />
+        </component>
+      </span>
     </component>
   </div>
 </template>
@@ -79,13 +83,20 @@ export default Vue.extend({
     removeOption(option: ButtonGridOption): void {
       this.$emit('remove', option)
     },
+    onDoubleClick(option: ButtonGridOption): void {
+      this.$emit('dblclick', option)
+    },
   },
 })
 </script>
 
 <style lang="scss">
-.radio-group {
+.button-grid {
   display: block;
+
+  .button-grid-option-wrapper input {
+    display: none;
+  }
 }
 
 .btn-light {

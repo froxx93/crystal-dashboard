@@ -40,6 +40,7 @@ export default {
           id: name,
           name: capitalize(name),
           types: actualTypeStrings as any,
+          evolvesTo: [],
         })
       }
       await Promise.all(ps)
