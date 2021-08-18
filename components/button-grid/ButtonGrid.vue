@@ -7,7 +7,7 @@
       class="button-grid"
       :name="id"
       buttons
-      button-variant="light"
+      :button-variant="buttonVariant"
       size="sm"
       @change="onChange"
       ><span
@@ -35,6 +35,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { $themeConfig } from '~/themeConfig'
 
 export interface ButtonGridOption {
   value: string
@@ -70,6 +71,13 @@ export default Vue.extend({
       selected:
         this.initiallySelected || ((this.multi ? [] : '') as string[] | string),
     }
+  },
+  computed: {
+    buttonVariant(): string {
+      return this.$store.getters['app-config/skin'] === 'dark'
+        ? 'dark'
+        : 'light'
+    },
   },
   watch: {
     selected(): void {

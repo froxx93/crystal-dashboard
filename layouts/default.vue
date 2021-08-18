@@ -29,6 +29,7 @@
 
     <div class="app-content content">
       <div class="content-wrapper">
+        <dark-toggler class="float-right" />
         <Nuxt />
       </div>
     </div>
@@ -103,6 +104,8 @@ export default Vue.extend({
       ls.clear()
     }
     ls.set('version', $themeConfig.version)
+
+    this.$store.dispatch('app-config/initLayout')
   },
   methods: {
     toggleVerticalMenuActive(): void {

@@ -571,30 +571,30 @@
       color: $theme-dark-body-color;
     }
 
-    &.btn-dark,
-    &.btn-outline-dark,
-    &.btn-flat-dark {
-      color: $gray-600;
-    }
+    // &.btn-dark,
+    // &.btn-outline-dark,
+    // &.btn-flat-dark {
+    //   color: $gray-600;
+    // }
 
-    &.btn-dark {
-      background-color: $dark !important;
-    }
+    // &.btn-dark {
+    //   background-color: $dark !important;
+    // }
 
-    &.btn-outline-dark {
-      border-color: $dark;
-      color: $gray-600;
-      &:hover:not(.disabled):not(:disabled) {
-        color: $gray-600;
-      }
-    }
+    // &.btn-outline-dark {
+    //   border-color: $dark;
+    //   color: $gray-600;
+    //   &:hover:not(.disabled):not(:disabled) {
+    //     color: $gray-600;
+    //   }
+    // }
 
-    &.btn-flat-dark {
-      &:active,
-      &:focus {
-        background: $dark;
-      }
-    }
+    // &.btn-flat-dark {
+    //   &:active,
+    //   &:focus {
+    //     background: $dark;
+    //   }
+    // }
   }
 
   .btn-group-toggle {
