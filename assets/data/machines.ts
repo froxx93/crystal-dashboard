@@ -440,15 +440,6 @@ const data: Machine[] = [
     },
     itemSources: [
       {
-        type: 'npc',
-        location: {
-          map: maps.MOOMOO_FARM,
-          x: 4,
-          y: 3,
-        },
-        conditions: ['Reward for feeding the sick Miltank 7 Berries'],
-      },
-      {
         type: 'field-item',
         location: {
           map: maps.DARK_CAVE_INNER,
@@ -456,6 +447,15 @@ const data: Machine[] = [
           y: 22,
         },
         conditions: ['Requires HM03 (Surf)', 'Requires HM04 (Strength)'],
+      },
+      {
+        type: 'npc',
+        location: {
+          map: maps.MOOMOO_FARM,
+          x: 4,
+          y: 3,
+        },
+        conditions: ['Reward for feeding the sick Miltank 7 Berries'],
       },
     ],
   },
@@ -909,6 +909,7 @@ const data: Machine[] = [
           x: 13,
           y: 9,
         },
+        conditions: ['Requires Basement Key'],
       },
     ],
   },

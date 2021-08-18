@@ -12,18 +12,10 @@
           </b-form-group>
         </b-col>
         <b-col>
-          <b-form-group label="Exclude Gym TMs">
+          <b-form-group label="Only Field Item TMs">
             <b-checkbox
-              id="machine-list-tracker-filter-gym-tms"
-              v-model="excludeGymTMs"
-            />
-          </b-form-group>
-        </b-col>
-        <b-col>
-          <b-form-group label="Exclude Game Corners">
-            <b-checkbox
-              id="machine-list-tracker-filter-game-corners"
-              v-model="excludeGameCorners"
+              id="machine-list-tracker-filter-npc-tms"
+              v-model="onlyFieldItemTMs"
             />
           </b-form-group>
         </b-col>
@@ -57,10 +49,6 @@ export default Vue.extend({
   },
   data() {
     const allTMs = allMachines.filter((machine) => machine.type === 'tm')
-    const allOptions: ButtonGridOption[] = allTMs.map((machine) => ({
-      value: machine.id,
-      text: machine.name,
-    }))
 
     const regions: ButtonGridOption[] = Object.values(allMaps)
       .filter((map) => map.type === 'region')
@@ -72,21 +60,18 @@ export default Vue.extend({
 
     const defaultSettings = {
       selectedRegion: '',
-      excludeGymTMs: false,
-      excludeGameCorners: false,
+      onlyFieldItemTMs: false,
       selected: [],
     }
-    const { selectedRegion, excludeGymTMs, excludeGameCorners, selected } =
+    const { selectedRegion, onlyFieldItemTMs, selected } =
       this.tracker.value || defaultSettings
 
     return {
       allTMs,
-      allOptions,
       regions,
 
       selectedRegion,
-      excludeGymTMs,
-      excludeGameCorners,
+      onlyFieldItemTMs,
       selected,
     }
   },
@@ -105,20 +90,11 @@ export default Vue.extend({
         })
       }
 
-      // Apply gym TM filter
-      if (this.excludeGymTMs) {
+      // Apply field item TM filter
+      if (this.onlyFieldItemTMs) {
         filteredTMs = filteredTMs.filter((tm) => {
           return tm.itemSources.find((itemSource) => {
-            return itemSource.type !== 'gym-leader'
-          })
-        })
-      }
-
-      // Apply game corners filter
-      if (this.excludeGameCorners) {
-        filteredTMs = filteredTMs.filter((tm) => {
-          return tm.itemSources.find((itemSource) => {
-            return itemSource.type !== 'game-corner'
+            return itemSource.type === 'field-item'
           })
         })
       }
@@ -126,6 +102,16 @@ export default Vue.extend({
       const filteredOptions = filteredTMs.map((tm) => ({
         value: tm.id,
         text: tm.name,
+        action: {
+          icon: 'CrosshairIcon',
+          alt: 'Locate',
+          route: {
+            name: 'machine-finder',
+            query: {
+              machineId: tm.id,
+            },
+          },
+        },
       }))
 
       return filteredOptions
@@ -135,10 +121,7 @@ export default Vue.extend({
     selectedRegion(): void {
       this.updatePersistableData()
     },
-    excludeGymTMs(): void {
-      this.updatePersistableData()
-    },
-    excludeGameCorners(): void {
+    onlyFieldItemTMs(): void {
       this.updatePersistableData()
     },
     selected(): void {
@@ -150,13 +133,11 @@ export default Vue.extend({
       this.selected = value
     },
     updatePersistableData(): any {
-      const { selectedRegion, excludeGymTMs, excludeGameCorners, selected } =
-        this
+      const { selectedRegion, onlyFieldItemTMs, selected } = this
 
       this.$emit('change', {
         selectedRegion,
-        excludeGymTMs,
-        excludeGameCorners,
+        onlyFieldItemTMs,
         selected,
       })
     },
