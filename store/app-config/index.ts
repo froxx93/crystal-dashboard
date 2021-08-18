@@ -1,4 +1,5 @@
-import { $themeConfig } from '@/themeConfig'
+import * as ls from 'local-storage'
+import { $themeConfig } from '~/themeConfig'
 
 type Language = 'en' | 'de'
 
@@ -15,7 +16,7 @@ export default {
     appLanguage: 'en',
     layout: {
       isRTL: $themeConfig.layout.isRTL,
-      skin: localStorage.getItem('theme-skin') || $themeConfig.layout.skin,
+      skin: ls.get('theme-skin') || $themeConfig.layout.skin,
       routerTransition: $themeConfig.layout.routerTransition,
       type: $themeConfig.layout.type,
       contentWidth: $themeConfig.layout.contentWidth,
@@ -31,7 +32,11 @@ export default {
       },
     },
   } as AppConfigState,
-  getters: {},
+  getters: {
+    skin(state: AppConfigState): string {
+      return state.layout.skin
+    },
+  },
   mutations: {
     toggleRtl(state: AppConfigState) {
       state.layout.isRTL = !state.layout.isRTL
@@ -44,7 +49,7 @@ export default {
       state.layout.skin = skin
 
       // Update value in localStorage
-      localStorage.setItem('theme-skin', skin)
+      ls.set('theme-skin', skin)
 
       // Update DOM for dark-layout
       if (skin === 'dark') document.body.classList.add('dark-layout')
@@ -70,5 +75,23 @@ export default {
       Object.assign(state.layout.footer, obj)
     },
   },
-  actions: {},
+  actions: {
+    initLayout({ dispatch, state }: any): void {
+      dispatch('updateSkin', { skin: state.layout.skin, withTransition: false })
+    },
+    updateSkin(
+      { commit }: any,
+      { skin, withTransition = true }: { skin: string; withTransition: boolean }
+    ): void {
+      if (withTransition) {
+        // temporarily add transition to specific elements
+        document.body.classList.add('is-in-theme-transition')
+        setTimeout(() => {
+          document.body.classList.add('is-in-theme-transition')
+        }, 500)
+      }
+
+      commit('updateSkin', skin)
+    },
+  },
 }

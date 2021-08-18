@@ -19,7 +19,7 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     // import core styles
-    '@/assets/scss/core.scss',
+    '@/assets/scss/style.scss',
     '@/assets/fonts/fonts.scss',
   ],
 
