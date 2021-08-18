@@ -19,12 +19,22 @@
         <component
           :is="multi ? 'b-form-checkbox' : 'b-form-radio'"
           :value="option.value"
-          >{{ option.text }}
+        >
+          {{ option.text }}
+
+          <nuxt-link
+            v-if="option.action"
+            :to="option.action.route"
+            class="ml-1"
+          >
+            <feather-icon :icon="option.action.icon" size="14" />
+          </nuxt-link>
+
           <feather-icon
             v-if="removeableOptions"
             icon="XIcon"
-            size="16"
-            class="button-grid-remove-icon"
+            size="14"
+            class="ml-1"
             @click="() => removeOption(option)"
           />
         </component>
@@ -35,11 +45,16 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { $themeConfig } from '~/themeConfig'
+
+interface ButtonGridOptionAction {
+  icon: string
+  route: { name: string; query: { [key: string]: string } }
+}
 
 export interface ButtonGridOption {
   value: string
   text: string
+  action?: ButtonGridOptionAction
 }
 
 export default Vue.extend({

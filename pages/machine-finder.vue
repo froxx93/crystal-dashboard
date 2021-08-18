@@ -72,13 +72,24 @@ export default Vue.extend({
       selectedMachine: undefined as Machine | undefined,
     }
   },
+  created(): void {
+    const { machineId } = this.$route.query as { [key: string]: string }
+
+    if (machineId) {
+      this.onChangeMachine(machineId, false)
+    }
+  },
   methods: {
-    onChangeMachine(machineId: string): void {
+    onChangeMachine(machineId: string, reroute: boolean = true): void {
       const machine = machines.find(({ id }) => id === machineId)
       this.selectedMachine = machine
       this.infoHeadline = machine
         ? `${machine.name} (${machine.move.name})`
         : ''
+
+      if (reroute) {
+        this.$router.replace({ query: { machineId } })
+      }
     },
   },
 })
