@@ -19,20 +19,18 @@
           >
         </b-row>
 
-        <b-dropdown
+        <dropdown
           id="type-counter-uncaught-dropdown"
           text="+"
           class="mt-md-1"
-          variant="outline-primary"
-          no-caret
-        >
-          <b-dropdown-item
-            v-for="pokemon in uncaughtPokemonListOfSelectedType"
-            :key="`type-counter-uncaught-${pokemon.id}`"
-            @click="() => onClickUntrackedPokemon(pokemon)"
-            >{{ pokemon.name }}</b-dropdown-item
-          >
-        </b-dropdown>
+          :items="
+            uncaughtPokemonListOfSelectedType.map((pokemon) => ({
+              value: pokemon.id,
+              label: pokemon.name,
+            }))
+          "
+          @item-click="onClickUntrackedPokemon"
+        />
 
         <button-grid
           id="type-counter-tracked-list"
@@ -78,6 +76,7 @@ import Pokemon from '~/domains/Pokemon'
 import types from '~/assets/data/types'
 import pokemon from '~/assets/data/pokemon'
 import { ButtonGridOption } from '~/components/button-grid/ButtonGrid.vue'
+import { DropdownItem } from '~/components/dropdown/Dropdown.vue'
 
 export default Vue.extend({
   props: {
@@ -134,10 +133,12 @@ export default Vue.extend({
       return this.caughtPokemonIds.length
     },
     trackedPokemonOptions(): ButtonGridOption[] {
-      return this.trackedPokemonList.map(({ id, name }) => ({
-        value: id,
-        text: name,
-      }))
+      return this.trackedPokemonList
+        .map(({ id, name }) => ({
+          value: id,
+          text: name,
+        }))
+        .sort(({ text: textA }, { text: textB }) => (textA < textB ? -1 : 1))
     },
   },
   watch: {
@@ -155,8 +156,13 @@ export default Vue.extend({
     onChangeType(typeId: string): void {
       this.selectedType = types.find((type) => type.id === typeId)
     },
-    onClickUntrackedPokemon(pokemon: Pokemon): void {
-      this.trackedPokemonList.push(pokemon)
+    onClickUntrackedPokemon(item: DropdownItem): void {
+      const pokemon = this.uncaughtPokemonListOfSelectedType.find(
+        (pokemon) => pokemon.id === item.value
+      )
+      if (pokemon) {
+        this.trackedPokemonList.push(pokemon)
+      }
     },
     removeCaughtPokemon(pokemon: Pokemon): void {
       const index = this.trackedPokemonList.indexOf(pokemon)
