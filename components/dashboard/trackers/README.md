@@ -7,3 +7,7 @@
 1. Add constant in TRACKER_TYPES in Tracker.vue
 1. Import and register component in Tracker.vue
 1. Add switch case in currentComp() in Tracker.vue
+1. Persist configurations by:
+1.1 Initializing this data from tracker propertie\'s 'value' (fallback to default settings)
+1.1 Setting a watcher to all configurable data
+1.1 Make all these watchers call a central function triggering the 'change' event with all configurable data
