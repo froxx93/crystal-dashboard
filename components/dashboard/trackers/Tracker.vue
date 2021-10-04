@@ -19,6 +19,7 @@ import Vue from 'vue'
 import MachineLocationTracker from './machine-location-tracker/MachineLocationTracker.vue'
 import MachineListTracker from './machine-list-tracker/MachineListTracker.vue'
 import TypeCounterTracker from './type-counter-tracker/TypeCounterTracker.vue'
+import CustomCounter from './custom-counter/CustomCounter.vue'
 
 export interface TrackerType {
   value: string
@@ -30,6 +31,7 @@ export const TRACKER_TYPES: TrackerType[] = [
   { value: 'machine-location', label: 'Machine Location', unique: false },
   { value: 'machine-list', label: 'TM List', unique: true },
   { value: 'type-counter', label: 'Type Counter', unique: false },
+  { value: 'custom-counter', label: 'Custom Counter', unique: false },
 ]
 
 export interface Tracker {
@@ -43,6 +45,7 @@ export default Vue.extend({
     MachineLocationTracker,
     MachineListTracker,
     TypeCounterTracker,
+    CustomCounter,
   },
   props: {
     tracker: {
@@ -59,6 +62,8 @@ export default Vue.extend({
           return MachineListTracker
         case 'type-counter':
           return TypeCounterTracker
+        case 'custom-counter':
+          return CustomCounter
 
         default:
           return undefined
