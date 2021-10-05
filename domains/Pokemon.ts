@@ -1,8 +1,6 @@
-import Type from './Type'
+import PokemonSpecies from './PokemonSpecies'
 
 export default interface Pokemon {
-  id: string
-  name: string
-  types: Type[]
-  evolvesTo: Pokemon[] // only next stage (e.g. [Slowbro, Slowking])
+  species: PokemonSpecies
+  level: number
 }

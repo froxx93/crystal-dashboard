@@ -24,9 +24,9 @@
           text="+"
           class="mt-md-1"
           :items="
-            uncaughtPokemonListOfSelectedType.map((pokemon) => ({
-              value: pokemon.id,
-              label: pokemon.name,
+            uncaughtPokemonListOfSelectedType.map((pokemonSpecies) => ({
+              value: pokemonSpecies.id,
+              label: pokemonSpecies.name,
             }))
           "
           @item-click="onClickUntrackedPokemon"
@@ -72,9 +72,9 @@
 import Vue from 'vue'
 import { Tracker } from '../Tracker.vue'
 import Type from '~/domains/Type'
-import Pokemon from '~/domains/Pokemon'
+import PokemonSpecies from '~/domains/PokemonSpecies'
 import types from '~/assets/data/types'
-import pokemon from '~/assets/data/pokemon'
+import pokemonSpecies from '~/assets/data/pokemonSpecies'
 import { ButtonGridOption } from '~/components/button-grid/ButtonGrid.vue'
 import { DropdownItem } from '~/components/dropdown/Dropdown.vue'
 
@@ -103,26 +103,26 @@ export default Vue.extend({
       typeOptions,
 
       selectedType: selectedType as Type | undefined,
-      trackedPokemonList: trackedPokemonList as Pokemon[],
+      trackedPokemonList: trackedPokemonList as PokemonSpecies[],
       caughtPokemonIds: caughtPokemonIds as string[],
 
-      pokemonToEvolve: undefined as Pokemon | undefined,
+      pokemonToEvolve: undefined as PokemonSpecies | undefined,
       evolutionOptions: [] as ButtonGridOption[],
     }
   },
   computed: {
-    uncaughtPokemonListOfSelectedType(): Pokemon[] {
+    uncaughtPokemonListOfSelectedType(): PokemonSpecies[] {
       if (!this.selectedType) {
         return []
       }
 
-      return pokemon
+      return pokemonSpecies
         .filter(({ types }) =>
           types.find((type) => type.id === this.selectedType?.id)
         )
         .filter(
-          (pokemon) =>
-            !this.trackedPokemonList.find(({ id }) => id === pokemon.id)
+          (pokemonSpecies) =>
+            !this.trackedPokemonList.find(({ id }) => id === pokemonSpecies.id)
         )
         .sort(({ name: nameA }, { name: nameB }) => (nameA < nameB ? -1 : 1))
     },
@@ -157,15 +157,15 @@ export default Vue.extend({
       this.selectedType = types.find((type) => type.id === typeId)
     },
     onClickUntrackedPokemon(item: DropdownItem): void {
-      const pokemon = this.uncaughtPokemonListOfSelectedType.find(
-        (pokemon) => pokemon.id === item.value
+      const pokemonSpecies = this.uncaughtPokemonListOfSelectedType.find(
+        (pokemonSpecies) => pokemonSpecies.id === item.value
       )
-      if (pokemon) {
-        this.trackedPokemonList.push(pokemon)
+      if (pokemonSpecies) {
+        this.trackedPokemonList.push(pokemonSpecies)
       }
     },
-    removeCaughtPokemon(pokemon: Pokemon): void {
-      const index = this.trackedPokemonList.indexOf(pokemon)
+    removeCaughtPokemon(pokemonSpecies: PokemonSpecies): void {
+      const index = this.trackedPokemonList.indexOf(pokemonSpecies)
       this.trackedPokemonList.splice(index, 1)
     },
     onSelectTrackedPokemon(selected: string[]): void {
@@ -197,15 +197,15 @@ export default Vue.extend({
       })
     },
     onDoubleClick(option: ButtonGridOption): void {
-      const pokemon = this.trackedPokemonList.find(
+      const pokemonSpecies = this.trackedPokemonList.find(
         ({ id }) => id === option.value
       )
-      if (!pokemon) {
+      if (!pokemonSpecies) {
         return
       }
 
-      // Only handle double click for pokemon that can evolve
-      const evolutionsOfSelectedType = pokemon.evolvesTo.filter(
+      // Only handle double click for pokemonSpecies that can evolve
+      const evolutionsOfSelectedType = pokemonSpecies.evolvesTo.filter(
         ({ types }) =>
           this.selectedType &&
           types.find(({ id }) => id === this.selectedType?.id)
@@ -216,7 +216,7 @@ export default Vue.extend({
 
       const trackedIndex = this.trackedPokemonList
         .map(({ id }) => id)
-        .indexOf(pokemon.id)
+        .indexOf(pokemonSpecies.id)
       if (trackedIndex === -1) {
         return
       }
@@ -231,19 +231,22 @@ export default Vue.extend({
             text: name,
           })
         )
-        this.pokemonToEvolve = pokemon
+        this.pokemonToEvolve = pokemonSpecies
         this.$bvModal.show('evolution-modal')
       }
     },
-    evolveTrackedPokemon(trackedIndex: number, evolution: Pokemon): void {
-      const pokemon = this.trackedPokemonList[trackedIndex]
+    evolveTrackedPokemon(
+      trackedIndex: number,
+      evolution: PokemonSpecies
+    ): void {
+      const pokemonSpecies = this.trackedPokemonList[trackedIndex]
       if (!this.trackedPokemonList.map(({ id }) => id).includes(evolution.id)) {
         this.trackedPokemonList.splice(trackedIndex, 1, evolution)
       } else {
         this.trackedPokemonList.splice(trackedIndex, 1)
       }
 
-      const caughtIndex = this.caughtPokemonIds.indexOf(pokemon.id)
+      const caughtIndex = this.caughtPokemonIds.indexOf(pokemonSpecies.id)
       if (caughtIndex !== -1) {
         this.caughtPokemonIds.splice(caughtIndex, 1)
       }
@@ -257,7 +260,7 @@ export default Vue.extend({
         return
       }
 
-      const evolution = pokemon.find(({ id }) => id === selectedOption)
+      const evolution = pokemonSpecies.find(({ id }) => id === selectedOption)
       if (!evolution) {
         return
       }

@@ -1,1514 +1,1514 @@
-import Pokemon from '~/domains/Pokemon'
+import PokemonSpecies from '~/domains/PokemonSpecies'
 import * as types from '~/assets/data/types'
 
-export const CELEBI: Pokemon = {
+export const CELEBI: PokemonSpecies = {
   id: 'celebi',
   name: 'Celebi',
   types: [types.PSYCHIC, types.GRASS],
   evolvesTo: [],
 }
-export const HO_OH: Pokemon = {
+export const HO_OH: PokemonSpecies = {
   id: 'ho-oh',
   name: 'Ho-Oh',
   types: [types.FIRE, types.FLYING],
   evolvesTo: [],
 }
-export const LUGIA: Pokemon = {
+export const LUGIA: PokemonSpecies = {
   id: 'lugia',
   name: 'Lugia',
   types: [types.PSYCHIC, types.FLYING],
   evolvesTo: [],
 }
-export const TYRANITAR: Pokemon = {
+export const TYRANITAR: PokemonSpecies = {
   id: 'tyranitar',
   name: 'Tyranitar',
   types: [types.ROCK, types.DARK],
   evolvesTo: [],
 }
-export const PUPITAR: Pokemon = {
+export const PUPITAR: PokemonSpecies = {
   id: 'pupitar',
   name: 'Pupitar',
   types: [types.ROCK, types.GROUND],
   evolvesTo: [TYRANITAR],
 }
-export const LARVITAR: Pokemon = {
+export const LARVITAR: PokemonSpecies = {
   id: 'larvitar',
   name: 'Larvitar',
   types: [types.ROCK, types.GROUND],
   evolvesTo: [PUPITAR],
 }
-export const SUICUNE: Pokemon = {
+export const SUICUNE: PokemonSpecies = {
   id: 'suicune',
   name: 'Suicune',
   types: [types.WATER],
   evolvesTo: [],
 }
-export const ENTEI: Pokemon = {
+export const ENTEI: PokemonSpecies = {
   id: 'entei',
   name: 'Entei',
   types: [types.FIRE],
   evolvesTo: [],
 }
-export const RAIKOU: Pokemon = {
+export const RAIKOU: PokemonSpecies = {
   id: 'raikou',
   name: 'Raikou',
   types: [types.ELECTRIC],
   evolvesTo: [],
 }
-export const BLISSEY: Pokemon = {
+export const BLISSEY: PokemonSpecies = {
   id: 'blissey',
   name: 'Blissey',
   types: [types.NORMAL],
   evolvesTo: [],
 }
-export const MILTANK: Pokemon = {
+export const MILTANK: PokemonSpecies = {
   id: 'miltank',
   name: 'Miltank',
   types: [types.NORMAL],
   evolvesTo: [],
 }
-export const HITMONTOP: Pokemon = {
+export const HITMONTOP: PokemonSpecies = {
   id: 'hitmontop',
   name: 'Hitmontop',
   types: [types.FIGHTING],
   evolvesTo: [],
 }
-export const SMEARGLE: Pokemon = {
+export const SMEARGLE: PokemonSpecies = {
   id: 'smeargle',
   name: 'Smeargle',
   types: [types.NORMAL],
   evolvesTo: [],
 }
-export const STANTLER: Pokemon = {
+export const STANTLER: PokemonSpecies = {
   id: 'stantler',
   name: 'Stantler',
   types: [types.NORMAL],
   evolvesTo: [],
 }
-export const PORYGON2: Pokemon = {
+export const PORYGON2: PokemonSpecies = {
   id: 'porygon2',
   name: 'Porygon2',
   types: [types.NORMAL],
   evolvesTo: [],
 }
-export const DONPHAN: Pokemon = {
+export const DONPHAN: PokemonSpecies = {
   id: 'donphan',
   name: 'Donphan',
   types: [types.GROUND],
   evolvesTo: [],
 }
-export const PHANPY: Pokemon = {
+export const PHANPY: PokemonSpecies = {
   id: 'phanpy',
   name: 'Phanpy',
   types: [types.GROUND],
   evolvesTo: [DONPHAN],
 }
-export const KINGDRA: Pokemon = {
+export const KINGDRA: PokemonSpecies = {
   id: 'kingdra',
   name: 'Kingdra',
   types: [types.WATER, types.DRAGON],
   evolvesTo: [],
 }
-export const HOUNDOOM: Pokemon = {
+export const HOUNDOOM: PokemonSpecies = {
   id: 'houndoom',
   name: 'Houndoom',
   types: [types.DARK, types.FIRE],
   evolvesTo: [],
 }
-export const HOUNDOUR: Pokemon = {
+export const HOUNDOUR: PokemonSpecies = {
   id: 'houndour',
   name: 'Houndour',
   types: [types.DARK, types.FIRE],
   evolvesTo: [HOUNDOOM],
 }
-export const SKARMORY: Pokemon = {
+export const SKARMORY: PokemonSpecies = {
   id: 'skarmory',
   name: 'Skarmory',
   types: [types.STEEL, types.FLYING],
   evolvesTo: [],
 }
-export const MANTINE: Pokemon = {
+export const MANTINE: PokemonSpecies = {
   id: 'mantine',
   name: 'Mantine',
   types: [types.WATER, types.FLYING],
   evolvesTo: [],
 }
-export const DELIBIRD: Pokemon = {
+export const DELIBIRD: PokemonSpecies = {
   id: 'delibird',
   name: 'Delibird',
   types: [types.ICE, types.FLYING],
   evolvesTo: [],
 }
-export const OCTILLERY: Pokemon = {
+export const OCTILLERY: PokemonSpecies = {
   id: 'octillery',
   name: 'Octillery',
   types: [types.WATER],
   evolvesTo: [],
 }
-export const REMORAID: Pokemon = {
+export const REMORAID: PokemonSpecies = {
   id: 'remoraid',
   name: 'Remoraid',
   types: [types.WATER],
   evolvesTo: [OCTILLERY],
 }
-export const CORSOLA: Pokemon = {
+export const CORSOLA: PokemonSpecies = {
   id: 'corsola',
   name: 'Corsola',
   types: [types.WATER, types.ROCK],
   evolvesTo: [],
 }
-export const PILOSWINE: Pokemon = {
+export const PILOSWINE: PokemonSpecies = {
   id: 'piloswine',
   name: 'Piloswine',
   types: [types.ICE, types.GROUND],
   evolvesTo: [],
 }
-export const SWINUB: Pokemon = {
+export const SWINUB: PokemonSpecies = {
   id: 'swinub',
   name: 'Swinub',
   types: [types.ICE, types.GROUND],
   evolvesTo: [PILOSWINE],
 }
-export const MAGCARGO: Pokemon = {
+export const MAGCARGO: PokemonSpecies = {
   id: 'magcargo',
   name: 'Magcargo',
   types: [types.FIRE, types.ROCK],
   evolvesTo: [],
 }
-export const SLUGMA: Pokemon = {
+export const SLUGMA: PokemonSpecies = {
   id: 'slugma',
   name: 'Slugma',
   types: [types.FIRE],
   evolvesTo: [MAGCARGO],
 }
-export const URSARING: Pokemon = {
+export const URSARING: PokemonSpecies = {
   id: 'ursaring',
   name: 'Ursaring',
   types: [types.NORMAL],
   evolvesTo: [],
 }
-export const TEDDIURSA: Pokemon = {
+export const TEDDIURSA: PokemonSpecies = {
   id: 'teddiursa',
   name: 'Teddiursa',
   types: [types.NORMAL],
   evolvesTo: [URSARING],
 }
-export const SNEASEL: Pokemon = {
+export const SNEASEL: PokemonSpecies = {
   id: 'sneasel',
   name: 'Sneasel',
   types: [types.DARK, types.ICE],
   evolvesTo: [],
 }
-export const HERACROSS: Pokemon = {
+export const HERACROSS: PokemonSpecies = {
   id: 'heracross',
   name: 'Heracross',
   types: [types.BUG, types.FIGHTING],
   evolvesTo: [],
 }
-export const SHUCKLE: Pokemon = {
+export const SHUCKLE: PokemonSpecies = {
   id: 'shuckle',
   name: 'Shuckle',
   types: [types.BUG, types.ROCK],
   evolvesTo: [],
 }
-export const SCIZOR: Pokemon = {
+export const SCIZOR: PokemonSpecies = {
   id: 'scizor',
   name: 'Scizor',
   types: [types.BUG, types.STEEL],
   evolvesTo: [],
 }
-export const QWILFISH: Pokemon = {
+export const QWILFISH: PokemonSpecies = {
   id: 'qwilfish',
   name: 'Qwilfish',
   types: [types.WATER, types.POISON],
   evolvesTo: [],
 }
-export const GRANBULL: Pokemon = {
+export const GRANBULL: PokemonSpecies = {
   id: 'granbull',
   name: 'Granbull',
   types: [types.NORMAL],
   evolvesTo: [],
 }
-export const SNUBBULL: Pokemon = {
+export const SNUBBULL: PokemonSpecies = {
   id: 'snubbull',
   name: 'Snubbull',
   types: [types.NORMAL],
   evolvesTo: [GRANBULL],
 }
-export const STEELIX: Pokemon = {
+export const STEELIX: PokemonSpecies = {
   id: 'steelix',
   name: 'Steelix',
   types: [types.STEEL, types.GROUND],
   evolvesTo: [],
 }
-export const GLIGAR: Pokemon = {
+export const GLIGAR: PokemonSpecies = {
   id: 'gligar',
   name: 'Gligar',
   types: [types.GROUND, types.FLYING],
   evolvesTo: [],
 }
-export const DUNSPARCE: Pokemon = {
+export const DUNSPARCE: PokemonSpecies = {
   id: 'dunsparce',
   name: 'Dunsparce',
   types: [types.NORMAL],
   evolvesTo: [],
 }
-export const FORRETRESS: Pokemon = {
+export const FORRETRESS: PokemonSpecies = {
   id: 'forretress',
   name: 'Forretress',
   types: [types.BUG, types.STEEL],
   evolvesTo: [],
 }
-export const PINECO: Pokemon = {
+export const PINECO: PokemonSpecies = {
   id: 'pineco',
   name: 'Pineco',
   types: [types.BUG],
   evolvesTo: [FORRETRESS],
 }
-export const GIRAFARIG: Pokemon = {
+export const GIRAFARIG: PokemonSpecies = {
   id: 'girafarig',
   name: 'Girafarig',
   types: [types.NORMAL, types.PSYCHIC],
   evolvesTo: [],
 }
-export const WOBBUFFET: Pokemon = {
+export const WOBBUFFET: PokemonSpecies = {
   id: 'wobbuffet',
   name: 'Wobbuffet',
   types: [types.PSYCHIC],
   evolvesTo: [],
 }
-export const UNOWN: Pokemon = {
+export const UNOWN: PokemonSpecies = {
   id: 'unown',
   name: 'Unown',
   types: [types.PSYCHIC],
   evolvesTo: [],
 }
-export const MISDREAVUS: Pokemon = {
+export const MISDREAVUS: PokemonSpecies = {
   id: 'misdreavus',
   name: 'Misdreavus',
   types: [types.GHOST],
   evolvesTo: [],
 }
-export const SLOWKING: Pokemon = {
+export const SLOWKING: PokemonSpecies = {
   id: 'slowking',
   name: 'Slowking',
   types: [types.WATER, types.PSYCHIC],
   evolvesTo: [],
 }
-export const MURKROW: Pokemon = {
+export const MURKROW: PokemonSpecies = {
   id: 'murkrow',
   name: 'Murkrow',
   types: [types.DARK, types.FLYING],
   evolvesTo: [],
 }
-export const UMBREON: Pokemon = {
+export const UMBREON: PokemonSpecies = {
   id: 'umbreon',
   name: 'Umbreon',
   types: [types.DARK],
   evolvesTo: [],
 }
-export const ESPEON: Pokemon = {
+export const ESPEON: PokemonSpecies = {
   id: 'espeon',
   name: 'Espeon',
   types: [types.PSYCHIC],
   evolvesTo: [],
 }
-export const QUAGSIRE: Pokemon = {
+export const QUAGSIRE: PokemonSpecies = {
   id: 'quagsire',
   name: 'Quagsire',
   types: [types.WATER, types.GROUND],
   evolvesTo: [],
 }
-export const WOOPER: Pokemon = {
+export const WOOPER: PokemonSpecies = {
   id: 'wooper',
   name: 'Wooper',
   types: [types.WATER, types.GROUND],
   evolvesTo: [QUAGSIRE],
 }
-export const YANMA: Pokemon = {
+export const YANMA: PokemonSpecies = {
   id: 'yanma',
   name: 'Yanma',
   types: [types.BUG, types.FLYING],
   evolvesTo: [],
 }
-export const SUNFLORA: Pokemon = {
+export const SUNFLORA: PokemonSpecies = {
   id: 'sunflora',
   name: 'Sunflora',
   types: [types.GRASS],
   evolvesTo: [],
 }
-export const SUNKERN: Pokemon = {
+export const SUNKERN: PokemonSpecies = {
   id: 'sunkern',
   name: 'Sunkern',
   types: [types.GRASS],
   evolvesTo: [SUNFLORA],
 }
-export const AIPOM: Pokemon = {
+export const AIPOM: PokemonSpecies = {
   id: 'aipom',
   name: 'Aipom',
   types: [types.NORMAL],
   evolvesTo: [],
 }
-export const JUMPLUFF: Pokemon = {
+export const JUMPLUFF: PokemonSpecies = {
   id: 'jumpluff',
   name: 'Jumpluff',
   types: [types.GRASS, types.FLYING],
   evolvesTo: [],
 }
-export const SKIPLOOM: Pokemon = {
+export const SKIPLOOM: PokemonSpecies = {
   id: 'skiploom',
   name: 'Skiploom',
   types: [types.GRASS, types.FLYING],
   evolvesTo: [JUMPLUFF],
 }
-export const HOPPIP: Pokemon = {
+export const HOPPIP: PokemonSpecies = {
   id: 'hoppip',
   name: 'Hoppip',
   types: [types.GRASS, types.FLYING],
   evolvesTo: [SKIPLOOM],
 }
-export const POLITOED: Pokemon = {
+export const POLITOED: PokemonSpecies = {
   id: 'politoed',
   name: 'Politoed',
   types: [types.WATER],
   evolvesTo: [],
 }
-export const SUDOWOODO: Pokemon = {
+export const SUDOWOODO: PokemonSpecies = {
   id: 'sudowoodo',
   name: 'Sudowoodo',
   types: [types.ROCK],
   evolvesTo: [],
 }
-export const AZUMARILL: Pokemon = {
+export const AZUMARILL: PokemonSpecies = {
   id: 'azumarill',
   name: 'Azumarill',
   types: [types.WATER],
   evolvesTo: [],
 }
-export const MARILL: Pokemon = {
+export const MARILL: PokemonSpecies = {
   id: 'marill',
   name: 'Marill',
   types: [types.WATER],
   evolvesTo: [AZUMARILL],
 }
-export const BELLOSSOM: Pokemon = {
+export const BELLOSSOM: PokemonSpecies = {
   id: 'bellossom',
   name: 'Bellossom',
   types: [types.GRASS],
   evolvesTo: [],
 }
-export const AMPHAROS: Pokemon = {
+export const AMPHAROS: PokemonSpecies = {
   id: 'ampharos',
   name: 'Ampharos',
   types: [types.ELECTRIC],
   evolvesTo: [],
 }
-export const FLAAFFY: Pokemon = {
+export const FLAAFFY: PokemonSpecies = {
   id: 'flaaffy',
   name: 'Flaaffy',
   types: [types.ELECTRIC],
   evolvesTo: [AMPHAROS],
 }
-export const MAREEP: Pokemon = {
+export const MAREEP: PokemonSpecies = {
   id: 'mareep',
   name: 'Mareep',
   types: [types.ELECTRIC],
   evolvesTo: [FLAAFFY],
 }
-export const XATU: Pokemon = {
+export const XATU: PokemonSpecies = {
   id: 'xatu',
   name: 'Xatu',
   types: [types.PSYCHIC, types.FLYING],
   evolvesTo: [],
 }
-export const NATU: Pokemon = {
+export const NATU: PokemonSpecies = {
   id: 'natu',
   name: 'Natu',
   types: [types.PSYCHIC, types.FLYING],
   evolvesTo: [XATU],
 }
-export const TOGETIC: Pokemon = {
+export const TOGETIC: PokemonSpecies = {
   id: 'togetic',
   name: 'Togetic',
   types: [types.NORMAL, types.FLYING],
   evolvesTo: [],
 }
-export const TOGEPI: Pokemon = {
+export const TOGEPI: PokemonSpecies = {
   id: 'togepi',
   name: 'Togepi',
   types: [types.NORMAL],
   evolvesTo: [TOGETIC],
 }
-export const LANTURN: Pokemon = {
+export const LANTURN: PokemonSpecies = {
   id: 'lanturn',
   name: 'Lanturn',
   types: [types.WATER, types.ELECTRIC],
   evolvesTo: [],
 }
-export const CHINCHOU: Pokemon = {
+export const CHINCHOU: PokemonSpecies = {
   id: 'chinchou',
   name: 'Chinchou',
   types: [types.WATER, types.ELECTRIC],
   evolvesTo: [LANTURN],
 }
-export const CROBAT: Pokemon = {
+export const CROBAT: PokemonSpecies = {
   id: 'crobat',
   name: 'Crobat',
   types: [types.POISON, types.FLYING],
   evolvesTo: [],
 }
-export const ARIADOS: Pokemon = {
+export const ARIADOS: PokemonSpecies = {
   id: 'ariados',
   name: 'Ariados',
   types: [types.BUG, types.POISON],
   evolvesTo: [],
 }
-export const SPINARAK: Pokemon = {
+export const SPINARAK: PokemonSpecies = {
   id: 'spinarak',
   name: 'Spinarak',
   types: [types.BUG, types.POISON],
   evolvesTo: [ARIADOS],
 }
-export const LEDIAN: Pokemon = {
+export const LEDIAN: PokemonSpecies = {
   id: 'ledian',
   name: 'Ledian',
   types: [types.BUG, types.FLYING],
   evolvesTo: [],
 }
-export const LEDYBA: Pokemon = {
+export const LEDYBA: PokemonSpecies = {
   id: 'ledyba',
   name: 'Ledyba',
   types: [types.BUG, types.FLYING],
   evolvesTo: [LEDIAN],
 }
-export const NOCTOWL: Pokemon = {
+export const NOCTOWL: PokemonSpecies = {
   id: 'noctowl',
   name: 'Noctowl',
   types: [types.NORMAL, types.FLYING],
   evolvesTo: [],
 }
-export const HOOTHOOT: Pokemon = {
+export const HOOTHOOT: PokemonSpecies = {
   id: 'hoothoot',
   name: 'Hoothoot',
   types: [types.NORMAL, types.FLYING],
   evolvesTo: [NOCTOWL],
 }
-export const FURRET: Pokemon = {
+export const FURRET: PokemonSpecies = {
   id: 'furret',
   name: 'Furret',
   types: [types.NORMAL],
   evolvesTo: [],
 }
-export const SENTRET: Pokemon = {
+export const SENTRET: PokemonSpecies = {
   id: 'sentret',
   name: 'Sentret',
   types: [types.NORMAL],
   evolvesTo: [FURRET],
 }
-export const FERALIGATR: Pokemon = {
+export const FERALIGATR: PokemonSpecies = {
   id: 'feraligatr',
   name: 'Feraligatr',
   types: [types.WATER],
   evolvesTo: [],
 }
-export const CROCONAW: Pokemon = {
+export const CROCONAW: PokemonSpecies = {
   id: 'croconaw',
   name: 'Croconaw',
   types: [types.WATER],
   evolvesTo: [FERALIGATR],
 }
-export const TOTODILE: Pokemon = {
+export const TOTODILE: PokemonSpecies = {
   id: 'totodile',
   name: 'Totodile',
   types: [types.WATER],
   evolvesTo: [CROCONAW],
 }
-export const TYPHLOSION: Pokemon = {
+export const TYPHLOSION: PokemonSpecies = {
   id: 'typhlosion',
   name: 'Typhlosion',
   types: [types.FIRE],
   evolvesTo: [],
 }
-export const QUILAVA: Pokemon = {
+export const QUILAVA: PokemonSpecies = {
   id: 'quilava',
   name: 'Quilava',
   types: [types.FIRE],
   evolvesTo: [TYPHLOSION],
 }
-export const CYNDAQUIL: Pokemon = {
+export const CYNDAQUIL: PokemonSpecies = {
   id: 'cyndaquil',
   name: 'Cyndaquil',
   types: [types.FIRE],
   evolvesTo: [QUILAVA],
 }
-export const MEGANIUM: Pokemon = {
+export const MEGANIUM: PokemonSpecies = {
   id: 'meganium',
   name: 'Meganium',
   types: [types.GRASS],
   evolvesTo: [],
 }
-export const BAYLEEF: Pokemon = {
+export const BAYLEEF: PokemonSpecies = {
   id: 'bayleef',
   name: 'Bayleef',
   types: [types.GRASS],
   evolvesTo: [MEGANIUM],
 }
-export const CHIKORITA: Pokemon = {
+export const CHIKORITA: PokemonSpecies = {
   id: 'chikorita',
   name: 'Chikorita',
   types: [types.GRASS],
   evolvesTo: [BAYLEEF],
 }
-export const MEW: Pokemon = {
+export const MEW: PokemonSpecies = {
   id: 'mew',
   name: 'Mew',
   types: [types.PSYCHIC],
   evolvesTo: [],
 }
-export const MEWTWO: Pokemon = {
+export const MEWTWO: PokemonSpecies = {
   id: 'mewtwo',
   name: 'Mewtwo',
   types: [types.PSYCHIC],
   evolvesTo: [],
 }
-export const DRAGONITE: Pokemon = {
+export const DRAGONITE: PokemonSpecies = {
   id: 'dragonite',
   name: 'Dragonite',
   types: [types.DRAGON, types.FLYING],
   evolvesTo: [],
 }
-export const DRAGONAIR: Pokemon = {
+export const DRAGONAIR: PokemonSpecies = {
   id: 'dragonair',
   name: 'Dragonair',
   types: [types.DRAGON],
   evolvesTo: [DRAGONITE],
 }
-export const DRATINI: Pokemon = {
+export const DRATINI: PokemonSpecies = {
   id: 'dratini',
   name: 'Dratini',
   types: [types.DRAGON],
   evolvesTo: [DRAGONAIR],
 }
-export const MOLTRES: Pokemon = {
+export const MOLTRES: PokemonSpecies = {
   id: 'moltres',
   name: 'Moltres',
   types: [types.FIRE, types.FLYING],
   evolvesTo: [],
 }
-export const ZAPDOS: Pokemon = {
+export const ZAPDOS: PokemonSpecies = {
   id: 'zapdos',
   name: 'Zapdos',
   types: [types.ELECTRIC, types.FLYING],
   evolvesTo: [],
 }
-export const ARTICUNO: Pokemon = {
+export const ARTICUNO: PokemonSpecies = {
   id: 'articuno',
   name: 'Articuno',
   types: [types.ICE, types.FLYING],
   evolvesTo: [],
 }
-export const SNORLAX: Pokemon = {
+export const SNORLAX: PokemonSpecies = {
   id: 'snorlax',
   name: 'Snorlax',
   types: [types.NORMAL],
   evolvesTo: [],
 }
-export const AERODACTYL: Pokemon = {
+export const AERODACTYL: PokemonSpecies = {
   id: 'aerodactyl',
   name: 'Aerodactyl',
   types: [types.ROCK, types.FLYING],
   evolvesTo: [],
 }
-export const KABUTOPS: Pokemon = {
+export const KABUTOPS: PokemonSpecies = {
   id: 'kabutops',
   name: 'Kabutops',
   types: [types.ROCK, types.WATER],
   evolvesTo: [],
 }
-export const KABUTO: Pokemon = {
+export const KABUTO: PokemonSpecies = {
   id: 'kabuto',
   name: 'Kabuto',
   types: [types.ROCK, types.WATER],
   evolvesTo: [KABUTOPS],
 }
-export const OMASTAR: Pokemon = {
+export const OMASTAR: PokemonSpecies = {
   id: 'omastar',
   name: 'Omastar',
   types: [types.ROCK, types.WATER],
   evolvesTo: [],
 }
-export const OMANYTE: Pokemon = {
+export const OMANYTE: PokemonSpecies = {
   id: 'omanyte',
   name: 'Omanyte',
   types: [types.ROCK, types.WATER],
   evolvesTo: [OMASTAR],
 }
-export const PORYGON: Pokemon = {
+export const PORYGON: PokemonSpecies = {
   id: 'porygon',
   name: 'Porygon',
   types: [types.NORMAL],
   evolvesTo: [PORYGON2],
 }
-export const FLAREON: Pokemon = {
+export const FLAREON: PokemonSpecies = {
   id: 'flareon',
   name: 'Flareon',
   types: [types.FIRE],
   evolvesTo: [],
 }
-export const JOLTEON: Pokemon = {
+export const JOLTEON: PokemonSpecies = {
   id: 'jolteon',
   name: 'Jolteon',
   types: [types.ELECTRIC],
   evolvesTo: [],
 }
-export const VAPOREON: Pokemon = {
+export const VAPOREON: PokemonSpecies = {
   id: 'vaporeon',
   name: 'Vaporeon',
   types: [types.WATER],
   evolvesTo: [],
 }
-export const EEVEE: Pokemon = {
+export const EEVEE: PokemonSpecies = {
   id: 'eevee',
   name: 'Eevee',
   types: [types.NORMAL],
   evolvesTo: [VAPOREON, JOLTEON, FLAREON, ESPEON, UMBREON],
 }
-export const DITTO: Pokemon = {
+export const DITTO: PokemonSpecies = {
   id: 'ditto',
   name: 'Ditto',
   types: [types.NORMAL],
   evolvesTo: [],
 }
-export const LAPRAS: Pokemon = {
+export const LAPRAS: PokemonSpecies = {
   id: 'lapras',
   name: 'Lapras',
   types: [types.WATER, types.ICE],
   evolvesTo: [],
 }
-export const GYARADOS: Pokemon = {
+export const GYARADOS: PokemonSpecies = {
   id: 'gyarados',
   name: 'Gyarados',
   types: [types.WATER, types.FLYING],
   evolvesTo: [],
 }
-export const MAGIKARP: Pokemon = {
+export const MAGIKARP: PokemonSpecies = {
   id: 'magikarp',
   name: 'Magikarp',
   types: [types.WATER],
   evolvesTo: [GYARADOS],
 }
-export const TAUROS: Pokemon = {
+export const TAUROS: PokemonSpecies = {
   id: 'tauros',
   name: 'Tauros',
   types: [types.NORMAL],
   evolvesTo: [],
 }
-export const PINSIR: Pokemon = {
+export const PINSIR: PokemonSpecies = {
   id: 'pinsir',
   name: 'Pinsir',
   types: [types.BUG],
   evolvesTo: [],
 }
-export const MAGMAR: Pokemon = {
+export const MAGMAR: PokemonSpecies = {
   id: 'magmar',
   name: 'Magmar',
   types: [types.FIRE],
   evolvesTo: [],
 }
-export const ELECTABUZZ: Pokemon = {
+export const ELECTABUZZ: PokemonSpecies = {
   id: 'electabuzz',
   name: 'Electabuzz',
   types: [types.ELECTRIC],
   evolvesTo: [],
 }
-export const JYNX: Pokemon = {
+export const JYNX: PokemonSpecies = {
   id: 'jynx',
   name: 'Jynx',
   types: [types.ICE, types.PSYCHIC],
   evolvesTo: [],
 }
-export const MAGBY: Pokemon = {
+export const MAGBY: PokemonSpecies = {
   id: 'magby',
   name: 'Magby',
   types: [types.FIRE],
   evolvesTo: [MAGMAR],
 }
-export const ELEKID: Pokemon = {
+export const ELEKID: PokemonSpecies = {
   id: 'elekid',
   name: 'Elekid',
   types: [types.ELECTRIC],
   evolvesTo: [ELECTABUZZ],
 }
-export const SMOOCHUM: Pokemon = {
+export const SMOOCHUM: PokemonSpecies = {
   id: 'smoochum',
   name: 'Smoochum',
   types: [types.ICE, types.PSYCHIC],
   evolvesTo: [JYNX],
 }
-export const SCYTHER: Pokemon = {
+export const SCYTHER: PokemonSpecies = {
   id: 'scyther',
   name: 'Scyther',
   types: [types.BUG, types.FLYING],
   evolvesTo: [SCIZOR],
 }
-export const MR_MIME: Pokemon = {
+export const MR_MIME: PokemonSpecies = {
   id: 'mr-mime',
   name: 'Mr. Mime',
   types: [types.PSYCHIC],
   evolvesTo: [],
 }
-export const STARMIE: Pokemon = {
+export const STARMIE: PokemonSpecies = {
   id: 'starmie',
   name: 'Starmie',
   types: [types.WATER, types.PSYCHIC],
   evolvesTo: [],
 }
-export const STARYU: Pokemon = {
+export const STARYU: PokemonSpecies = {
   id: 'staryu',
   name: 'Staryu',
   types: [types.WATER],
   evolvesTo: [STARMIE],
 }
-export const SEAKING: Pokemon = {
+export const SEAKING: PokemonSpecies = {
   id: 'seaking',
   name: 'Seaking',
   types: [types.WATER],
   evolvesTo: [],
 }
-export const GOLDEEN: Pokemon = {
+export const GOLDEEN: PokemonSpecies = {
   id: 'goldeen',
   name: 'Goldeen',
   types: [types.WATER],
   evolvesTo: [SEAKING],
 }
-export const SEADRA: Pokemon = {
+export const SEADRA: PokemonSpecies = {
   id: 'seadra',
   name: 'Seadra',
   types: [types.WATER],
   evolvesTo: [KINGDRA],
 }
-export const HORSEA: Pokemon = {
+export const HORSEA: PokemonSpecies = {
   id: 'horsea',
   name: 'Horsea',
   types: [types.WATER],
   evolvesTo: [SEADRA],
 }
-export const KANGASKHAN: Pokemon = {
+export const KANGASKHAN: PokemonSpecies = {
   id: 'kangaskhan',
   name: 'Kangaskhan',
   types: [types.NORMAL],
   evolvesTo: [],
 }
-export const TANGELA: Pokemon = {
+export const TANGELA: PokemonSpecies = {
   id: 'tangela',
   name: 'Tangela',
   types: [types.GRASS],
   evolvesTo: [],
 }
-export const CHANSEY: Pokemon = {
+export const CHANSEY: PokemonSpecies = {
   id: 'chansey',
   name: 'Chansey',
   types: [types.NORMAL],
   evolvesTo: [BLISSEY],
 }
-export const RHYDON: Pokemon = {
+export const RHYDON: PokemonSpecies = {
   id: 'rhydon',
   name: 'Rhydon',
   types: [types.GROUND, types.ROCK],
   evolvesTo: [],
 }
-export const RHYHORN: Pokemon = {
+export const RHYHORN: PokemonSpecies = {
   id: 'rhyhorn',
   name: 'Rhyhorn',
   types: [types.GROUND, types.ROCK],
   evolvesTo: [RHYDON],
 }
-export const WEEZING: Pokemon = {
+export const WEEZING: PokemonSpecies = {
   id: 'weezing',
   name: 'Weezing',
   types: [types.POISON],
   evolvesTo: [],
 }
-export const KOFFING: Pokemon = {
+export const KOFFING: PokemonSpecies = {
   id: 'koffing',
   name: 'Koffing',
   types: [types.POISON],
   evolvesTo: [WEEZING],
 }
-export const LICKITUNG: Pokemon = {
+export const LICKITUNG: PokemonSpecies = {
   id: 'lickitung',
   name: 'Lickitung',
   types: [types.NORMAL],
   evolvesTo: [],
 }
-export const HITMONCHAN: Pokemon = {
+export const HITMONCHAN: PokemonSpecies = {
   id: 'hitmonchan',
   name: 'Hitmonchan',
   types: [types.FIGHTING],
   evolvesTo: [],
 }
-export const HITMONLEE: Pokemon = {
+export const HITMONLEE: PokemonSpecies = {
   id: 'hitmonlee',
   name: 'Hitmonlee',
   types: [types.FIGHTING],
   evolvesTo: [],
 }
-export const TYROGUE: Pokemon = {
+export const TYROGUE: PokemonSpecies = {
   id: 'tyrogue',
   name: 'Tyrogue',
   types: [types.FIGHTING],
   evolvesTo: [HITMONLEE, HITMONCHAN, HITMONTOP],
 }
-export const MAROWAK: Pokemon = {
+export const MAROWAK: PokemonSpecies = {
   id: 'marowak',
   name: 'Marowak',
   types: [types.GROUND],
   evolvesTo: [],
 }
-export const CUBONE: Pokemon = {
+export const CUBONE: PokemonSpecies = {
   id: 'cubone',
   name: 'Cubone',
   types: [types.GROUND],
   evolvesTo: [MAROWAK],
 }
-export const EXEGGUTOR: Pokemon = {
+export const EXEGGUTOR: PokemonSpecies = {
   id: 'exeggutor',
   name: 'Exeggutor',
   types: [types.GRASS, types.PSYCHIC],
   evolvesTo: [],
 }
-export const EXEGGCUTE: Pokemon = {
+export const EXEGGCUTE: PokemonSpecies = {
   id: 'exeggcute',
   name: 'Exeggcute',
   types: [types.GRASS, types.PSYCHIC],
   evolvesTo: [EXEGGUTOR],
 }
-export const ELECTRODE: Pokemon = {
+export const ELECTRODE: PokemonSpecies = {
   id: 'electrode',
   name: 'Electrode',
   types: [types.ELECTRIC],
   evolvesTo: [],
 }
-export const VOLTORB: Pokemon = {
+export const VOLTORB: PokemonSpecies = {
   id: 'voltorb',
   name: 'Voltorb',
   types: [types.ELECTRIC],
   evolvesTo: [ELECTRODE],
 }
-export const KINGLER: Pokemon = {
+export const KINGLER: PokemonSpecies = {
   id: 'kingler',
   name: 'Kingler',
   types: [types.WATER],
   evolvesTo: [],
 }
-export const KRABBY: Pokemon = {
+export const KRABBY: PokemonSpecies = {
   id: 'krabby',
   name: 'Krabby',
   types: [types.WATER],
   evolvesTo: [KINGLER],
 }
-export const HYPNO: Pokemon = {
+export const HYPNO: PokemonSpecies = {
   id: 'hypno',
   name: 'Hypno',
   types: [types.PSYCHIC],
   evolvesTo: [],
 }
-export const DROWZEE: Pokemon = {
+export const DROWZEE: PokemonSpecies = {
   id: 'drowzee',
   name: 'Drowzee',
   types: [types.PSYCHIC],
   evolvesTo: [HYPNO],
 }
-export const ONIX: Pokemon = {
+export const ONIX: PokemonSpecies = {
   id: 'onix',
   name: 'Onix',
   types: [types.ROCK, types.GROUND],
   evolvesTo: [STEELIX],
 }
-export const GENGAR: Pokemon = {
+export const GENGAR: PokemonSpecies = {
   id: 'gengar',
   name: 'Gengar',
   types: [types.GHOST, types.POISON],
   evolvesTo: [],
 }
-export const HAUNTER: Pokemon = {
+export const HAUNTER: PokemonSpecies = {
   id: 'haunter',
   name: 'Haunter',
   types: [types.GHOST, types.POISON],
   evolvesTo: [GENGAR],
 }
-export const GASTLY: Pokemon = {
+export const GASTLY: PokemonSpecies = {
   id: 'gastly',
   name: 'Gastly',
   types: [types.GHOST, types.POISON],
   evolvesTo: [HAUNTER],
 }
-export const CLOYSTER: Pokemon = {
+export const CLOYSTER: PokemonSpecies = {
   id: 'cloyster',
   name: 'Cloyster',
   types: [types.WATER, types.ICE],
   evolvesTo: [],
 }
-export const SHELLDER: Pokemon = {
+export const SHELLDER: PokemonSpecies = {
   id: 'shellder',
   name: 'Shellder',
   types: [types.WATER],
   evolvesTo: [CLOYSTER],
 }
-export const MUK: Pokemon = {
+export const MUK: PokemonSpecies = {
   id: 'muk',
   name: 'Muk',
   types: [types.POISON],
   evolvesTo: [],
 }
-export const GRIMER: Pokemon = {
+export const GRIMER: PokemonSpecies = {
   id: 'grimer',
   name: 'Grimer',
   types: [types.POISON],
   evolvesTo: [MUK],
 }
-export const DEWGONG: Pokemon = {
+export const DEWGONG: PokemonSpecies = {
   id: 'dewgong',
   name: 'Dewgong',
   types: [types.WATER, types.ICE],
   evolvesTo: [],
 }
-export const SEEL: Pokemon = {
+export const SEEL: PokemonSpecies = {
   id: 'seel',
   name: 'Seel',
   types: [types.WATER],
   evolvesTo: [DEWGONG],
 }
-export const DODRIO: Pokemon = {
+export const DODRIO: PokemonSpecies = {
   id: 'dodrio',
   name: 'Dodrio',
   types: [types.NORMAL, types.FLYING],
   evolvesTo: [],
 }
-export const DODUO: Pokemon = {
+export const DODUO: PokemonSpecies = {
   id: 'doduo',
   name: 'Doduo',
   types: [types.NORMAL, types.FLYING],
   evolvesTo: [DODRIO],
 }
-export const FARFETCHD: Pokemon = {
+export const FARFETCHD: PokemonSpecies = {
   id: 'farfetchd',
   name: "Farfetch'd",
   types: [types.NORMAL, types.FLYING],
   evolvesTo: [],
 }
-export const MAGNETON: Pokemon = {
+export const MAGNETON: PokemonSpecies = {
   id: 'magneton',
   name: 'Magneton',
   types: [types.ELECTRIC, types.STEEL],
   evolvesTo: [],
 }
-export const MAGNEMITE: Pokemon = {
+export const MAGNEMITE: PokemonSpecies = {
   id: 'magnemite',
   name: 'Magnemite',
   types: [types.ELECTRIC, types.STEEL],
   evolvesTo: [MAGNETON],
 }
-export const SLOWBRO: Pokemon = {
+export const SLOWBRO: PokemonSpecies = {
   id: 'slowbro',
   name: 'Slowbro',
   types: [types.WATER, types.PSYCHIC],
   evolvesTo: [],
 }
-export const SLOWPOKE: Pokemon = {
+export const SLOWPOKE: PokemonSpecies = {
   id: 'slowpoke',
   name: 'Slowpoke',
   types: [types.WATER, types.PSYCHIC],
   evolvesTo: [SLOWBRO, SLOWKING],
 }
-export const RAPIDASH: Pokemon = {
+export const RAPIDASH: PokemonSpecies = {
   id: 'rapidash',
   name: 'Rapidash',
   types: [types.FIRE],
   evolvesTo: [],
 }
-export const PONYTA: Pokemon = {
+export const PONYTA: PokemonSpecies = {
   id: 'ponyta',
   name: 'Ponyta',
   types: [types.FIRE],
   evolvesTo: [RAPIDASH],
 }
-export const GOLEM: Pokemon = {
+export const GOLEM: PokemonSpecies = {
   id: 'golem',
   name: 'Golem',
   types: [types.ROCK, types.GROUND],
   evolvesTo: [],
 }
-export const GRAVELER: Pokemon = {
+export const GRAVELER: PokemonSpecies = {
   id: 'graveler',
   name: 'Graveler',
   types: [types.ROCK, types.GROUND],
   evolvesTo: [GOLEM],
 }
-export const GEODUDE: Pokemon = {
+export const GEODUDE: PokemonSpecies = {
   id: 'geodude',
   name: 'Geodude',
   types: [types.ROCK, types.GROUND],
   evolvesTo: [GRAVELER],
 }
-export const TENTACRUEL: Pokemon = {
+export const TENTACRUEL: PokemonSpecies = {
   id: 'tentacruel',
   name: 'Tentacruel',
   types: [types.WATER, types.POISON],
   evolvesTo: [],
 }
-export const TENTACOOL: Pokemon = {
+export const TENTACOOL: PokemonSpecies = {
   id: 'tentacool',
   name: 'Tentacool',
   types: [types.WATER, types.POISON],
   evolvesTo: [TENTACRUEL],
 }
-export const VICTREEBEL: Pokemon = {
+export const VICTREEBEL: PokemonSpecies = {
   id: 'victreebel',
   name: 'Victreebel',
   types: [types.GRASS, types.POISON],
   evolvesTo: [],
 }
-export const WEEPINBELL: Pokemon = {
+export const WEEPINBELL: PokemonSpecies = {
   id: 'weepinbell',
   name: 'Weepinbell',
   types: [types.GRASS, types.POISON],
   evolvesTo: [VICTREEBEL],
 }
-export const BELLSPROUT: Pokemon = {
+export const BELLSPROUT: PokemonSpecies = {
   id: 'bellsprout',
   name: 'Bellsprout',
   types: [types.GRASS, types.POISON],
   evolvesTo: [WEEPINBELL],
 }
-export const MACHAMP: Pokemon = {
+export const MACHAMP: PokemonSpecies = {
   id: 'machamp',
   name: 'Machamp',
   types: [types.FIGHTING],
   evolvesTo: [],
 }
-export const MACHOKE: Pokemon = {
+export const MACHOKE: PokemonSpecies = {
   id: 'machoke',
   name: 'Machoke',
   types: [types.FIGHTING],
   evolvesTo: [MACHAMP],
 }
-export const MACHOP: Pokemon = {
+export const MACHOP: PokemonSpecies = {
   id: 'machop',
   name: 'Machop',
   types: [types.FIGHTING],
   evolvesTo: [MACHOKE],
 }
-export const ALAKAZAM: Pokemon = {
+export const ALAKAZAM: PokemonSpecies = {
   id: 'alakazam',
   name: 'Alakazam',
   types: [types.PSYCHIC],
   evolvesTo: [],
 }
-export const KADABRA: Pokemon = {
+export const KADABRA: PokemonSpecies = {
   id: 'kadabra',
   name: 'Kadabra',
   types: [types.PSYCHIC],
   evolvesTo: [ALAKAZAM],
 }
-export const ABRA: Pokemon = {
+export const ABRA: PokemonSpecies = {
   id: 'abra',
   name: 'Abra',
   types: [types.PSYCHIC],
   evolvesTo: [KADABRA],
 }
-export const POLIWRATH: Pokemon = {
+export const POLIWRATH: PokemonSpecies = {
   id: 'poliwrath',
   name: 'Poliwrath',
   types: [types.WATER, types.FIGHTING],
   evolvesTo: [],
 }
-export const POLIWHIRL: Pokemon = {
+export const POLIWHIRL: PokemonSpecies = {
   id: 'poliwhirl',
   name: 'Poliwhirl',
   types: [types.WATER],
   evolvesTo: [POLIWRATH, POLITOED],
 }
-export const POLIWAG: Pokemon = {
+export const POLIWAG: PokemonSpecies = {
   id: 'poliwag',
   name: 'Poliwag',
   types: [types.WATER],
   evolvesTo: [POLIWHIRL],
 }
-export const ARCANINE: Pokemon = {
+export const ARCANINE: PokemonSpecies = {
   id: 'arcanine',
   name: 'Arcanine',
   types: [types.FIRE],
   evolvesTo: [],
 }
-export const GROWLITHE: Pokemon = {
+export const GROWLITHE: PokemonSpecies = {
   id: 'growlithe',
   name: 'Growlithe',
   types: [types.FIRE],
   evolvesTo: [ARCANINE],
 }
-export const PRIMEAPE: Pokemon = {
+export const PRIMEAPE: PokemonSpecies = {
   id: 'primeape',
   name: 'Primeape',
   types: [types.FIGHTING],
   evolvesTo: [],
 }
-export const MANKEY: Pokemon = {
+export const MANKEY: PokemonSpecies = {
   id: 'mankey',
   name: 'Mankey',
   types: [types.FIGHTING],
   evolvesTo: [PRIMEAPE],
 }
-export const GOLDUCK: Pokemon = {
+export const GOLDUCK: PokemonSpecies = {
   id: 'golduck',
   name: 'Golduck',
   types: [types.WATER],
   evolvesTo: [],
 }
-export const PSYDUCK: Pokemon = {
+export const PSYDUCK: PokemonSpecies = {
   id: 'psyduck',
   name: 'Psyduck',
   types: [types.WATER],
   evolvesTo: [GOLDUCK],
 }
-export const PERSIAN: Pokemon = {
+export const PERSIAN: PokemonSpecies = {
   id: 'persian',
   name: 'Persian',
   types: [types.NORMAL],
   evolvesTo: [],
 }
-export const MEOWTH: Pokemon = {
+export const MEOWTH: PokemonSpecies = {
   id: 'meowth',
   name: 'Meowth',
   types: [types.NORMAL],
   evolvesTo: [PERSIAN],
 }
-export const DUGTRIO: Pokemon = {
+export const DUGTRIO: PokemonSpecies = {
   id: 'dugtrio',
   name: 'Dugtrio',
   types: [types.GROUND],
   evolvesTo: [],
 }
-export const DIGLETT: Pokemon = {
+export const DIGLETT: PokemonSpecies = {
   id: 'diglett',
   name: 'Diglett',
   types: [types.GROUND],
   evolvesTo: [DUGTRIO],
 }
-export const VENOMOTH: Pokemon = {
+export const VENOMOTH: PokemonSpecies = {
   id: 'venomoth',
   name: 'Venomoth',
   types: [types.BUG, types.POISON],
   evolvesTo: [],
 }
-export const VENONAT: Pokemon = {
+export const VENONAT: PokemonSpecies = {
   id: 'venonat',
   name: 'Venonat',
   types: [types.BUG, types.POISON],
   evolvesTo: [VENOMOTH],
 }
-export const PARASECT: Pokemon = {
+export const PARASECT: PokemonSpecies = {
   id: 'parasect',
   name: 'Parasect',
   types: [types.BUG, types.GRASS],
   evolvesTo: [],
 }
-export const PARAS: Pokemon = {
+export const PARAS: PokemonSpecies = {
   id: 'paras',
   name: 'Paras',
   types: [types.BUG, types.GRASS],
   evolvesTo: [PARASECT],
 }
-export const VILEPLUME: Pokemon = {
+export const VILEPLUME: PokemonSpecies = {
   id: 'vileplume',
   name: 'Vileplume',
   types: [types.GRASS, types.POISON],
   evolvesTo: [],
 }
-export const GLOOM: Pokemon = {
+export const GLOOM: PokemonSpecies = {
   id: 'gloom',
   name: 'Gloom',
   types: [types.GRASS, types.POISON],
   evolvesTo: [VILEPLUME, BELLOSSOM],
 }
-export const ODDISH: Pokemon = {
+export const ODDISH: PokemonSpecies = {
   id: 'oddish',
   name: 'Oddish',
   types: [types.GRASS, types.POISON],
   evolvesTo: [GLOOM],
 }
-export const GOLBAT: Pokemon = {
+export const GOLBAT: PokemonSpecies = {
   id: 'golbat',
   name: 'Golbat',
   types: [types.POISON, types.FLYING],
   evolvesTo: [CROBAT],
 }
-export const ZUBAT: Pokemon = {
+export const ZUBAT: PokemonSpecies = {
   id: 'zubat',
   name: 'Zubat',
   types: [types.POISON, types.FLYING],
   evolvesTo: [GOLBAT],
 }
-export const WIGGLYTUFF: Pokemon = {
+export const WIGGLYTUFF: PokemonSpecies = {
   id: 'wigglytuff',
   name: 'Wigglytuff',
   types: [types.NORMAL],
   evolvesTo: [],
 }
-export const JIGGLYPUFF: Pokemon = {
+export const JIGGLYPUFF: PokemonSpecies = {
   id: 'jigglypuff',
   name: 'Jigglypuff',
   types: [types.NORMAL],
   evolvesTo: [WIGGLYTUFF],
 }
-export const NINETALES: Pokemon = {
+export const NINETALES: PokemonSpecies = {
   id: 'ninetales',
   name: 'Ninetales',
   types: [types.FIRE],
   evolvesTo: [],
 }
-export const VULPIX: Pokemon = {
+export const VULPIX: PokemonSpecies = {
   id: 'vulpix',
   name: 'Vulpix',
   types: [types.FIRE],
   evolvesTo: [NINETALES],
 }
-export const CLEFABLE: Pokemon = {
+export const CLEFABLE: PokemonSpecies = {
   id: 'clefable',
   name: 'Clefable',
   types: [types.NORMAL],
   evolvesTo: [],
 }
-export const CLEFAIRY: Pokemon = {
+export const CLEFAIRY: PokemonSpecies = {
   id: 'clefairy',
   name: 'Clefairy',
   types: [types.NORMAL],
   evolvesTo: [CLEFABLE],
 }
-export const IGGLYBUFF: Pokemon = {
+export const IGGLYBUFF: PokemonSpecies = {
   id: 'igglybuff',
   name: 'Igglybuff',
   types: [types.NORMAL],
   evolvesTo: [JIGGLYPUFF],
 }
-export const CLEFFA: Pokemon = {
+export const CLEFFA: PokemonSpecies = {
   id: 'cleffa',
   name: 'Cleffa',
   types: [types.NORMAL],
   evolvesTo: [CLEFAIRY],
 }
-export const NIDOKING: Pokemon = {
+export const NIDOKING: PokemonSpecies = {
   id: 'nidoking',
   name: 'Nidoking',
   types: [types.POISON, types.GROUND],
   evolvesTo: [],
 }
-export const NIDORINO: Pokemon = {
+export const NIDORINO: PokemonSpecies = {
   id: 'nidorino',
   name: 'Nidorino',
   types: [types.POISON],
   evolvesTo: [NIDOKING],
 }
-export const NIDORAN_M: Pokemon = {
+export const NIDORAN_M: PokemonSpecies = {
   id: 'nidoran-m',
   name: 'Nidoran ♂',
   types: [types.POISON],
   evolvesTo: [NIDORINO],
 }
-export const NIDOQUEEN: Pokemon = {
+export const NIDOQUEEN: PokemonSpecies = {
   id: 'nidoqueen',
   name: 'Nidoqueen',
   types: [types.POISON, types.GROUND],
   evolvesTo: [],
 }
-export const NIDORINA: Pokemon = {
+export const NIDORINA: PokemonSpecies = {
   id: 'nidorina',
   name: 'Nidorina',
   types: [types.POISON],
   evolvesTo: [NIDOQUEEN],
 }
-export const NIDORAN_F: Pokemon = {
+export const NIDORAN_F: PokemonSpecies = {
   id: 'nidoran-f',
   name: 'Nidoran ♀',
   types: [types.POISON],
   evolvesTo: [NIDORINA],
 }
-export const SANDSLASH: Pokemon = {
+export const SANDSLASH: PokemonSpecies = {
   id: 'sandslash',
   name: 'Sandslash',
   types: [types.GROUND],
   evolvesTo: [],
 }
-export const SANDSHREW: Pokemon = {
+export const SANDSHREW: PokemonSpecies = {
   id: 'sandshrew',
   name: 'Sandshrew',
   types: [types.GROUND],
   evolvesTo: [SANDSLASH],
 }
-export const RAICHU: Pokemon = {
+export const RAICHU: PokemonSpecies = {
   id: 'raichu',
   name: 'Raichu',
   types: [types.ELECTRIC],
   evolvesTo: [],
 }
-export const PIKACHU: Pokemon = {
+export const PIKACHU: PokemonSpecies = {
   id: 'pikachu',
   name: 'Pikachu',
   types: [types.ELECTRIC],
   evolvesTo: [RAICHU],
 }
-export const PICHU: Pokemon = {
+export const PICHU: PokemonSpecies = {
   id: 'pichu',
   name: 'Pichu',
   types: [types.ELECTRIC],
   evolvesTo: [PIKACHU],
 }
-export const ARBOK: Pokemon = {
+export const ARBOK: PokemonSpecies = {
   id: 'arbok',
   name: 'Arbok',
   types: [types.POISON],
   evolvesTo: [],
 }
-export const EKANS: Pokemon = {
+export const EKANS: PokemonSpecies = {
   id: 'ekans',
   name: 'Ekans',
   types: [types.POISON],
   evolvesTo: [ARBOK],
 }
-export const FEAROW: Pokemon = {
+export const FEAROW: PokemonSpecies = {
   id: 'fearow',
   name: 'Fearow',
   types: [types.NORMAL, types.FLYING],
   evolvesTo: [],
 }
-export const SPEAROW: Pokemon = {
+export const SPEAROW: PokemonSpecies = {
   id: 'spearow',
   name: 'Spearow',
   types: [types.NORMAL, types.FLYING],
   evolvesTo: [FEAROW],
 }
-export const RATICATE: Pokemon = {
+export const RATICATE: PokemonSpecies = {
   id: 'raticate',
   name: 'Raticate',
   types: [types.NORMAL],
   evolvesTo: [],
 }
-export const RATTATA: Pokemon = {
+export const RATTATA: PokemonSpecies = {
   id: 'rattata',
   name: 'Rattata',
   types: [types.NORMAL],
   evolvesTo: [RATICATE],
 }
-export const PIDGEOT: Pokemon = {
+export const PIDGEOT: PokemonSpecies = {
   id: 'pidgeot',
   name: 'Pidgeot',
   types: [types.NORMAL, types.FLYING],
   evolvesTo: [],
 }
-export const PIDGEOTTO: Pokemon = {
+export const PIDGEOTTO: PokemonSpecies = {
   id: 'pidgeotto',
   name: 'Pidgeotto',
   types: [types.NORMAL, types.FLYING],
   evolvesTo: [PIDGEOT],
 }
-export const PIDGEY: Pokemon = {
+export const PIDGEY: PokemonSpecies = {
   id: 'pidgey',
   name: 'Pidgey',
   types: [types.NORMAL, types.FLYING],
   evolvesTo: [PIDGEOTTO],
 }
-export const BEEDRILL: Pokemon = {
+export const BEEDRILL: PokemonSpecies = {
   id: 'beedrill',
   name: 'Beedrill',
   types: [types.BUG, types.POISON],
   evolvesTo: [],
 }
-export const KAKUNA: Pokemon = {
+export const KAKUNA: PokemonSpecies = {
   id: 'kakuna',
   name: 'Kakuna',
   types: [types.BUG, types.POISON],
   evolvesTo: [BEEDRILL],
 }
-export const WEEDLE: Pokemon = {
+export const WEEDLE: PokemonSpecies = {
   id: 'weedle',
   name: 'Weedle',
   types: [types.BUG, types.POISON],
   evolvesTo: [KAKUNA],
 }
-export const BUTTERFREE: Pokemon = {
+export const BUTTERFREE: PokemonSpecies = {
   id: 'butterfree',
   name: 'Butterfree',
   types: [types.BUG, types.FLYING],
   evolvesTo: [],
 }
-export const METAPOD: Pokemon = {
+export const METAPOD: PokemonSpecies = {
   id: 'metapod',
   name: 'Metapod',
   types: [types.BUG],
   evolvesTo: [BUTTERFREE],
 }
-export const CATERPIE: Pokemon = {
+export const CATERPIE: PokemonSpecies = {
   id: 'caterpie',
   name: 'Caterpie',
   types: [types.BUG],
   evolvesTo: [METAPOD],
 }
-export const BLASTOISE: Pokemon = {
+export const BLASTOISE: PokemonSpecies = {
   id: 'blastoise',
   name: 'Blastoise',
   types: [types.WATER],
   evolvesTo: [],
 }
-export const WARTORTLE: Pokemon = {
+export const WARTORTLE: PokemonSpecies = {
   id: 'wartortle',
   name: 'Wartortle',
   types: [types.WATER],
   evolvesTo: [BLASTOISE],
 }
-export const SQUIRTLE: Pokemon = {
+export const SQUIRTLE: PokemonSpecies = {
   id: 'squirtle',
   name: 'Squirtle',
   types: [types.WATER],
   evolvesTo: [WARTORTLE],
 }
-export const CHARIZARD: Pokemon = {
+export const CHARIZARD: PokemonSpecies = {
   id: 'charizard',
   name: 'Charizard',
   types: [types.FIRE, types.FLYING],
   evolvesTo: [],
 }
-export const CHARMELEON: Pokemon = {
+export const CHARMELEON: PokemonSpecies = {
   id: 'charmeleon',
   name: 'Charmeleon',
   types: [types.FIRE],
   evolvesTo: [CHARIZARD],
 }
-export const CHARMANDER: Pokemon = {
+export const CHARMANDER: PokemonSpecies = {
   id: 'charmander',
   name: 'Charmander',
   types: [types.FIRE],
   evolvesTo: [CHARMELEON],
 }
-export const VENUSAUR: Pokemon = {
+export const VENUSAUR: PokemonSpecies = {
   id: 'venusaur',
   name: 'Venusaur',
   types: [types.GRASS, types.POISON],
   evolvesTo: [],
 }
-export const IVYSAUR: Pokemon = {
+export const IVYSAUR: PokemonSpecies = {
   id: 'ivysaur',
   name: 'Ivysaur',
   types: [types.GRASS, types.POISON],
   evolvesTo: [VENUSAUR],
 }
-export const BULBASAUR: Pokemon = {
+export const BULBASAUR: PokemonSpecies = {
   id: 'bulbasaur',
   name: 'Bulbasaur',
   types: [types.GRASS, types.POISON],
   evolvesTo: [IVYSAUR],
 }
 
-const data: Pokemon[] = [
+const data: PokemonSpecies[] = [
   BULBASAUR,
   IVYSAUR,
   VENUSAUR,

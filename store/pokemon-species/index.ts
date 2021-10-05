@@ -1,22 +1,22 @@
-import Pokemon from '~/domains/Pokemon'
+import PokemonSpecies from '~/domains/PokemonSpecies'
 import { $axios } from '~/utils/api'
 
 const capitalize = (s: string) => {
   return s[0].toUpperCase() + s.slice(1)
 }
 
-interface PokemonState {
-  list: Pokemon[]
+interface PokemonSpeciesState {
+  list: PokemonSpecies[]
 }
 
 export default {
   namespaced: true,
   state: {
     list: [],
-  } as PokemonState,
+  } as PokemonSpeciesState,
   getters: {},
   mutations: {
-    setList: (state: PokemonState, list: Pokemon[]): void => {
+    setList: (state: PokemonSpeciesState, list: PokemonSpecies[]): void => {
       state.list = list
     },
   },
@@ -25,9 +25,9 @@ export default {
       const min = 1
       const max = 251
       const ps: Promise<any>[] = []
-      const pokemon: Pokemon[] = []
+      const pokemonSpecies: PokemonSpecies[] = []
       for (let index = min; index <= max; index++) {
-        // get data for single pokemon
+        // get data for single pokemonSpecies
         const { name, types: typesTemp } = await $axios.$get(
           `/pokemon/${index}`
         )
@@ -36,7 +36,7 @@ export default {
           .map((type: any) => type.type.name)
           .map((typeName: string) => `types.${typeName.toUpperCase()}`)
 
-        pokemon.push({
+        pokemonSpecies.push({
           id: name,
           name: capitalize(name),
           types: actualTypeStrings as any,
@@ -45,7 +45,7 @@ export default {
       }
       await Promise.all(ps)
 
-      commit('setList', pokemon)
+      commit('setList', pokemonSpecies)
     },
   },
 }
