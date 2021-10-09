@@ -2,6 +2,9 @@ import Map from './Map'
 
 export default interface Location {
   map: Map // only use maps imported from './Maps' here
-  x: number // in tiles
-  y: number // in tiles
+  // all numbers in amount of tiles
+  x: number
+  y: number
+  width?: number
+  height?: number
 }

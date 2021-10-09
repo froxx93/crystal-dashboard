@@ -3,7 +3,7 @@
     <p>
       <strong>{{ location.map.name }}</strong>
     </p>
-    <map-wrapper :map="location.map" :marker="marker" />
+    <map-wrapper :map="location.map" :markers="[marker]" />
   </b-col>
 </template>
 

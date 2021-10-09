@@ -1,5 +1,9 @@
 import TrainerType from '~/domains/TrainerType'
 
+const ACE_TRAINER: TrainerType = {
+  id: 'ace-trainer',
+  name: 'Ace Trainer',
+}
 const BEAUTY: TrainerType = {
   id: 'beauty',
   name: 'Beauty',
@@ -28,9 +32,9 @@ const BURGLAR: TrainerType = {
   id: 'burglar',
   name: 'Burglar',
 }
-const ACE_TRAINER: TrainerType = {
-  id: 'ace-trainer',
-  name: 'Ace Trainer',
+const CAMPER: TrainerType = {
+  id: 'camper',
+  name: 'Camper',
 }
 const FIREBREATHER: TrainerType = {
   id: 'firebreather',
@@ -56,14 +60,6 @@ const HIKER: TrainerType = {
   id: 'hiker',
   name: 'Hiker',
 }
-const CAMPER: TrainerType = {
-  id: 'camper',
-  name: 'Camper',
-}
-const PICNICKER: TrainerType = {
-  id: 'picnicker',
-  name: 'Picnicker',
-}
 const JUGGLER: TrainerType = {
   id: 'juggler',
   name: 'Juggler',
@@ -88,6 +84,10 @@ const OFFICER: TrainerType = {
   id: 'officer',
   name: 'Officer',
 }
+const PICNICKER: TrainerType = {
+  id: 'picnicker',
+  name: 'Picnicker',
+}
 const POKE_FAN: TrainerType = {
   id: 'poke-fan',
   name: 'Poké Fan',
@@ -103,10 +103,6 @@ const PSYCHIC: TrainerType = {
 const ROCKET_EXECUTIVE: TrainerType = {
   id: 'rocket-executive',
   name: 'Rocket Executive',
-}
-const TEAM_ROCKET_GRUNT: TrainerType = {
-  id: 'team-rocket-grunt',
-  name: 'Team Rocket Grunt',
 }
 const SAGE: TrainerType = {
   id: 'sage',
@@ -140,6 +136,10 @@ const TEACHER: TrainerType = {
   id: 'teacher',
   name: 'Teacher',
 }
+const TEAM_ROCKET_GRUNT: TrainerType = {
+  id: 'team-rocket-grunt',
+  name: 'Team Rocket Grunt',
+}
 const TWINS: TrainerType = {
   id: 'twins',
   name: 'Twins',
@@ -150,6 +150,7 @@ const YOUNGSTER: TrainerType = {
 }
 
 const data: TrainerType[] = [
+  ACE_TRAINER,
   BEAUTY,
   BIKER,
   BIRD_KEEPER,
@@ -157,26 +158,24 @@ const data: TrainerType[] = [
   BOARDER,
   BUG_CATCHER,
   BURGLAR,
-  ACE_TRAINER,
+  CAMPER,
   FIREBREATHER,
   FISHER,
   GAMER,
   GENTLEMAN,
   GUITARIST,
   HIKER,
-  CAMPER,
-  PICNICKER,
   JUGGLER,
   KIMONO_GIRL,
   LASS,
   MEDIUM,
   MYSTICALMAN,
   OFFICER,
+  PICNICKER,
   POKE_FAN,
   POKE_MANIAC,
   PSYCHIC,
   ROCKET_EXECUTIVE,
-  TEAM_ROCKET_GRUNT,
   SAGE,
   SAILOR,
   SCHOOLBOY,
@@ -185,6 +184,7 @@ const data: TrainerType[] = [
   SUPER_NERD,
   SWIMMER,
   TEACHER,
+  TEAM_ROCKET_GRUNT,
   TWINS,
   YOUNGSTER,
 ]
@@ -192,6 +192,7 @@ const data: TrainerType[] = [
 export default data
 
 export {
+  ACE_TRAINER,
   BEAUTY,
   BIKER,
   BIRD_KEEPER,
@@ -199,26 +200,24 @@ export {
   BOARDER,
   BUG_CATCHER,
   BURGLAR,
-  ACE_TRAINER,
+  CAMPER,
   FIREBREATHER,
   FISHER,
   GAMER,
   GENTLEMAN,
   GUITARIST,
   HIKER,
-  CAMPER,
-  PICNICKER,
   JUGGLER,
   KIMONO_GIRL,
   LASS,
   MEDIUM,
   MYSTICALMAN,
   OFFICER,
+  PICNICKER,
   POKE_FAN,
   POKE_MANIAC,
   PSYCHIC,
   ROCKET_EXECUTIVE,
-  TEAM_ROCKET_GRUNT,
   SAGE,
   SAILOR,
   SCHOOLBOY,
@@ -227,6 +226,7 @@ export {
   SUPER_NERD,
   SWIMMER,
   TEACHER,
+  TEAM_ROCKET_GRUNT,
   TWINS,
   YOUNGSTER,
 }

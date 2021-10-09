@@ -2,11 +2,12 @@
   <div class="map-wrapper">
     <b-img :src="getFilePath(map)" alt="map" />
     <div
-      v-if="marker"
+      v-for="(marker, index) in markers"
+      :key="index"
       class="marker"
       :style="`
-        width: calc(100% / ${map.width});
-        height: calc(100% / ${map.height});
+        width: calc(100% / ${map.width} * ${marker.width || 1});
+        height: calc(100% / ${map.height} * ${marker.height || 1});
         left: calc(100% / ${map.width} * ${marker.x});
         top: calc(100% / ${map.height} * ${marker.y});
       `"
@@ -15,7 +16,7 @@
 </template>
 
 <script lang="ts">
-import { getFilePath } from '@/utils/mapUtils'
+import { getFilePath } from '~/utils/mapUtils'
 import Map from '~/domains/Map'
 import Marker from '~/domains/Marker'
 
@@ -25,9 +26,9 @@ export default {
       type: Object as () => Map,
       required: true,
     },
-    marker: {
-      type: Object as () => Marker | undefined,
-      default: undefined,
+    markers: {
+      type: Array as () => Marker[],
+      default: () => [],
     },
   },
   data() {

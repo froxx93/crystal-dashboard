@@ -1,8 +1,12 @@
-import Map from '~/domains/Map'
+import Map, { MapType } from '~/domains/Map'
 
-export const getDeepestParent = (map: Map): Map => {
+export const getMapParent = (map: Map, type: MapType = 'region'): Map => {
+  if (map.type === type) {
+    return map
+  }
+
   if (map.parentLocation) {
-    return getDeepestParent(map.parentLocation.map)
+    return getMapParent(map.parentLocation.map, type)
   } else {
     // If no parentLocation is defined, type should be region
     return map

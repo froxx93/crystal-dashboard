@@ -88,26 +88,28 @@ const ROUTE_29: Map = {
   id: 'route-29',
   name: 'Route 29',
   type: 'area',
-  width: 3,
-  height: 3,
+  width: 60,
+  height: 22,
   fileName: 'route-29.jpeg',
   parentLocation: {
     map: JOHTO,
-    x: 1,
-    y: 2,
+    x: 12,
+    y: 9,
+    width: 4,
   },
 }
 const ROUTE_30: Map = {
   id: 'route-30',
   name: 'Route 30',
   type: 'area',
-  width: 3,
-  height: 3,
+  width: 28,
+  height: 54,
   fileName: 'route-30.jpeg',
   parentLocation: {
     map: JOHTO,
-    x: 1,
-    y: 2,
+    x: 11,
+    y: 5,
+    height: 4,
   },
 }
 const ROUTE_31: Map = {
@@ -133,7 +135,8 @@ const ROUTE_32: Map = {
   parentLocation: {
     map: JOHTO,
     x: 9,
-    y: 8,
+    y: 5,
+    height: 7,
   },
 }
 const ROUTE_33: Map = {
@@ -159,7 +162,8 @@ const ROUTE_34: Map = {
   parentLocation: {
     map: JOHTO,
     x: 5,
-    y: 10,
+    y: 9,
+    height: 4,
   },
 }
 const ROUTE_35: Map = {
@@ -172,7 +176,8 @@ const ROUTE_35: Map = {
   parentLocation: {
     map: JOHTO,
     x: 5,
-    y: 6,
+    y: 5,
+    height: 3,
   },
 }
 const ROUTE_36: Map = {
@@ -184,8 +189,9 @@ const ROUTE_36: Map = {
   fileName: 'route-36.jpeg',
   parentLocation: {
     map: JOHTO,
-    x: 7,
+    x: 6,
     y: 4,
+    width: 3,
   },
 }
 const ROUTE_37: Map = {
@@ -197,8 +203,8 @@ const ROUTE_37: Map = {
   fileName: 'route-37.jpeg',
   parentLocation: {
     map: JOHTO,
-    x: 1,
-    y: 2,
+    x: 7,
+    y: 3,
   },
 }
 const ROUTE_38: Map = {
@@ -210,8 +216,9 @@ const ROUTE_38: Map = {
   fileName: 'route-38.jpeg',
   parentLocation: {
     map: JOHTO,
-    x: 1,
+    x: 4,
     y: 2,
+    width: 3,
   },
 }
 const ROUTE_39: Map = {
@@ -224,7 +231,8 @@ const ROUTE_39: Map = {
   parentLocation: {
     map: JOHTO,
     x: 3,
-    y: 3,
+    y: 2,
+    height: 2,
   },
 }
 const ROUTE_40: Map = {
@@ -236,8 +244,9 @@ const ROUTE_40: Map = {
   fileName: 'route-40.jpeg',
   parentLocation: {
     map: JOHTO,
-    x: 1,
-    y: 2,
+    x: 2,
+    y: 4,
+    height: 3,
   },
 }
 const ROUTE_41: Map = {
@@ -249,8 +258,9 @@ const ROUTE_41: Map = {
   fileName: 'route-41.jpeg',
   parentLocation: {
     map: JOHTO,
-    x: 1,
-    y: 2,
+    x: 2,
+    y: 7,
+    height: 3,
   },
 }
 const ROUTE_42: Map = {
@@ -262,8 +272,9 @@ const ROUTE_42: Map = {
   fileName: 'route-42.jpeg',
   parentLocation: {
     map: JOHTO,
-    x: 10,
+    x: 8,
     y: 2,
+    width: 4,
   },
 }
 const ROUTE_43: Map = {
@@ -288,8 +299,9 @@ const ROUTE_44: Map = {
   fileName: 'route-44.jpeg',
   parentLocation: {
     map: JOHTO,
-    x: 14,
+    x: 13,
     y: 2,
+    width: 2,
   },
 }
 const ROUTE_45: Map = {
@@ -302,7 +314,8 @@ const ROUTE_45: Map = {
   parentLocation: {
     map: JOHTO,
     x: 15,
-    y: 4,
+    y: 3,
+    height: 4,
   },
 }
 const ROUTE_46: Map = {
@@ -314,8 +327,9 @@ const ROUTE_46: Map = {
   fileName: 'route-46.jpeg',
   parentLocation: {
     map: JOHTO,
-    x: 1,
-    y: 2,
+    x: 14,
+    y: 6,
+    height: 3,
   },
 }
 const CIANWOOD_CITY: Map = {
@@ -1109,7 +1123,7 @@ const DARK_CAVE_OUTER: Map = {
   },
 }
 
-export default {
+export default [
   // worlds
   JOHTO,
   KANTO,
@@ -1155,6 +1169,98 @@ export default {
   LAKE_OF_RAGE,
   ROCK_TUNNEL_1F,
 
+  // houses
+  CIANWOOD_GYM,
+  CELADON_CONDOMINIUMS_4F,
+  FUCHSIA_GYM,
+  POWER_PLANT,
+  CELADON_DEPARTMENT_STORE_3F,
+  ROUTE_34_ENTRANCE,
+  MOOMOO_FARM,
+  GOLDENROD_GAME_CORNER,
+  CELADON_GAME_CORNER,
+  MR_PSYCHICS_HOUSE,
+  MAHAGONY_GYM,
+  SLOWPOKE_WELL_B2F,
+  CELADON_GYM,
+  BURNED_TOWER_B1F,
+  GOLDENROD_DEPARTMENT_STORE_5F,
+  OLIVINE_GYM,
+  BLACKTHORN_GYM,
+  VICTORY_ROAD_1F,
+  ECRUTEAK_GYM,
+  VIOLET_GYM,
+  LIGHTHOUSE_5F,
+  GOLDENROD_UNDERGROUND_WAREHOUSE,
+  ROUTE_43_PASSAGE,
+  UNION_CAVE_B1F,
+  MT_MORTAR_2F,
+  ICE_PATH_B2FA,
+  ICE_PATH_B2FB,
+  GOLDENROD_GYM,
+  ROCKET_HIDEOUT_B1F,
+  ROCKET_HIDEOUT_B2F,
+  ROCKET_HIDEOUT_B3F,
+  ROUTE_28_HOUSE,
+  AZALEA_GYM,
+  POKEMON_CENTER_2F,
+  ECRUTEAK_DANCE_THEATER,
+  OLIVINE_CAFE,
+  SPROUT_TOWER_1F,
+  SPROUT_TOWER_2F,
+  SPROUT_TOWER_3F,
+  ICE_PATH_1F,
+  ROUTE_27_HOUSE,
+  LAKE_OF_RAGE_HOUSE,
+  GOLDENROD_RADIO_TOWER_3F,
+  DARK_CAVE_INNER,
+  DARK_CAVE_OUTER,
+]
+
+export {
+  // worlds
+  JOHTO,
+  KANTO,
+  // routes and cities
+  ROUTE_9,
+  ROUTE_10,
+  ROUTE_23,
+  ROUTE_27,
+  ROUTE_28,
+  ROUTE_29,
+  ROUTE_30,
+  ROUTE_31,
+  ROUTE_32,
+  ROUTE_33,
+  ROUTE_34,
+  ROUTE_35,
+  ROUTE_36,
+  ROUTE_37,
+  ROUTE_38,
+  ROUTE_39,
+  ROUTE_40,
+  ROUTE_41,
+  ROUTE_42,
+  ROUTE_43,
+  ROUTE_44,
+  ROUTE_45,
+  ROUTE_46,
+  CIANWOOD_CITY,
+  ILEX_FOREST,
+  CELADON_CITY,
+  FUCHSIA_CITY,
+  GOLDENROD_CITY,
+  SAFFRON_CITY,
+  MAHAGONY_TOWN,
+  AZALEA_TOWN,
+  ECRUTEAK_CITY,
+  OLIVINE_CITY,
+  BLACKTHORN_CITY,
+  NATIONAL_PARK,
+  VIOLET_CITY,
+  VERIDIAN_CITY,
+  LAKE_OF_RAGE,
+  ROCK_TUNNEL_1F,
   // houses
   CIANWOOD_GYM,
   CELADON_CONDOMINIUMS_4F,

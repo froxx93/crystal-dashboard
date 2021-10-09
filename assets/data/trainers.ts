@@ -1,5 +1,6 @@
 import * as TRAINER_TYPES from './trainerTypes'
 import * as POKEMON_SPECIES from './pokemonSpecies'
+import * as MAPS from './maps'
 import Trainer from '~/domains/Trainer'
 
 // beauty
@@ -17,6 +18,11 @@ const BEAUTY_CASSIE: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BEAUTY_JULIA: Trainer = {
   id: 'beauty-julia',
@@ -36,6 +42,11 @@ const BEAUTY_JULIA: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BEAUTY_OLIVIA: Trainer = {
   id: 'beauty-olivia',
@@ -47,6 +58,11 @@ const BEAUTY_OLIVIA: Trainer = {
       level: 19,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BEAUTY_SAMANTHA: Trainer = {
   id: 'beauty-samantha',
@@ -62,6 +78,11 @@ const BEAUTY_SAMANTHA: Trainer = {
       level: 16,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BEAUTY_VALERIE: Trainer = {
   id: 'beauty-valerie',
@@ -77,6 +98,11 @@ const BEAUTY_VALERIE: Trainer = {
       level: 16,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BEAUTY_VICTORIA: Trainer = {
   id: 'beauty-victoria',
@@ -96,6 +122,11 @@ const BEAUTY_VICTORIA: Trainer = {
       level: 17,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // biker
@@ -117,6 +148,11 @@ const BIKER_CHARLES: Trainer = {
       level: 30,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BIKER_DWAYNE: Trainer = {
   id: 'biker-dwayne',
@@ -140,6 +176,11 @@ const BIKER_DWAYNE: Trainer = {
       level: 30,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BIKER_GLENN: Trainer = {
   id: 'biker-glenn',
@@ -159,6 +200,11 @@ const BIKER_GLENN: Trainer = {
       level: 30,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BIKER_HARRIS: Trainer = {
   id: 'biker-harris',
@@ -170,6 +216,11 @@ const BIKER_HARRIS: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BIKER_JOEL: Trainer = {
   id: 'biker-joel',
@@ -185,6 +236,11 @@ const BIKER_JOEL: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BIKER_RILEY: Trainer = {
   id: 'biker-riley',
@@ -196,6 +252,11 @@ const BIKER_RILEY: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BIKER_ZEKE: Trainer = {
   id: 'biker-zeke',
@@ -211,6 +272,11 @@ const BIKER_ZEKE: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // bird keepers
@@ -224,6 +290,11 @@ const BIRD_KEEPER_ABE: Trainer = {
       level: 9,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BIRD_KEEPER_BOB: Trainer = {
   id: 'bird-keeper-bob',
@@ -235,6 +306,11 @@ const BIRD_KEEPER_BOB: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BIRD_KEEPER_BORIS: Trainer = {
   id: 'bird-keeper-boris',
@@ -254,6 +330,11 @@ const BIRD_KEEPER_BORIS: Trainer = {
       level: 28,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BIRD_KEEPER_BRET: Trainer = {
   id: 'bird-keeper-bret',
@@ -269,6 +350,11 @@ const BIRD_KEEPER_BRET: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BIRD_KEEPER_BRYAN: Trainer = {
   id: 'bird-keeper-bryan',
@@ -284,6 +370,11 @@ const BIRD_KEEPER_BRYAN: Trainer = {
       level: 14,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BIRD_KEEPER_DENIS: Trainer = {
   id: 'bird-keeper-denis',
@@ -303,6 +394,11 @@ const BIRD_KEEPER_DENIS: Trainer = {
       level: 20,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BIRD_KEEPER_JOSE: Trainer = {
   id: 'bird-keeper-jose',
@@ -314,6 +410,11 @@ const BIRD_KEEPER_JOSE: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BIRD_KEEPER_HANK: Trainer = {
   id: 'bird-keeper-hank',
@@ -329,6 +430,11 @@ const BIRD_KEEPER_HANK: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BIRD_KEEPER_PERRY: Trainer = {
   id: 'bird-keeper-perry',
@@ -340,6 +446,11 @@ const BIRD_KEEPER_PERRY: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BIRD_KEEPER_PETER: Trainer = {
   id: 'bird-keeper-peter',
@@ -359,6 +470,11 @@ const BIRD_KEEPER_PETER: Trainer = {
       level: 8,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BIRD_KEEPER_ROD: Trainer = {
   id: 'bird-keeper-rod',
@@ -374,6 +490,11 @@ const BIRD_KEEPER_ROD: Trainer = {
       level: 7,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BIRD_KEEPER_ROY: Trainer = {
   id: 'bird-keeper-roy',
@@ -389,6 +510,11 @@ const BIRD_KEEPER_ROY: Trainer = {
       level: 35,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BIRD_KEEPER_THEO: Trainer = {
   id: 'bird-keeper-theo',
@@ -416,6 +542,11 @@ const BIRD_KEEPER_THEO: Trainer = {
       level: 15,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BIRD_KEEPER_TOBY: Trainer = {
   id: 'bird-keeper-toby',
@@ -435,6 +566,11 @@ const BIRD_KEEPER_TOBY: Trainer = {
       level: 17,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BIRD_KEEPER_VANCE: Trainer = {
   id: 'bird-keeper-vance',
@@ -450,6 +586,11 @@ const BIRD_KEEPER_VANCE: Trainer = {
       level: 25,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // black belt
@@ -463,6 +604,11 @@ const BLACK_BELT_KENJI: Trainer = {
       level: 28,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BLACK_BELT_KIYO: Trainer = {
   id: 'black-belt-kiyo',
@@ -478,6 +624,11 @@ const BLACK_BELT_KIYO: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BLACK_BELT_LAO: Trainer = {
   id: 'black-belt-lao',
@@ -489,6 +640,11 @@ const BLACK_BELT_LAO: Trainer = {
       level: 27,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BLACK_BELT_LUNG: Trainer = {
   id: 'black-belt-lung',
@@ -508,6 +664,11 @@ const BLACK_BELT_LUNG: Trainer = {
       level: 25,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BLACK_BELT_NOB: Trainer = {
   id: 'black-belt-nob',
@@ -523,6 +684,11 @@ const BLACK_BELT_NOB: Trainer = {
       level: 25,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BLACK_BELT_WAI: Trainer = {
   id: 'black-belt-wai',
@@ -542,6 +708,11 @@ const BLACK_BELT_WAI: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BLACK_BELT_YOSHI: Trainer = {
   id: 'black-belt-yoshi',
@@ -553,6 +724,11 @@ const BLACK_BELT_YOSHI: Trainer = {
       level: 27,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // boarder
@@ -570,6 +746,11 @@ const BOARDER_BRAD: Trainer = {
       level: 26,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BOARDER_DOUGLAS: Trainer = {
   id: 'boarder-douglas',
@@ -589,6 +770,11 @@ const BOARDER_DOUGLAS: Trainer = {
       level: 25,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BOARDER_RONALD: Trainer = {
   id: 'boarder-ronald',
@@ -608,6 +794,11 @@ const BOARDER_RONALD: Trainer = {
       level: 25,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // bug catcher
@@ -625,6 +816,11 @@ const BUG_CATCHER_AL: Trainer = {
       level: 12,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BUG_CATCHER_ARNIE: Trainer = {
   id: 'bug-catcher-arnie',
@@ -636,6 +832,11 @@ const BUG_CATCHER_ARNIE: Trainer = {
       level: 15,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BUG_CATCHER_BENNY: Trainer = {
   id: 'bug-catcher-benny',
@@ -655,6 +856,11 @@ const BUG_CATCHER_BENNY: Trainer = {
       level: 12,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BUG_CATCHER_DON: Trainer = {
   id: 'bug-catcher-don',
@@ -670,6 +876,11 @@ const BUG_CATCHER_DON: Trainer = {
       level: 3,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BUG_CATCHER_DOUG: Trainer = {
   id: 'bug-catcher-doug',
@@ -681,6 +892,11 @@ const BUG_CATCHER_DOUG: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BUG_CATCHER_ED: Trainer = {
   id: 'bug-catcher-ed',
@@ -700,6 +916,11 @@ const BUG_CATCHER_ED: Trainer = {
       level: 30,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BUG_CATCHER_JOSH: Trainer = {
   id: 'bug-catcher-josh',
@@ -711,6 +932,11 @@ const BUG_CATCHER_JOSH: Trainer = {
       level: 13,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BUG_CATCHER_KEN: Trainer = {
   id: 'bug-catcher-ken',
@@ -726,6 +952,11 @@ const BUG_CATCHER_KEN: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BUG_CATCHER_ROB: Trainer = {
   id: 'bug-catcher-rob',
@@ -741,6 +972,11 @@ const BUG_CATCHER_ROB: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BUG_CATCHER_WADE: Trainer = {
   id: 'bug-catcher-wade',
@@ -764,6 +1000,11 @@ const BUG_CATCHER_WADE: Trainer = {
       level: 2,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BUG_CATCHER_WAYNE: Trainer = {
   id: 'bug-catcher-wayne',
@@ -779,6 +1020,11 @@ const BUG_CATCHER_WAYNE: Trainer = {
       level: 10,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // burglar
@@ -804,6 +1050,11 @@ const BURGLAR_CORAY: Trainer = {
       level: 30,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BURGLAR_DUNCAN: Trainer = {
   id: 'burglar-duncan',
@@ -823,6 +1074,11 @@ const BURGLAR_DUNCAN: Trainer = {
       level: 23,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const BURGLAR_EDDIE: Trainer = {
   id: 'burglar-eddie',
@@ -838,6 +1094,11 @@ const BURGLAR_EDDIE: Trainer = {
       level: 24,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // ace trainer
@@ -859,6 +1120,11 @@ const ACE_TRAINER_AARON: Trainer = {
       level: 24,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_ALLEN: Trainer = {
   id: 'ace-trainer-allen',
@@ -870,6 +1136,11 @@ const ACE_TRAINER_ALLEN: Trainer = {
       level: 27,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_BETH: Trainer = {
   id: 'ace-trainer-beth',
@@ -881,6 +1152,11 @@ const ACE_TRAINER_BETH: Trainer = {
       level: 37,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_BLAKE: Trainer = {
   id: 'ace-trainer-blake',
@@ -900,6 +1176,11 @@ const ACE_TRAINER_BLAKE: Trainer = {
       level: 31,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_BRIAN: Trainer = {
   id: 'ace-trainer-brian',
@@ -911,6 +1192,11 @@ const ACE_TRAINER_BRIAN: Trainer = {
       level: 35,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_CARA: Trainer = {
   id: 'ace-trainer-cara',
@@ -930,6 +1216,11 @@ const ACE_TRAINER_CARA: Trainer = {
       level: 33,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_CAROL: Trainer = {
   id: 'ace-trainer-carol',
@@ -949,6 +1240,11 @@ const ACE_TRAINER_CAROL: Trainer = {
       level: 35,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_CODY: Trainer = {
   id: 'ace-trainer-cody',
@@ -964,6 +1260,11 @@ const ACE_TRAINER_CODY: Trainer = {
       level: 36,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_CYBIL: Trainer = {
   id: 'ace-trainer-cybil',
@@ -979,6 +1280,11 @@ const ACE_TRAINER_CYBIL: Trainer = {
       level: 25,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_DARIN: Trainer = {
   id: 'ace-trainer-darin',
@@ -990,6 +1296,11 @@ const ACE_TRAINER_DARIN: Trainer = {
       level: 37,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_EMMA: Trainer = {
   id: 'ace-trainer-emma',
@@ -1001,6 +1312,11 @@ const ACE_TRAINER_EMMA: Trainer = {
       level: 28,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_FRAN: Trainer = {
   id: 'ace-trainer-fran',
@@ -1012,6 +1328,11 @@ const ACE_TRAINER_FRAN: Trainer = {
       level: 37,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_GAVEN: Trainer = {
   id: 'ace-trainer-gaven',
@@ -1031,6 +1352,11 @@ const ACE_TRAINER_GAVEN: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_GWEN: Trainer = {
   id: 'ace-trainer-gwen',
@@ -1054,6 +1380,11 @@ const ACE_TRAINER_GWEN: Trainer = {
       level: 22,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_IRENE: Trainer = {
   id: 'ace-trainer-irene',
@@ -1069,6 +1400,11 @@ const ACE_TRAINER_IRENE: Trainer = {
       level: 24,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_JAKE: Trainer = {
   id: 'ace-trainer-jake',
@@ -1084,6 +1420,11 @@ const ACE_TRAINER_JAKE: Trainer = {
       level: 35,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_JENN: Trainer = {
   id: 'ace-trainer-jenn',
@@ -1099,6 +1440,11 @@ const ACE_TRAINER_JENN: Trainer = {
       level: 26,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_JOYCE: Trainer = {
   id: 'ace-trainer-joyce',
@@ -1114,6 +1460,11 @@ const ACE_TRAINER_JOYCE: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_KATE: Trainer = {
   id: 'ace-trainer-kate',
@@ -1129,6 +1480,11 @@ const ACE_TRAINER_KATE: Trainer = {
       level: 28,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_KELLY: Trainer = {
   id: 'ace-trainer-kelly',
@@ -1148,6 +1504,11 @@ const ACE_TRAINER_KELLY: Trainer = {
       level: 24,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_KEVIN: Trainer = {
   id: 'ace-trainer-kevin',
@@ -1167,6 +1528,11 @@ const ACE_TRAINER_KEVIN: Trainer = {
       level: 35,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_LOIS: Trainer = {
   id: 'ace-trainer-lois',
@@ -1182,6 +1548,11 @@ const ACE_TRAINER_LOIS: Trainer = {
       level: 25,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_LOLA: Trainer = {
   id: 'ace-trainer-lola',
@@ -1197,6 +1568,11 @@ const ACE_TRAINER_LOLA: Trainer = {
       level: 36,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_MEGAN: Trainer = {
   id: 'ace-trainer-megan',
@@ -1216,6 +1592,11 @@ const ACE_TRAINER_MEGAN: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_MIKE: Trainer = {
   id: 'ace-trainer-mike',
@@ -1227,6 +1608,11 @@ const ACE_TRAINER_MIKE: Trainer = {
       level: 37,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_NICK: Trainer = {
   id: 'ace-trainer-nick',
@@ -1246,6 +1632,11 @@ const ACE_TRAINER_NICK: Trainer = {
       level: 26,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_PAUL: Trainer = {
   id: 'ace-trainer-paul',
@@ -1265,6 +1656,11 @@ const ACE_TRAINER_PAUL: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_QUINN: Trainer = {
   id: 'ace-trainer-quinn',
@@ -1280,6 +1676,11 @@ const ACE_TRAINER_QUINN: Trainer = {
       level: 38,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_REENA: Trainer = {
   id: 'ace-trainer-reena',
@@ -1299,6 +1700,11 @@ const ACE_TRAINER_REENA: Trainer = {
       level: 31,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_RYAN: Trainer = {
   id: 'ace-trainer-ryan',
@@ -1314,6 +1720,11 @@ const ACE_TRAINER_RYAN: Trainer = {
       level: 27,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ACE_TRAINER_SEAN: Trainer = {
   id: 'ace-trainer-sean',
@@ -1333,6 +1744,11 @@ const ACE_TRAINER_SEAN: Trainer = {
       level: 35,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // firebreather
@@ -1350,6 +1766,11 @@ const FIREBREATHER_BILL: Trainer = {
       level: 6,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const FIREBREATHER_BURT: Trainer = {
   id: 'firebreather-burt',
@@ -1365,6 +1786,11 @@ const FIREBREATHER_BURT: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const FIREBREATHER_LYLE: Trainer = {
   id: 'firebreather-lyle',
@@ -1384,6 +1810,11 @@ const FIREBREATHER_LYLE: Trainer = {
       level: 28,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const FIREBREATHER_OTIS: Trainer = {
   id: 'firebreather-otis',
@@ -1403,6 +1834,11 @@ const FIREBREATHER_OTIS: Trainer = {
       level: 29,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const FIREBREATHER_RAY: Trainer = {
   id: 'firebreather-ray',
@@ -1414,6 +1850,11 @@ const FIREBREATHER_RAY: Trainer = {
       level: 9,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const FIREBREATHER_WALT: Trainer = {
   id: 'firebreather-walt',
@@ -1429,6 +1870,11 @@ const FIREBREATHER_WALT: Trainer = {
       level: 13,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // fisher
@@ -1442,6 +1888,11 @@ const FISHER_ANDRE: Trainer = {
       level: 27,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const FISHER_ARNOLD: Trainer = {
   id: 'fisher-arnold',
@@ -1453,6 +1904,11 @@ const FISHER_ARNOLD: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const FISHER_BARNEY: Trainer = {
   id: 'fisher-barney',
@@ -1472,6 +1928,11 @@ const FISHER_BARNEY: Trainer = {
       level: 30,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const FISHER_EDGAR: Trainer = {
   id: 'fisher-edgar',
@@ -1487,6 +1948,11 @@ const FISHER_EDGAR: Trainer = {
       level: 25,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const FISHER_HENRY: Trainer = {
   id: 'fisher-henry',
@@ -1502,6 +1968,11 @@ const FISHER_HENRY: Trainer = {
       level: 8,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const FISHER_JONAH: Trainer = {
   id: 'fisher-jonah',
@@ -1525,6 +1996,11 @@ const FISHER_JONAH: Trainer = {
       level: 25,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const FISHER_JUSTIN: Trainer = {
   id: 'fisher-justin',
@@ -1548,6 +2024,11 @@ const FISHER_JUSTIN: Trainer = {
       level: 5,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const FISHER_KYLE: Trainer = {
   id: 'fisher-kyle',
@@ -1567,6 +2048,11 @@ const FISHER_KYLE: Trainer = {
       level: 31,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const FISHER_MARTIN: Trainer = {
   id: 'fisher-martin',
@@ -1582,6 +2068,11 @@ const FISHER_MARTIN: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const FISHER_MARVIN: Trainer = {
   id: 'fisher-marvin',
@@ -1605,6 +2096,11 @@ const FISHER_MARVIN: Trainer = {
       level: 15,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const FISHER_RALPH: Trainer = {
   id: 'fisher-ralph',
@@ -1616,6 +2112,11 @@ const FISHER_RALPH: Trainer = {
       level: 10,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const FISHER_RAYMOND: Trainer = {
   id: 'fisher-raymond',
@@ -1639,6 +2140,11 @@ const FISHER_RAYMOND: Trainer = {
       level: 22,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const FISHER_SCOTT: Trainer = {
   id: 'fisher-scott',
@@ -1658,6 +2164,11 @@ const FISHER_SCOTT: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const FISHER_STEPHEN: Trainer = {
   id: 'fisher-stephen',
@@ -1681,6 +2192,11 @@ const FISHER_STEPHEN: Trainer = {
       level: 31,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const FISHER_TULLY: Trainer = {
   id: 'fisher-tully',
@@ -1692,6 +2208,11 @@ const FISHER_TULLY: Trainer = {
       level: 18,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const FISHER_WILTON: Trainer = {
   id: 'fisher-wilton',
@@ -1711,6 +2232,11 @@ const FISHER_WILTON: Trainer = {
       level: 25,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // gentleman
@@ -1724,6 +2250,11 @@ const GENTLEMAN_ALFRED: Trainer = {
       level: 20,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const GENTLEMAN_EDWARD: Trainer = {
   id: 'gentleman-edward',
@@ -1735,6 +2266,11 @@ const GENTLEMAN_EDWARD: Trainer = {
       level: 33,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const GENTLEMAN_GREGORY: Trainer = {
   id: 'gentleman-gregory',
@@ -1750,6 +2286,11 @@ const GENTLEMAN_GREGORY: Trainer = {
       level: 33,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const GENTLEMAN_PRESTON: Trainer = {
   id: 'gentleman-preston',
@@ -1765,6 +2306,11 @@ const GENTLEMAN_PRESTON: Trainer = {
       level: 18,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // guitarist
@@ -1778,6 +2324,11 @@ const GUITARIST_CLYDE: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const GUITARIST_VINCENT: Trainer = {
   id: 'guitarist-vincent',
@@ -1801,6 +2352,11 @@ const GUITARIST_VINCENT: Trainer = {
       level: 33,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // hiker
@@ -1818,6 +2374,11 @@ const HIKER_ANTHONY: Trainer = {
       level: 11,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const HIKER_BAILEY: Trainer = {
   id: 'hiker-bailey',
@@ -1845,6 +2406,11 @@ const HIKER_BAILEY: Trainer = {
       level: 13,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const HIKER_BENJAMIN: Trainer = {
   id: 'hiker-benjamin',
@@ -1864,6 +2430,11 @@ const HIKER_BENJAMIN: Trainer = {
       level: 16,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const HIKER_DANIEL: Trainer = {
   id: 'hiker-daniel',
@@ -1875,6 +2446,11 @@ const HIKER_DANIEL: Trainer = {
       level: 11,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const HIKER_ERIK: Trainer = {
   id: 'hiker-erik',
@@ -1894,6 +2470,11 @@ const HIKER_ERIK: Trainer = {
       level: 27,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const HIKER_JIM: Trainer = {
   id: 'hiker-jim',
@@ -1905,6 +2486,11 @@ const HIKER_JIM: Trainer = {
       level: 35,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const HIKER_KENNY: Trainer = {
   id: 'hiker-kenny',
@@ -1928,6 +2514,11 @@ const HIKER_KENNY: Trainer = {
       level: 29,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const HIKER_LEONARD: Trainer = {
   id: 'hiker-leonard',
@@ -1943,6 +2534,11 @@ const HIKER_LEONARD: Trainer = {
       level: 25,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const HIKER_MICHAEL: Trainer = {
   id: 'hiker-michael',
@@ -1962,6 +2558,11 @@ const HIKER_MICHAEL: Trainer = {
       level: 25,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const HIKER_PARRY: Trainer = {
   id: 'hiker-parry',
@@ -1973,6 +2574,11 @@ const HIKER_PARRY: Trainer = {
       level: 29,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const HIKER_PHILLIP: Trainer = {
   id: 'hiker-phillip',
@@ -1992,6 +2598,11 @@ const HIKER_PHILLIP: Trainer = {
       level: 23,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const HIKER_RUSSELL: Trainer = {
   id: 'hiker-russell',
@@ -2011,6 +2622,11 @@ const HIKER_RUSSELL: Trainer = {
       level: 8,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const HIKER_SIDNEY: Trainer = {
   id: 'hiker-sidney',
@@ -2026,6 +2642,11 @@ const HIKER_SIDNEY: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const HIKER_TIM: Trainer = {
   id: 'hiker-tim',
@@ -2045,6 +2666,11 @@ const HIKER_TIM: Trainer = {
       level: 31,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const HIKER_TIMOTHY: Trainer = {
   id: 'hiker-timothy',
@@ -2060,6 +2686,11 @@ const HIKER_TIMOTHY: Trainer = {
       level: 27,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // camper
@@ -2073,6 +2704,11 @@ const CAMPER_BARRY: Trainer = {
       level: 36,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const CAMPER_DEAN: Trainer = {
   id: 'camper-dean',
@@ -2088,6 +2724,11 @@ const CAMPER_DEAN: Trainer = {
       level: 31,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const CAMPER_ELLIOT: Trainer = {
   id: 'camper-elliot',
@@ -2103,6 +2744,11 @@ const CAMPER_ELLIOT: Trainer = {
       level: 15,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const CAMPER_IVAN: Trainer = {
   id: 'camper-ivan',
@@ -2122,6 +2768,11 @@ const CAMPER_IVAN: Trainer = {
       level: 14,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const CAMPER_JERRY: Trainer = {
   id: 'camper-jerry',
@@ -2133,6 +2784,11 @@ const CAMPER_JERRY: Trainer = {
       level: 37,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const CAMPER_LLOYD: Trainer = {
   id: 'camper-lloyd',
@@ -2144,6 +2800,11 @@ const CAMPER_LLOYD: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const CAMPER_QUENTIN: Trainer = {
   id: 'camper-quentin',
@@ -2163,6 +2824,11 @@ const CAMPER_QUENTIN: Trainer = {
       level: 30,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const CAMPER_ROLAND: Trainer = {
   id: 'camper-roland',
@@ -2174,6 +2840,11 @@ const CAMPER_ROLAND: Trainer = {
       level: 9,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const CAMPER_SID: Trainer = {
   id: 'camper-sid',
@@ -2193,6 +2864,11 @@ const CAMPER_SID: Trainer = {
       level: 29,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const CAMPER_SPENCER: Trainer = {
   id: 'camper-spencer',
@@ -2212,6 +2888,11 @@ const CAMPER_SPENCER: Trainer = {
       level: 19,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const CAMPER_TED: Trainer = {
   id: 'camper-ted',
@@ -2223,6 +2904,11 @@ const CAMPER_TED: Trainer = {
       level: 17,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const CAMPER_TODD: Trainer = {
   id: 'camper-todd',
@@ -2234,6 +2920,11 @@ const CAMPER_TODD: Trainer = {
       level: 14,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // picnicker
@@ -2247,6 +2938,11 @@ const PICNICKER_BROOKE: Trainer = {
       level: 16,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PICNICKER_CINDY: Trainer = {
   id: 'picnicker-cindy',
@@ -2258,6 +2954,11 @@ const PICNICKER_CINDY: Trainer = {
       level: 36,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PICNICKER_DEBRA: Trainer = {
   id: 'picnicker-debra',
@@ -2269,6 +2970,11 @@ const PICNICKER_DEBRA: Trainer = {
       level: 33,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PICNICKER_EDNA: Trainer = {
   id: 'picnicker-edna',
@@ -2284,6 +2990,11 @@ const PICNICKER_EDNA: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PICNICKER_ERIN: Trainer = {
   id: 'picnicker-erin',
@@ -2299,6 +3010,11 @@ const PICNICKER_ERIN: Trainer = {
       level: 16,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PICNICKER_GINA: Trainer = {
   id: 'picnicker-gina',
@@ -2318,6 +3034,11 @@ const PICNICKER_GINA: Trainer = {
       level: 12,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PICNICKER_HEIDI: Trainer = {
   id: 'picnicker-heidi',
@@ -2333,6 +3054,11 @@ const PICNICKER_HEIDI: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PICNICKER_HOPE: Trainer = {
   id: 'picnicker-hope',
@@ -2344,6 +3070,11 @@ const PICNICKER_HOPE: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PICNICKER_KIM: Trainer = {
   id: 'picnicker-kim',
@@ -2355,6 +3086,11 @@ const PICNICKER_KIM: Trainer = {
       level: 15,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PICNICKER_LIZ: Trainer = {
   id: 'picnicker-liz',
@@ -2366,6 +3102,11 @@ const PICNICKER_LIZ: Trainer = {
       level: 9,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PICNICKER_SHARON: Trainer = {
   id: 'picnicker-sharon',
@@ -2381,6 +3122,11 @@ const PICNICKER_SHARON: Trainer = {
       level: 33,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PICNICKER_TANYA: Trainer = {
   id: 'picnicker-tanya',
@@ -2392,6 +3138,11 @@ const PICNICKER_TANYA: Trainer = {
       level: 37,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PICNICKER_TIFFANY: Trainer = {
   id: 'picnicker-tiffany',
@@ -2403,6 +3154,11 @@ const PICNICKER_TIFFANY: Trainer = {
       level: 20,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // juggler
@@ -2424,6 +3180,11 @@ const JUGGLER_FRITZ: Trainer = {
       level: 29,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const JUGGLER_HORTON: Trainer = {
   id: 'juggler-horton',
@@ -2447,6 +3208,11 @@ const JUGGLER_HORTON: Trainer = {
       level: 33,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const JUGGLER_IRWIN: Trainer = {
   id: 'juggler-irwin',
@@ -2470,6 +3236,11 @@ const JUGGLER_IRWIN: Trainer = {
       level: 14,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // kimono girl
@@ -2483,6 +3254,11 @@ const KIMONO_GIRL_KUNI: Trainer = {
       level: 17,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const KIMONO_GIRL_MIKI: Trainer = {
   id: 'kimono-girl-miki',
@@ -2494,6 +3270,11 @@ const KIMONO_GIRL_MIKI: Trainer = {
       level: 17,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const KIMONO_GIRL_NAOKO: Trainer = {
   id: 'kimono-girl-naoko',
@@ -2505,6 +3286,11 @@ const KIMONO_GIRL_NAOKO: Trainer = {
       level: 17,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const KIMONO_GIRL_SAYO: Trainer = {
   id: 'kimono-girl-sayo',
@@ -2516,6 +3302,11 @@ const KIMONO_GIRL_SAYO: Trainer = {
       level: 17,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const KIMONO_GIRL_ZUKI: Trainer = {
   id: 'kimono-girl-zuki',
@@ -2527,6 +3318,11 @@ const KIMONO_GIRL_ZUKI: Trainer = {
       level: 17,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // lass
@@ -2548,6 +3344,11 @@ const LASS_ALICE: Trainer = {
       level: 30,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const LASS_BRIDGET: Trainer = {
   id: 'lass-bridget',
@@ -2567,6 +3368,11 @@ const LASS_BRIDGET: Trainer = {
       level: 15,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const LASS_CARRIE: Trainer = {
   id: 'lass-carrie',
@@ -2578,6 +3384,11 @@ const LASS_CARRIE: Trainer = {
       level: 18,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const LASS_CONNIE: Trainer = {
   id: 'lass-connie',
@@ -2589,6 +3400,11 @@ const LASS_CONNIE: Trainer = {
       level: 21,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const LASS_DANA: Trainer = {
   id: 'lass-dana',
@@ -2604,6 +3420,11 @@ const LASS_DANA: Trainer = {
       level: 18,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const LASS_ELLEN: Trainer = {
   id: 'lass-ellen',
@@ -2619,6 +3440,11 @@ const LASS_ELLEN: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const LASS_KRISE: Trainer = {
   id: 'lass-krise',
@@ -2634,6 +3460,11 @@ const LASS_KRISE: Trainer = {
       level: 15,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const LASS_LAURA: Trainer = {
   id: 'lass-laura',
@@ -2653,6 +3484,11 @@ const LASS_LAURA: Trainer = {
       level: 31,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const LASS_LINDA: Trainer = {
   id: 'lass-linda',
@@ -2672,6 +3508,11 @@ const LASS_LINDA: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const LASS_MICHELLE: Trainer = {
   id: 'lass-michelle',
@@ -2691,6 +3532,11 @@ const LASS_MICHELLE: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const LASS_SHANNON: Trainer = {
   id: 'lass-shannon',
@@ -2710,6 +3556,11 @@ const LASS_SHANNON: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // medium
@@ -2727,6 +3578,11 @@ const MEDIUM_DORIS: Trainer = {
       level: 36,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const MEDIUM_GRACE: Trainer = {
   id: 'medium-grace',
@@ -2742,6 +3598,11 @@ const MEDIUM_GRACE: Trainer = {
       level: 20,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const MEDIUM_MARTHA: Trainer = {
   id: 'medium-martha',
@@ -2761,6 +3622,11 @@ const MEDIUM_MARTHA: Trainer = {
       level: 20,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const MEDIUM_REBECCA: Trainer = {
   id: 'medium-rebecca',
@@ -2776,12 +3642,17 @@ const MEDIUM_REBECCA: Trainer = {
       level: 35,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // mysticalman
 const MYSTICALMAN_EUSIN: Trainer = {
   id: 'mysticalman-eusin',
-  type: TRAINER_TYPES.MEDIUM,
+  type: TRAINER_TYPES.MYSTICALMAN,
   name: 'Eusin',
   pokemon: [
     {
@@ -2797,6 +3668,11 @@ const MYSTICALMAN_EUSIN: Trainer = {
       level: 25,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // officer
@@ -2814,6 +3690,11 @@ const OFFICER_DIRK: Trainer = {
       level: 14,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const OFFICER_KEITH: Trainer = {
   id: 'officer-keith',
@@ -2825,6 +3706,11 @@ const OFFICER_KEITH: Trainer = {
       level: 17,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // poke fan
@@ -2846,6 +3732,11 @@ const POKE_FAN_ALEX: Trainer = {
       level: 29,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_FAN_ALLAN: Trainer = {
   id: 'poke-fan-allan',
@@ -2857,6 +3748,11 @@ const POKE_FAN_ALLAN: Trainer = {
       level: 35,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_FAN_BEVERLY: Trainer = {
   id: 'poke-fan-beverly',
@@ -2868,6 +3764,11 @@ const POKE_FAN_BEVERLY: Trainer = {
       level: 14,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_FAN_BRANDON: Trainer = {
   id: 'poke-fan-brandon',
@@ -2879,6 +3780,11 @@ const POKE_FAN_BRANDON: Trainer = {
       level: 13,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_FAN_CARTER: Trainer = {
   id: 'poke-fan-carter',
@@ -2898,6 +3804,11 @@ const POKE_FAN_CARTER: Trainer = {
       level: 29,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_FAN_COLIN: Trainer = {
   id: 'poke-fan-colin',
@@ -2909,6 +3820,11 @@ const POKE_FAN_COLIN: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_FAN_DEREK: Trainer = {
   id: 'poke-fan-derek',
@@ -2920,6 +3836,11 @@ const POKE_FAN_DEREK: Trainer = {
       level: 17,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_FAN_GEORGIA: Trainer = {
   id: 'poke-fan-georgia',
@@ -2947,6 +3868,11 @@ const POKE_FAN_GEORGIA: Trainer = {
       level: 23,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_FAN_JAIME: Trainer = {
   id: 'poke-fan-jaime',
@@ -2958,6 +3884,11 @@ const POKE_FAN_JAIME: Trainer = {
       level: 16,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_FAN_JEREMY: Trainer = {
   id: 'poke-fan-jeremy',
@@ -2977,6 +3908,11 @@ const POKE_FAN_JEREMY: Trainer = {
       level: 28,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_FAN_JOSHUA: Trainer = {
   id: 'poke-fan-joshua',
@@ -3004,6 +3940,11 @@ const POKE_FAN_JOSHUA: Trainer = {
       level: 23,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_FAN_REX: Trainer = {
   id: 'poke-fan-rex',
@@ -3015,6 +3956,11 @@ const POKE_FAN_REX: Trainer = {
       level: 35,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_FAN_ROBERT: Trainer = {
   id: 'poke-fan-robert',
@@ -3026,6 +3972,11 @@ const POKE_FAN_ROBERT: Trainer = {
       level: 33,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_FAN_RUTH: Trainer = {
   id: 'poke-fan-ruth',
@@ -3037,6 +3988,11 @@ const POKE_FAN_RUTH: Trainer = {
       level: 17,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_FAN_TREVOR: Trainer = {
   id: 'poke-fan-trevor',
@@ -3048,6 +4004,11 @@ const POKE_FAN_TREVOR: Trainer = {
       level: 33,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_FAN_WILLIAM: Trainer = {
   id: 'poke-fan-william',
@@ -3059,6 +4020,11 @@ const POKE_FAN_WILLIAM: Trainer = {
       level: 14,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // poke maniac
@@ -3076,6 +4042,11 @@ const POKE_MANIAC_ANDREW: Trainer = {
       level: 24,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_MANIAC_BEN: Trainer = {
   id: 'poke-maniac-ben',
@@ -3087,6 +4058,11 @@ const POKE_MANIAC_BEN: Trainer = {
       level: 19,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_MANIAC_BRENT: Trainer = {
   id: 'poke-maniac-brent',
@@ -3098,6 +4074,11 @@ const POKE_MANIAC_BRENT: Trainer = {
       level: 19,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_MANIAC_CALVIN: Trainer = {
   id: 'poke-maniac-calvin',
@@ -3109,6 +4090,11 @@ const POKE_MANIAC_CALVIN: Trainer = {
       level: 26,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_MANIAC_DONALD: Trainer = {
   id: 'poke-maniac-donald',
@@ -3124,6 +4110,11 @@ const POKE_MANIAC_DONALD: Trainer = {
       level: 10,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_MANIAC_ISAAC: Trainer = {
   id: 'poke-maniac-isaac',
@@ -3135,6 +4126,11 @@ const POKE_MANIAC_ISAAC: Trainer = {
       level: 12,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_MANIAC_LARRY: Trainer = {
   id: 'poke-maniac-larry',
@@ -3146,6 +4142,11 @@ const POKE_MANIAC_LARRY: Trainer = {
       level: 10,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_MANIAC_MILLER: Trainer = {
   id: 'poke-maniac-miller',
@@ -3161,6 +4162,11 @@ const POKE_MANIAC_MILLER: Trainer = {
       level: 17,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_MANIAC_RON: Trainer = {
   id: 'poke-maniac-ron',
@@ -3172,6 +4178,11 @@ const POKE_MANIAC_RON: Trainer = {
       level: 19,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_MANIAC_SHANE: Trainer = {
   id: 'poke-maniac-shane',
@@ -3187,6 +4198,11 @@ const POKE_MANIAC_SHANE: Trainer = {
       level: 16,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const POKE_MANIAC_ZACH: Trainer = {
   id: 'poke-maniac-zach',
@@ -3198,6 +4214,11 @@ const POKE_MANIAC_ZACH: Trainer = {
       level: 27,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // psychic
@@ -3211,6 +4232,11 @@ const PSYCHIC_FIDEL: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PSYCHIC_FRANKLIN: Trainer = {
   id: 'psychic-franklin',
@@ -3222,6 +4248,11 @@ const PSYCHIC_FRANKLIN: Trainer = {
       level: 37,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PSYCHIC_GILBERT: Trainer = {
   id: 'psychic-gilbert',
@@ -3241,6 +4272,11 @@ const PSYCHIC_GILBERT: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PSYCHIC_GREG: Trainer = {
   id: 'psychic-greg',
@@ -3252,6 +4288,11 @@ const PSYCHIC_GREG: Trainer = {
       level: 17,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PSYCHIC_HERMAN: Trainer = {
   id: 'psychic-herman',
@@ -3271,6 +4312,11 @@ const PSYCHIC_HERMAN: Trainer = {
       level: 30,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PSYCHIC_JARED: Trainer = {
   id: 'psychic-jared',
@@ -3290,6 +4336,11 @@ const PSYCHIC_JARED: Trainer = {
       level: 35,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PSYCHIC_MARK: Trainer = {
   id: 'psychic-mark',
@@ -3309,6 +4360,11 @@ const PSYCHIC_MARK: Trainer = {
       level: 15,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PSYCHIC_NATHAN: Trainer = {
   id: 'psychic-nathan',
@@ -3320,6 +4376,11 @@ const PSYCHIC_NATHAN: Trainer = {
       level: 26,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PSYCHIC_NORMAN: Trainer = {
   id: 'psychic-norman',
@@ -3335,6 +4396,11 @@ const PSYCHIC_NORMAN: Trainer = {
       level: 20,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PSYCHIC_PHIL: Trainer = {
   id: 'psychic-phil',
@@ -3350,6 +4416,11 @@ const PSYCHIC_PHIL: Trainer = {
       level: 24,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PSYCHIC_RICHARD: Trainer = {
   id: 'psychic-richard',
@@ -3361,6 +4432,11 @@ const PSYCHIC_RICHARD: Trainer = {
       level: 36,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const PSYCHIC_RODNEY: Trainer = {
   id: 'psychic-rodney',
@@ -3376,6 +4452,11 @@ const PSYCHIC_RODNEY: Trainer = {
       level: 33,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // rocket executive
@@ -3397,6 +4478,11 @@ const ROCKET_EXECUTIVE_1: Trainer = {
       level: 24,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ROCKET_EXECUTIVE_2: Trainer = {
   id: 'rocket-executive-2',
@@ -3416,6 +4502,11 @@ const ROCKET_EXECUTIVE_2: Trainer = {
       level: 25,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ROCKET_EXECUTIVE_3: Trainer = {
   id: 'rocket-executive-3',
@@ -3427,6 +4518,11 @@ const ROCKET_EXECUTIVE_3: Trainer = {
       level: 36,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const ROCKET_EXECUTIVE_4: Trainer = {
   id: 'rocket-executive-4',
@@ -3446,6 +4542,11 @@ const ROCKET_EXECUTIVE_4: Trainer = {
       level: 35,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // sage
@@ -3467,6 +4568,11 @@ const SAGE_CHOW: Trainer = {
       level: 3,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SAGE_EDMOND: Trainer = {
   id: 'sage-edmond',
@@ -3486,6 +4592,11 @@ const SAGE_EDMOND: Trainer = {
       level: 3,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SAGE_GAKU: Trainer = {
   id: 'sage-gaku',
@@ -3501,6 +4612,11 @@ const SAGE_GAKU: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SAGE_JEFFREY: Trainer = {
   id: 'sage-jeffrey',
@@ -3512,6 +4628,11 @@ const SAGE_JEFFREY: Trainer = {
       level: 22,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SAGE_JIN: Trainer = {
   id: 'sage-jin',
@@ -3523,6 +4644,11 @@ const SAGE_JIN: Trainer = {
       level: 6,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SAGE_KOJI: Trainer = {
   id: 'sage-koji',
@@ -3538,6 +4664,11 @@ const SAGE_KOJI: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SAGE_LI: Trainer = {
   id: 'sage-li',
@@ -3557,6 +4688,11 @@ const SAGE_LI: Trainer = {
       level: 7,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SAGE_MASA: Trainer = {
   id: 'sage-masa',
@@ -3572,6 +4708,11 @@ const SAGE_MASA: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SAGE_NEAL: Trainer = {
   id: 'sage-neal',
@@ -3583,6 +4724,11 @@ const SAGE_NEAL: Trainer = {
       level: 6,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SAGE_NICO: Trainer = {
   id: 'sage-nico',
@@ -3602,6 +4748,11 @@ const SAGE_NICO: Trainer = {
       level: 3,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SAGE_PING: Trainer = {
   id: 'sage-ping',
@@ -3629,6 +4780,11 @@ const SAGE_PING: Trainer = {
       level: 16,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SAGE_TROY: Trainer = {
   id: 'sage-troy',
@@ -3644,6 +4800,11 @@ const SAGE_TROY: Trainer = {
       level: 7,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // schoolboy
@@ -3657,6 +4818,11 @@ const SCHOOLBOY_ALAN: Trainer = {
       level: 16,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SCHOOLBOY_BILLY: Trainer = {
   id: 'schoolboy-billy',
@@ -3680,6 +4846,11 @@ const SCHOOLBOY_BILLY: Trainer = {
       level: 35,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SCHOOLBOY_CHAD: Trainer = {
   id: 'schoolboy-chad',
@@ -3691,6 +4862,11 @@ const SCHOOLBOY_CHAD: Trainer = {
       level: 19,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SCHOOLBOY_DANNY: Trainer = {
   id: 'schoolboy-danny',
@@ -3710,6 +4886,11 @@ const SCHOOLBOY_DANNY: Trainer = {
       level: 31,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SCHOOLBOY_DUDLEY: Trainer = {
   id: 'schoolboy-dudley',
@@ -3721,6 +4902,11 @@ const SCHOOLBOY_DUDLEY: Trainer = {
       level: 35,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SCHOOLBOY_JACK: Trainer = {
   id: 'schoolboy-jack',
@@ -3736,6 +4922,11 @@ const SCHOOLBOY_JACK: Trainer = {
       level: 15,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SCHOOLBOY_JOE: Trainer = {
   id: 'schoolboy-joe',
@@ -3751,6 +4942,11 @@ const SCHOOLBOY_JOE: Trainer = {
       level: 33,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SCHOOLBOY_JOHNNY: Trainer = {
   id: 'schoolboy-johnny',
@@ -3770,6 +4966,11 @@ const SCHOOLBOY_JOHNNY: Trainer = {
       level: 33,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SCHOOLBOY_KIPP: Trainer = {
   id: 'schoolboy-kipp',
@@ -3793,6 +4994,11 @@ const SCHOOLBOY_KIPP: Trainer = {
       level: 27,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SCHOOLBOY_NATE: Trainer = {
   id: 'schoolboy-nate',
@@ -3808,6 +5014,11 @@ const SCHOOLBOY_NATE: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SCHOOLBOY_RICKY: Trainer = {
   id: 'schoolboy-ricky',
@@ -3823,6 +5034,11 @@ const SCHOOLBOY_RICKY: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SCHOOLBOY_TOMMY: Trainer = {
   id: 'schoolboy-tommy',
@@ -3838,6 +5054,11 @@ const SCHOOLBOY_TOMMY: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // skier
@@ -3851,6 +5072,11 @@ const SKIER_CLARISSA: Trainer = {
       level: 28,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SKIER_ROXANNE: Trainer = {
   id: 'skier-roxanne',
@@ -3862,6 +5088,11 @@ const SKIER_ROXANNE: Trainer = {
       level: 28,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // teacher
@@ -3875,6 +5106,11 @@ const TEACHER_COLETTE: Trainer = {
       level: 36,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEACHER_HILLARY: Trainer = {
   id: 'teacher-hillary',
@@ -3890,6 +5126,11 @@ const TEACHER_HILLARY: Trainer = {
       level: 36,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEACHER_SHIRLEY: Trainer = {
   id: 'teacher-shirley',
@@ -3901,6 +5142,11 @@ const TEACHER_SHIRLEY: Trainer = {
       level: 35,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // team rocket grunt
@@ -3918,6 +5164,11 @@ const TEAM_ROCKET_GRUNT_1: Trainer = {
       level: 9,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_2: Trainer = {
   id: 'team-rocket-grunt-2',
@@ -3933,6 +5184,11 @@ const TEAM_ROCKET_GRUNT_2: Trainer = {
       level: 11,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_3: Trainer = {
   id: 'team-rocket-grunt-3',
@@ -3952,6 +5208,11 @@ const TEAM_ROCKET_GRUNT_3: Trainer = {
       level: 9,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_4: Trainer = {
   id: 'team-rocket-grunt-4',
@@ -3963,6 +5224,11 @@ const TEAM_ROCKET_GRUNT_4: Trainer = {
       level: 14,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_5: Trainer = {
   id: 'team-rocket-grunt-5',
@@ -3986,6 +5252,11 @@ const TEAM_ROCKET_GRUNT_5: Trainer = {
       level: 16,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_6: Trainer = {
   id: 'team-rocket-grunt-6',
@@ -4001,6 +5272,11 @@ const TEAM_ROCKET_GRUNT_6: Trainer = {
       level: 19,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_7: Trainer = {
   id: 'team-rocket-grunt-7',
@@ -4020,6 +5296,11 @@ const TEAM_ROCKET_GRUNT_7: Trainer = {
       level: 18,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_8: Trainer = {
   id: 'team-rocket-grunt-8',
@@ -4035,6 +5316,11 @@ const TEAM_ROCKET_GRUNT_8: Trainer = {
       level: 18,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_9: Trainer = {
   id: 'team-rocket-grunt-9',
@@ -4046,6 +5332,11 @@ const TEAM_ROCKET_GRUNT_9: Trainer = {
       level: 18,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_10: Trainer = {
   id: 'team-rocket-grunt-10',
@@ -4065,6 +5356,11 @@ const TEAM_ROCKET_GRUNT_10: Trainer = {
       level: 17,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_11: Trainer = {
   id: 'team-rocket-grunt-11',
@@ -4080,6 +5376,11 @@ const TEAM_ROCKET_GRUNT_11: Trainer = {
       level: 18,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_12: Trainer = {
   id: 'team-rocket-grunt-12',
@@ -4091,6 +5392,11 @@ const TEAM_ROCKET_GRUNT_12: Trainer = {
       level: 19,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_13: Trainer = {
   id: 'team-rocket-grunt-13',
@@ -4106,6 +5412,11 @@ const TEAM_ROCKET_GRUNT_13: Trainer = {
       level: 24,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_14: Trainer = {
   id: 'team-rocket-grunt-14',
@@ -4117,6 +5428,11 @@ const TEAM_ROCKET_GRUNT_14: Trainer = {
       level: 26,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_15: Trainer = {
   id: 'team-rocket-grunt-15',
@@ -4144,6 +5460,11 @@ const TEAM_ROCKET_GRUNT_15: Trainer = {
       level: 23,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_16: Trainer = {
   id: 'team-rocket-grunt-16',
@@ -4163,6 +5484,11 @@ const TEAM_ROCKET_GRUNT_16: Trainer = {
       level: 25,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_17: Trainer = {
   id: 'team-rocket-grunt-17',
@@ -4178,6 +5504,11 @@ const TEAM_ROCKET_GRUNT_17: Trainer = {
       level: 26,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_18: Trainer = {
   id: 'team-rocket-grunt-18',
@@ -4201,6 +5532,11 @@ const TEAM_ROCKET_GRUNT_18: Trainer = {
       level: 23,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_19: Trainer = {
   id: 'team-rocket-grunt-19',
@@ -4212,6 +5548,11 @@ const TEAM_ROCKET_GRUNT_19: Trainer = {
       level: 26,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_20: Trainer = {
   id: 'team-rocket-grunt-20',
@@ -4227,6 +5568,11 @@ const TEAM_ROCKET_GRUNT_20: Trainer = {
       level: 26,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_21: Trainer = {
   id: 'team-rocket-grunt-21',
@@ -4246,6 +5592,11 @@ const TEAM_ROCKET_GRUNT_21: Trainer = {
       level: 22,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_22: Trainer = {
   id: 'team-rocket-grunt-22',
@@ -4269,6 +5620,11 @@ const TEAM_ROCKET_GRUNT_22: Trainer = {
       level: 24,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_23: Trainer = {
   id: 'team-rocket-grunt-23',
@@ -4280,6 +5636,11 @@ const TEAM_ROCKET_GRUNT_23: Trainer = {
       level: 27,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_24: Trainer = {
   id: 'team-rocket-grunt-24',
@@ -4299,6 +5660,11 @@ const TEAM_ROCKET_GRUNT_24: Trainer = {
       level: 25,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_25: Trainer = {
   id: 'team-rocket-grunt-25',
@@ -4314,6 +5680,11 @@ const TEAM_ROCKET_GRUNT_25: Trainer = {
       level: 24,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_26: Trainer = {
   id: 'team-rocket-grunt-26',
@@ -4329,6 +5700,11 @@ const TEAM_ROCKET_GRUNT_26: Trainer = {
       level: 25,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_27: Trainer = {
   id: 'team-rocket-grunt-27',
@@ -4344,6 +5720,11 @@ const TEAM_ROCKET_GRUNT_27: Trainer = {
       level: 24,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_28: Trainer = {
   id: 'team-rocket-grunt-28',
@@ -4359,6 +5740,11 @@ const TEAM_ROCKET_GRUNT_28: Trainer = {
       level: 23,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_29: Trainer = {
   id: 'team-rocket-grunt-29',
@@ -4374,6 +5760,11 @@ const TEAM_ROCKET_GRUNT_29: Trainer = {
       level: 25,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TEAM_ROCKET_GRUNT_30: Trainer = {
   id: 'team-rocket-grunt-30',
@@ -4385,6 +5776,11 @@ const TEAM_ROCKET_GRUNT_30: Trainer = {
       level: 30,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // twins
@@ -4402,6 +5798,11 @@ const TWINS_AMY_AND_MAY: Trainer = {
       level: 10,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TWINS_JO_AND_ZOE: Trainer = {
   id: 'twins-jo-and-zoe',
@@ -4417,6 +5818,11 @@ const TWINS_JO_AND_ZOE: Trainer = {
       level: 35,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TWINS_MEG_AND_PEG: Trainer = {
   id: 'twins-meg-and-peg',
@@ -4432,6 +5838,11 @@ const TWINS_MEG_AND_PEG: Trainer = {
       level: 31,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TWINS_ANN_AND_ANNE: Trainer = {
   id: 'twins-ann-and-anne',
@@ -4447,6 +5858,11 @@ const TWINS_ANN_AND_ANNE: Trainer = {
       level: 16,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const TWINS_LEA_AND_PIA: Trainer = {
   id: 'twins-lea-and-pia',
@@ -4462,6 +5878,11 @@ const TWINS_LEA_AND_PIA: Trainer = {
       level: 35,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // sailor
@@ -4483,6 +5904,11 @@ const SAILOR_ERNEST: Trainer = {
       level: 18,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SAILOR_EUGENE: Trainer = {
   id: 'sailor-eugene',
@@ -4502,6 +5928,11 @@ const SAILOR_EUGENE: Trainer = {
       level: 17,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SAILOR_GARRETT: Trainer = {
   id: 'sailor-garrett',
@@ -4513,6 +5944,11 @@ const SAILOR_GARRETT: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SAILOR_HARRY: Trainer = {
   id: 'sailor-harry',
@@ -4524,6 +5960,11 @@ const SAILOR_HARRY: Trainer = {
       level: 19,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SAILOR_HUEY: Trainer = {
   id: 'sailor-huey',
@@ -4539,6 +5980,11 @@ const SAILOR_HUEY: Trainer = {
       level: 18,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SAILOR_JEFF: Trainer = {
   id: 'sailor-jeff',
@@ -4554,6 +6000,11 @@ const SAILOR_JEFF: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SAILOR_KENNETH: Trainer = {
   id: 'sailor-kenneth',
@@ -4577,6 +6028,11 @@ const SAILOR_KENNETH: Trainer = {
       level: 28,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SAILOR_KENT: Trainer = {
   id: 'sailor-kent',
@@ -4592,6 +6048,11 @@ const SAILOR_KENT: Trainer = {
       level: 20,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SAILOR_STANLY: Trainer = {
   id: 'sailor-stanly',
@@ -4611,6 +6072,11 @@ const SAILOR_STANLY: Trainer = {
       level: 26,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SAILOR_TERRELL: Trainer = {
   id: 'sailor-terrell',
@@ -4622,6 +6088,11 @@ const SAILOR_TERRELL: Trainer = {
       level: 20,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // scientist
@@ -4643,6 +6114,11 @@ const SCIENTIST_JED: Trainer = {
       level: 20,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SCIENTIST_MARC: Trainer = {
   id: 'scientist-marc',
@@ -4662,6 +6138,11 @@ const SCIENTIST_MARC: Trainer = {
       level: 27,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SCIENTIST_MITCH: Trainer = {
   id: 'scientist-mitch',
@@ -4673,6 +6154,11 @@ const SCIENTIST_MITCH: Trainer = {
       level: 24,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SCIENTIST_RICH: Trainer = {
   id: 'scientist-rich',
@@ -4684,6 +6170,11 @@ const SCIENTIST_RICH: Trainer = {
       level: 30,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SCIENTIST_ROSS: Trainer = {
   id: 'scientist-ross',
@@ -4699,6 +6190,11 @@ const SCIENTIST_ROSS: Trainer = {
       level: 22,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // super nerd
@@ -4716,6 +6212,11 @@ const SUPER_NERD_ERIC: Trainer = {
       level: 11,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SUPER_NERD_HUGH: Trainer = {
   id: 'super-nerd-hugh',
@@ -4727,6 +6228,11 @@ const SUPER_NERD_HUGH: Trainer = {
       level: 39,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SUPER_NERD_MARKUS: Trainer = {
   id: 'super-nerd-markus',
@@ -4738,6 +6244,11 @@ const SUPER_NERD_MARKUS: Trainer = {
       level: 19,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SUPER_NERD_PAT: Trainer = {
   id: 'super-nerd-pat',
@@ -4749,6 +6260,11 @@ const SUPER_NERD_PAT: Trainer = {
       level: 36,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SUPER_NERD_SAM: Trainer = {
   id: 'super-nerd-sam',
@@ -4764,6 +6280,11 @@ const SUPER_NERD_SAM: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SUPER_NERD_SHAWN: Trainer = {
   id: 'super-nerd-shawn',
@@ -4783,6 +6304,11 @@ const SUPER_NERD_SHAWN: Trainer = {
       level: 31,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SUPER_NERD_TERU: Trainer = {
   id: 'super-nerd-teru',
@@ -4806,6 +6332,11 @@ const SUPER_NERD_TERU: Trainer = {
       level: 9,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SUPER_NERD_TOM: Trainer = {
   id: 'super-nerd-tom',
@@ -4825,6 +6356,11 @@ const SUPER_NERD_TOM: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // swimmer
@@ -4838,6 +6374,11 @@ const SWIMMER_BERKE: Trainer = {
       level: 23,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_BRIANA: Trainer = {
   id: 'swimmer-briana',
@@ -4853,6 +6394,11 @@ const SWIMMER_BRIANA: Trainer = {
       level: 35,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_CAMERON: Trainer = {
   id: 'swimmer-cameron',
@@ -4864,6 +6410,11 @@ const SWIMMER_CAMERON: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_CHARLIE: Trainer = {
   id: 'swimmer-charlie',
@@ -4883,6 +6434,11 @@ const SWIMMER_CHARLIE: Trainer = {
       level: 19,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_DAWN: Trainer = {
   id: 'swimmer-dawn',
@@ -4894,6 +6450,11 @@ const SWIMMER_DAWN: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_DENISE: Trainer = {
   id: 'swimmer-denise',
@@ -4905,6 +6466,11 @@ const SWIMMER_DENISE: Trainer = {
       level: 22,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_DIANA: Trainer = {
   id: 'swimmer-diana',
@@ -4916,6 +6482,11 @@ const SWIMMER_DIANA: Trainer = {
       level: 37,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_ELAINE: Trainer = {
   id: 'swimmer-elaine',
@@ -4927,6 +6498,11 @@ const SWIMMER_ELAINE: Trainer = {
       level: 21,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_GEORGE: Trainer = {
   id: 'swimmer-george',
@@ -4958,6 +6534,11 @@ const SWIMMER_GEORGE: Trainer = {
       level: 19,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_HAROLD: Trainer = {
   id: 'swimmer-harold',
@@ -4973,6 +6554,11 @@ const SWIMMER_HAROLD: Trainer = {
       level: 30,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_JEROME: Trainer = {
   id: 'swimmer-jerome',
@@ -4996,6 +6582,11 @@ const SWIMMER_JEROME: Trainer = {
       level: 28,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_KARA: Trainer = {
   id: 'swimmer-kara',
@@ -5011,6 +6602,11 @@ const SWIMMER_KARA: Trainer = {
       level: 20,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_KAYLEE: Trainer = {
   id: 'swimmer-kaylee',
@@ -5030,6 +6626,11 @@ const SWIMMER_KAYLEE: Trainer = {
       level: 20,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_KIRK: Trainer = {
   id: 'swimmer-kirk',
@@ -5045,6 +6646,11 @@ const SWIMMER_KIRK: Trainer = {
       level: 20,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_LORI: Trainer = {
   id: 'swimmer-lori',
@@ -5060,6 +6666,11 @@ const SWIMMER_LORI: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_MATHEW: Trainer = {
   id: 'swimmer-mathew',
@@ -5071,6 +6682,11 @@ const SWIMMER_MATHEW: Trainer = {
       level: 23,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_NICOLE: Trainer = {
   id: 'swimmer-nicole',
@@ -5090,6 +6706,11 @@ const SWIMMER_NICOLE: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_NIKKI: Trainer = {
   id: 'swimmer-nikki',
@@ -5113,6 +6734,11 @@ const SWIMMER_NIKKI: Trainer = {
       level: 28,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_PARKER: Trainer = {
   id: 'swimmer-parker',
@@ -5132,6 +6758,11 @@ const SWIMMER_PARKER: Trainer = {
       level: 35,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_PAULA: Trainer = {
   id: 'swimmer-paula',
@@ -5147,6 +6778,11 @@ const SWIMMER_PAULA: Trainer = {
       level: 19,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_RANDALL: Trainer = {
   id: 'swimmer-randall',
@@ -5166,6 +6802,11 @@ const SWIMMER_RANDALL: Trainer = {
       level: 20,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_SETH: Trainer = {
   id: 'swimmer-seth',
@@ -5185,6 +6826,11 @@ const SWIMMER_SETH: Trainer = {
       level: 32,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_SIMON: Trainer = {
   id: 'swimmer-simon',
@@ -5200,6 +6846,11 @@ const SWIMMER_SIMON: Trainer = {
       level: 20,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_SUSIE: Trainer = {
   id: 'swimmer-susie',
@@ -5215,6 +6866,11 @@ const SWIMMER_SUSIE: Trainer = {
       level: 22,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_TUCKER: Trainer = {
   id: 'swimmer-tucker',
@@ -5230,6 +6886,11 @@ const SWIMMER_TUCKER: Trainer = {
       level: 34,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const SWIMMER_WENDY: Trainer = {
   id: 'swimmer-wendy',
@@ -5245,6 +6906,11 @@ const SWIMMER_WENDY: Trainer = {
       level: 21,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 // youngster
@@ -5262,6 +6928,11 @@ const YOUNGSTER_ALBERT: Trainer = {
       level: 8,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const YOUNGSTER_GORDON: Trainer = {
   id: 'youngster-gordon',
@@ -5273,6 +6944,11 @@ const YOUNGSTER_GORDON: Trainer = {
       level: 10,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const YOUNGSTER_IAN: Trainer = {
   id: 'youngster-ian',
@@ -5288,6 +6964,11 @@ const YOUNGSTER_IAN: Trainer = {
       level: 12,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const YOUNGSTER_JASON: Trainer = {
   id: 'youngster-jason',
@@ -5303,6 +6984,11 @@ const YOUNGSTER_JASON: Trainer = {
       level: 33,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const YOUNGSTER_JIMMY: Trainer = {
   id: 'youngster-jimmy',
@@ -5318,6 +7004,11 @@ const YOUNGSTER_JIMMY: Trainer = {
       level: 33,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const YOUNGSTER_JOEY: Trainer = {
   id: 'youngster-joey',
@@ -5329,6 +7020,11 @@ const YOUNGSTER_JOEY: Trainer = {
       level: 4,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_30,
+    x: 8,
+    y: 23,
+  },
 }
 const YOUNGSTER_MIKEY: Trainer = {
   id: 'youngster-mikey',
@@ -5344,6 +7040,11 @@ const YOUNGSTER_MIKEY: Trainer = {
       level: 4,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const YOUNGSTER_OWEN: Trainer = {
   id: 'youngster-owen',
@@ -5355,6 +7056,11 @@ const YOUNGSTER_OWEN: Trainer = {
       level: 35,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const YOUNGSTER_SAMUEL: Trainer = {
   id: 'youngster-samuel',
@@ -5378,6 +7084,11 @@ const YOUNGSTER_SAMUEL: Trainer = {
       level: 8,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 const YOUNGSTER_WARREN: Trainer = {
   id: 'youngster-warren',
@@ -5389,6 +7100,11 @@ const YOUNGSTER_WARREN: Trainer = {
       level: 35,
     },
   ],
+  location: {
+    map: MAPS.ROUTE_29,
+    x: 1,
+    y: 1,
+  },
 }
 
 const data: Trainer[] = [

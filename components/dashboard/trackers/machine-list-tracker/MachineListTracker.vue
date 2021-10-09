@@ -38,7 +38,7 @@ import { Tracker } from '../Tracker.vue'
 import allMachines from '~/assets/data/machines'
 import allMaps from '~/assets/data/maps'
 import { ButtonGridOption } from '~/components/button-grid/ButtonGrid.vue'
-import { getDeepestParent } from '~/utils/domain-utils/mapUtils'
+import { getMapParent } from '~/utils/domain-utils/mapUtils'
 
 export default Vue.extend({
   props: {
@@ -84,8 +84,7 @@ export default Vue.extend({
         filteredTMs = filteredTMs.filter((tm) => {
           return tm.itemSources.find(
             (itemSource) =>
-              getDeepestParent(itemSource.location.map).id ===
-              this.selectedRegion
+              getMapParent(itemSource.location.map).id === this.selectedRegion
           )
         })
       }
