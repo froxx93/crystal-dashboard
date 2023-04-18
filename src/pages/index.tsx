@@ -1,7 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import LayoutBase from "~/components/LayoutBase";
-
 import { api } from "~/utils/api";
 
 const Dashboard: NextPage = () => {

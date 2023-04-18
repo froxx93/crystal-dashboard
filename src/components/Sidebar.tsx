@@ -53,7 +53,7 @@ const Sidebar = () => {
 
   return (
     <aside
-      className="w-[200px] flex-shrink-0 bg-gray-100 shadow-md dark:bg-gray-900 dark:text-gray-50"
+      className="w-[230px] flex-shrink-0 bg-gray-100 shadow-md dark:bg-gray-900 dark:text-gray-50"
       aria-label="Sidebar"
     >
       {/* menu */}
@@ -107,7 +107,7 @@ const CSidebarGroup: React.FC<{
         className="group flex w-full items-center rounded p-2 transition hover:bg-gray-200 hover:dark:bg-gray-700"
         onClick={() => setHidden(!isHidden)}
       >
-        <span className="ml-3 flex flex-1 gap-3 truncate text-ellipsis whitespace-nowrap text-left">
+        <span className="flex flex-1 gap-3 truncate text-ellipsis whitespace-nowrap text-left">
           {item.icon && <Icon name={item.icon} />}
           {item.label}
         </span>
@@ -116,7 +116,7 @@ const CSidebarGroup: React.FC<{
         />
       </button>
 
-      <ul className={`${isHidden ? "hidden" : ""} block space-y-2 py-2`}>
+      <ul className={`${isHidden ? "hidden" : ""} ml-3 block space-y-2 py-2`}>
         {item.children.map((child, index) => (
           <CSidebarItem key={index} item={child} />
         ))}
@@ -133,7 +133,7 @@ const CSidebarLink: React.FC<{ item: SidebarLink }> = ({ item }) => {
     <li>
       <Link
         href={item.route}
-        className={`group flex w-full cursor-pointer items-center rounded p-2 pl-11 text-base font-normal transition ${
+        className={`group flex w-full cursor-pointer items-center rounded p-2 text-base font-normal transition ${
           active
             ? "bg-primary text-white"
             : "hover:bg-gray-200 hover:dark:bg-gray-700"
