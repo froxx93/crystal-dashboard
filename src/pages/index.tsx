@@ -1,5 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
+import Card from "~/components/Card";
 import LayoutBase from "~/components/LayoutBase";
 import { api } from "~/utils/api";
 
@@ -17,13 +18,21 @@ const Dashboard: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <LayoutBase>
-        <h1 className="text-3xl">Welcome to Crystal Dashboard!</h1>
-        <div className="mt-3 grid grid-cols-12 gap-3">
-          <div className="col-span-4 rounded border p-3">Tracker 1</div>
-          <div className="col-span-4 rounded border p-3">Tracker 200</div>
-          <div className="col-span-4 rounded border p-3">Tracker 5000</div>
-          <div className="col-span-4 rounded border p-3">
-            Some other tracker
+        <h1 className="mb-3 text-3xl font-semibold">
+          Welcome to Crystal Dashboard!
+        </h1>
+        <div className="grid grid-cols-12 gap-3">
+          <div className="col-span-4">
+            <Card>Tracker 1</Card>
+          </div>
+          <div className="col-span-4">
+            <Card>Tracker 200</Card>
+          </div>
+          <div className="col-span-4">
+            <Card>Tracker 5000</Card>
+          </div>
+          <div className="col-span-4">
+            <Card>Some other tracker</Card>
           </div>
         </div>
       </LayoutBase>
