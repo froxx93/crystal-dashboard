@@ -1,10 +1,11 @@
 import { type NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import LayoutBase from "~/components/LayoutBase";
 
 import { api } from "~/utils/api";
 
-const Dashboard: NextPage = () => {
+const Error404: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
   return (
@@ -18,18 +19,18 @@ const Dashboard: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <LayoutBase>
-        <h1 className="text-3xl">Welcome to Crystal Dashboard!</h1>
-        <div className="mt-3 grid grid-cols-12 gap-3">
-          <div className="col-span-4 rounded border p-3">Tracker 1</div>
-          <div className="col-span-4 rounded border p-3">Tracker 200</div>
-          <div className="col-span-4 rounded border p-3">Tracker 5000</div>
-          <div className="col-span-4 rounded border p-3">
-            Some other tracker
-          </div>
-        </div>
+        <h1 className="mb-3 text-3xl">Ahem...</h1>
+        <p className="mb dark:text-gray-400">
+          {"What exactly do you think you're doing?"}
+        </p>
+        <p className="text-primary">
+          <Link href="/">
+            {"If you're looking for the Dashboard, you can go here."}
+          </Link>
+        </p>
       </LayoutBase>
     </>
   );
 };
 
-export default Dashboard;
+export default Error404;

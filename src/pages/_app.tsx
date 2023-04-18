@@ -1,6 +1,8 @@
 import { type AppType } from "next/app";
 import { type Session } from "next-auth";
 import { SessionProvider } from "next-auth/react";
+import "material-icons/iconfont/material-icons.css";
+import "material-icons/css/material-icons.min.css";
 
 import { api } from "~/utils/api";
 
