@@ -1,11 +1,14 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import { useState } from "react";
+import React, { useState } from "react";
+import { MACHINES } from "~/assets/data/machines";
 import Card from "~/components/Card";
 import LayoutBase from "~/components/LayoutBase";
+import { type Machine } from "~/domains/Machine";
+import { getDeepestParent } from "~/domains/Map";
 import { hash } from "~/utils/common";
 
-type TrackerType = "custom-counter" | "Tracker2" | "Tracker3";
+type TrackerType = "custom-counter" | "tm-list";
 
 type TrackerCustomCounter = {
   type: "custom-counter";
@@ -15,7 +18,16 @@ type TrackerCustomCounter = {
   };
 };
 
-type Tracker = TrackerCustomCounter;
+type Region = "both" | "johto" | "kanto";
+type TrackerTmList = {
+  type: "tm-list";
+  data: {
+    region: Region;
+    onlyFieldItemTms: boolean;
+  };
+};
+
+type Tracker = TrackerCustomCounter | TrackerTmList;
 
 const Dashboard: NextPage = () => {
   const trackers: Tracker[] = [
@@ -24,6 +36,13 @@ const Dashboard: NextPage = () => {
       data: {
         label: "thing",
         value: 0,
+      },
+    },
+    {
+      type: "tm-list",
+      data: {
+        region: "johto",
+        onlyFieldItemTms: false,
       },
     },
   ];
@@ -61,9 +80,9 @@ const Tracker: React.FC<{
 };
 
 const trackerMap: Record<TrackerType, React.FC<{ data: Tracker["data"] }>> = {
-  ["custom-counter"]: ({ data }) => {
-    const [label, setLabel] = useState("");
-    const [value, setValue] = useState(0);
+  ["custom-counter"]: ({ data }: { data: TrackerCustomCounter["data"] }) => {
+    const [label, setLabel] = useState(data.label);
+    const [value, setValue] = useState(data.value);
     const [isLabelDefined, setIsLabelDefined] = useState(false);
 
     return (
@@ -126,11 +145,97 @@ const trackerMap: Record<TrackerType, React.FC<{ data: Tracker["data"] }>> = {
       </>
     );
   },
-  Tracker2: ({ data }) => {
-    return <p>Tracker 2: {JSON.stringify(data)}</p>;
-  },
-  Tracker3: ({ data }) => {
-    return <p>Tracker 3: {JSON.stringify(data)}</p>;
+  ["tm-list"]: ({ data }: { data: TrackerTmList["data"] }) => {
+    const [selectedRegion, setSelectedRegion] = useState<Region>(data.region);
+    const [onlyFieldItemTms, setOnlyFieldItemTms] = useState(
+      data.onlyFieldItemTms
+    );
+
+    const regionFilter =
+      selectedRegion === "both" ? ["johto", "kanto"] : [selectedRegion];
+
+    const [selectedTms, setSelectedTms] = useState<Machine[]>(
+      MACHINES.filter((machine) =>
+        ["tm07", "tm13", "tm42"].includes(machine.id)
+      )
+    );
+
+    return (
+      <>
+        <h2 className="mb-3 text-xl font-semibold">TM List</h2>
+        <div className="flex flex-col gap-3">
+          <div>
+            <p>Regions</p>
+            {(["both", "johto", "kanto"] as const).map((region) => (
+              <label key={region} className="mr-3">
+                <input
+                  type="radio"
+                  name="region"
+                  value={region}
+                  checked={region === selectedRegion}
+                  onClick={() => {
+                    setSelectedRegion(region);
+                  }}
+                />
+                &nbsp;{region}
+              </label>
+            ))}
+          </div>
+
+          <div>
+            <p>Only Field Item TMs</p>
+            <input
+              type="checkbox"
+              checked={onlyFieldItemTms}
+              onChange={(e) => {
+                setOnlyFieldItemTms(e.target.checked);
+              }}
+            />
+          </div>
+
+          <div className="grid grid-cols-3">
+            {MACHINES.filter((machine) => machine.type === "tm")
+              .filter((tm) =>
+                tm.itemSources.some((itemSource) =>
+                  regionFilter.includes(
+                    getDeepestParent(itemSource.location.map).id
+                  )
+                )
+              )
+              .filter(
+                (tm) =>
+                  !onlyFieldItemTms ||
+                  (onlyFieldItemTms &&
+                    tm.itemSources.some(
+                      (itemSource) => itemSource.type === "field-item"
+                    ))
+              )
+              .map((tm) => (
+                <label key={tm.id}>
+                  <input
+                    type="checkbox"
+                    checked={selectedTms.some(
+                      (selectedTm) => selectedTm.id === tm.id
+                    )}
+                    onChange={(e) => {
+                      if (e.target.checked) {
+                        setSelectedTms([...selectedTms, tm]);
+                      } else {
+                        setSelectedTms(
+                          selectedTms.filter(
+                            (selectedTm) => selectedTm.id !== tm.id
+                          )
+                        );
+                      }
+                    }}
+                  />
+                  &nbsp;{tm.name}
+                </label>
+              ))}
+          </div>
+        </div>
+      </>
+    );
   },
 };
 
