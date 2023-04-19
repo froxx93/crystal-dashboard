@@ -3,11 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import LayoutBase from "~/components/LayoutBase";
 
-import { api } from "~/utils/api";
-
 const Error404: NextPage = () => {
-  const hello = api.example.hello.useQuery({ text: "from tRPC" });
-
   return (
     <>
       <Head>

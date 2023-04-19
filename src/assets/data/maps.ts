@@ -1,4 +1,4 @@
-import Map from "../../domains/Map";
+import type Map from "~/domains/Map";
 
 // worlds
 const JOHTO: Map = {

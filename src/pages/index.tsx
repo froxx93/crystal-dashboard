@@ -80,7 +80,8 @@ const Tracker: React.FC<{
 };
 
 const trackerMap: Record<TrackerType, React.FC<{ data: Tracker["data"] }>> = {
-  ["custom-counter"]: ({ data }: { data: TrackerCustomCounter["data"] }) => {
+  ["custom-counter"]: ({ data: d }) => {
+    const data = d as TrackerCustomCounter["data"]
     const [label, setLabel] = useState(data.label);
     const [value, setValue] = useState(data.value);
     const [isLabelDefined, setIsLabelDefined] = useState(false);
@@ -145,7 +146,8 @@ const trackerMap: Record<TrackerType, React.FC<{ data: Tracker["data"] }>> = {
       </>
     );
   },
-  ["tm-list"]: ({ data }: { data: TrackerTmList["data"] }) => {
+  ["tm-list"]: ({ data: d }) => {
+    const data = d as TrackerTmList["data"];
     const [selectedRegion, setSelectedRegion] = useState<Region>(data.region);
     const [onlyFieldItemTms, setOnlyFieldItemTms] = useState(
       data.onlyFieldItemTms
